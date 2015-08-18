@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r3393 - in	branches/1.8/Gunpowder_Age/Gunpowder_Age: factions macros units
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2011-February/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3393%20-%20in%0A%09branches/1.8/Gunpowder_Age/Gunpowder_Age%3A%20factions%20macros%20units&In-Reply-To=%3C20110203205755.A2C51481356%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="002509.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r3393 - in	branches/1.8/Gunpowder_Age/Gunpowder_Age: factions macros units</H1>
+    <B>mordante at mail.berlios.de</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3393%20-%20in%0A%09branches/1.8/Gunpowder_Age/Gunpowder_Age%3A%20factions%20macros%20units&In-Reply-To=%3C20110203205755.A2C51481356%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r3393 - in	branches/1.8/Gunpowder_Age/Gunpowder_Age: factions macros units">mordante at mail.berlios.de
+       </A><BR>
+    <I>Thu Feb  3 21:57:55 CET 2011</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="002509.html">[Wescamp-i18n-commit] r3394 - in	branches/1.8/Brave_Wings/Brave_Wings: . maps scenarios units utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2508">[ date ]</a>
+              <a href="thread.html#2508">[ thread ]</a>
+              <a href="subject.html#2508">[ subject ]</a>
+              <a href="author.html#2508">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2011-02-03 21:57:55 +0100 (Thu, 03 Feb 2011)
+New Revision: 3393
+
+Added:
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/b1Mountaineer.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/b2Duoten.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/c1Skirmisher.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/c2Flanker.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/d1sharpshooter.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/d2marksman.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/d3crackshot.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/e1grendeir.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/e2bombardier.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/f0Milita.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/f1Ambusher.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/f2Ranger.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/g1scout.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/g2spy.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/h1Cannon.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/h2Artillery.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/h3Fast_Artillery.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/i1Mounted.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/i2Cavalry.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/i3Dragoon.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/j1medic.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/j2battle_hospital.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/k1Ensign.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/k2Lieutenant.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/k3Major.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/k4Marshal.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/l1Frigate.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/l2Galleon.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/m1Sloop.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/m2Corsair.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/n1transport.cfg
+Removed:
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/b1Cannon.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/b2Artillery.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/b3Fast_Artillery.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/c1Mounted.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/c2Cavalry.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/c3Dragoon.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/d1Ensign.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/d2Lieutenant.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/d3Major.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/d4Marshal.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/e0Milita.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/e1Ambusher.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/e2Ranger.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/f1Mountaineer.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/f2Duoten.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/g0scout.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/g1spy.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/h1Skirmisher.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/h2Flanker.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/i1sharpshooter.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/i2marksman.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/i3crackshot.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/j1Sloop.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/j2Corsair.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/k1Frigate.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/k2Galleon.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/l1heavy_transport.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/m1medic.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/m2battle_hospital.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/n1grendeir.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/n2bombardier.cfg
+Modified:
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/factions/Empire-GPA.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/macros/general-movetypes.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/a1Infantry.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/a2Veteran.cfg
+   branches/1.8/Gunpowder_Age/Gunpowder_Age/units/a3Elite.cfg
+Log:
+wescamp_client: automatic update of addon 'Gunpowder_Age'
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="002509.html">[Wescamp-i18n-commit] r3394 - in	branches/1.8/Brave_Wings/Brave_Wings: . maps scenarios units utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2508">[ date ]</a>
+              <a href="thread.html#2508">[ thread ]</a>
+              <a href="subject.html#2508">[ subject ]</a>
+              <a href="author.html#2508">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

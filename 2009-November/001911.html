@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r2796 - in branches/1.8/Kromire: . po
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2009-November/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2796%20-%20in%20branches/1.8/Kromire%3A%20.%20po&In-Reply-To=%3C200911172105.nAHL5mLq016753%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001910.html">
+   <LINK REL="Next"  HREF="001912.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r2796 - in branches/1.8/Kromire: . po</H1>
+    <B>torangan at BerliOS</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2796%20-%20in%20branches/1.8/Kromire%3A%20.%20po&In-Reply-To=%3C200911172105.nAHL5mLq016753%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r2796 - in branches/1.8/Kromire: . po">torangan at mail.berlios.de
+       </A><BR>
+    <I>Tue Nov 17 22:05:48 CET 2009</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001910.html">[Wescamp-i18n-commit] r2795 - in branches/1.8/Dead_Water: .	Dead_Water Dead_Water/images Dead_Water/images/attacks	Dead_Water/images/items Dead_Water/images/overlays	Dead_Water/images/units Dead_Water/images/units/merfolk	Dead_Water/images/units/monsters	Dead_Water/images/units/undead Dead_Water/maps	Dead_Water/public Dead_Water/public/images	Dead_Water/scenarios Dead_Water/units Dead_Water/utils
+</A></li>
+        <LI>Next message: <A HREF="001912.html">[Wescamp-i18n-commit] r2797 - branches/1.8
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1911">[ date ]</a>
+              <a href="thread.html#1911">[ thread ]</a>
+              <a href="subject.html#1911">[ subject ]</a>
+              <a href="author.html#1911">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: torangan
+Date: 2009-11-17 22:05:28 +0100 (Tue, 17 Nov 2009)
+New Revision: 2796
+
+Added:
+   branches/1.8/Kromire/Makefile
+   branches/1.8/Kromire/campaign.def
+   branches/1.8/Kromire/config.status
+   branches/1.8/Kromire/po/
+   branches/1.8/Kromire/po/FINDCFG
+   branches/1.8/Kromire/po/LINGUAS
+   branches/1.8/Kromire/po/Makefile
+   branches/1.8/Kromire/po/Makefile.in.in
+   branches/1.8/Kromire/po/Makevars
+   branches/1.8/Kromire/po/POTFILES.in
+   branches/1.8/Kromire/po/af.po
+   branches/1.8/Kromire/po/ar.po
+   branches/1.8/Kromire/po/bg.po
+   branches/1.8/Kromire/po/ca.po
+   branches/1.8/Kromire/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">ca_ES at valencia.po</A>
+   branches/1.8/Kromire/po/cs.po
+   branches/1.8/Kromire/po/da.po
+   branches/1.8/Kromire/po/de.po
+   branches/1.8/Kromire/po/el.po
+   branches/1.8/Kromire/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">en at shaw.po</A>
+   branches/1.8/Kromire/po/en_GB.po
+   branches/1.8/Kromire/po/eo.po
+   branches/1.8/Kromire/po/es.po
+   branches/1.8/Kromire/po/et.po
+   branches/1.8/Kromire/po/eu.po
+   branches/1.8/Kromire/po/fi.po
+   branches/1.8/Kromire/po/fr.po
+   branches/1.8/Kromire/po/fur_IT.po
+   branches/1.8/Kromire/po/gl.po
+   branches/1.8/Kromire/po/he.po
+   branches/1.8/Kromire/po/hr.po
+   branches/1.8/Kromire/po/hu.po
+   branches/1.8/Kromire/po/id.po
+   branches/1.8/Kromire/po/is.po
+   branches/1.8/Kromire/po/it.po
+   branches/1.8/Kromire/po/ja.po
+   branches/1.8/Kromire/po/ko.po
+   branches/1.8/Kromire/po/la.po
+   branches/1.8/Kromire/po/lt.po
+   branches/1.8/Kromire/po/lv.po
+   branches/1.8/Kromire/po/mk.po
+   branches/1.8/Kromire/po/mr.po
+   branches/1.8/Kromire/po/nb_NO.po
+   branches/1.8/Kromire/po/nl.po
+   branches/1.8/Kromire/po/pl.po
+   branches/1.8/Kromire/po/pt.po
+   branches/1.8/Kromire/po/pt_BR.po
+   branches/1.8/Kromire/po/racv.po
+   branches/1.8/Kromire/po/remove-potcdate.sed
+   branches/1.8/Kromire/po/remove-potcdate.sin
+   branches/1.8/Kromire/po/ro.po
+   branches/1.8/Kromire/po/ru.po
+   branches/1.8/Kromire/po/sk.po
+   branches/1.8/Kromire/po/sl.po
+   branches/1.8/Kromire/po/sr.po
+   branches/1.8/Kromire/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">sr at latin.po</A>
+   branches/1.8/Kromire/po/sv.po
+   branches/1.8/Kromire/po/tl.po
+   branches/1.8/Kromire/po/tr.po
+   branches/1.8/Kromire/po/vi.po
+   branches/1.8/Kromire/po/wesnoth-Kromire.pot
+   branches/1.8/Kromire/po/zh_CN.po
+   branches/1.8/Kromire/po/zh_TW.po
+Log:
+added i18n stuff
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001910.html">[Wescamp-i18n-commit] r2795 - in branches/1.8/Dead_Water: .	Dead_Water Dead_Water/images Dead_Water/images/attacks	Dead_Water/images/items Dead_Water/images/overlays	Dead_Water/images/units Dead_Water/images/units/merfolk	Dead_Water/images/units/monsters	Dead_Water/images/units/undead Dead_Water/maps	Dead_Water/public Dead_Water/public/images	Dead_Water/scenarios Dead_Water/units Dead_Water/utils
+</A></li>
+	<LI>Next message: <A HREF="001912.html">[Wescamp-i18n-commit] r2797 - branches/1.8
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1911">[ date ]</a>
+              <a href="thread.html#1911">[ thread ]</a>
+              <a href="subject.html#1911">[ subject ]</a>
+              <a href="author.html#1911">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

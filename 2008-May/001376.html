@@ -1,0 +1,644 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r2188 - in branches/1.4/The_Heist/The_Heist:	. maps scenarios utils
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2008-May/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2188%20-%20in%20branches/1.4/The_Heist/The_Heist%3A%0A%09.%20maps%20scenarios%20utils&In-Reply-To=%3C200805011349.m41Dnw7w007911%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001375.html">
+   <LINK REL="Next"  HREF="001377.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r2188 - in branches/1.4/The_Heist/The_Heist:	. maps scenarios utils</H1>
+    <B>mordante at BerliOS</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2188%20-%20in%20branches/1.4/The_Heist/The_Heist%3A%0A%09.%20maps%20scenarios%20utils&In-Reply-To=%3C200805011349.m41Dnw7w007911%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r2188 - in branches/1.4/The_Heist/The_Heist:	. maps scenarios utils">mordante at mail.berlios.de
+       </A><BR>
+    <I>Thu May  1 15:49:58 CEST 2008</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001375.html">[Wescamp-i18n-commit] r2187 - in	branches/1.4/Extended_Era/Extended_Era: . eras	images/units/chaos races units/aragwaith units/chaos	units/dark_elves units/dwarves units/kalifa units/nagas	units/orcs units/outlaws units/sidhe units/steppe_orcs	units/sylvan_fairies units/trolls units/woses
+</A></li>
+        <LI>Next message: <A HREF="001377.html">[Wescamp-i18n-commit] r2189 - in branches/1.4/Legend_of_Wesmere: .	Legend_of_Wesmere Legend_of_Wesmere/external_binary_data/images	Legend_of_Wesmere/images Legend_of_Wesmere/images/portraits	Legend_of_Wesmere/images/story Legend_of_Wesmere/scenarios
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1376">[ date ]</a>
+              <a href="thread.html#1376">[ thread ]</a>
+              <a href="subject.html#1376">[ subject ]</a>
+              <a href="author.html#1376">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2008-05-01 15:49:57 +0200 (Thu, 01 May 2008)
+New Revision: 2188
+
+Modified:
+   branches/1.4/The_Heist/The_Heist/_main.cfg
+   branches/1.4/The_Heist/The_Heist/maps/The_Guillotine.map
+   branches/1.4/The_Heist/The_Heist/maps/The_Statues.map
+   branches/1.4/The_Heist/The_Heist/scenarios/03_The_Heist.cfg
+   branches/1.4/The_Heist/The_Heist/scenarios/05_The_Collision.cfg
+   branches/1.4/The_Heist/The_Heist/scenarios/06_The_Hideout.cfg
+   branches/1.4/The_Heist/The_Heist/scenarios/08_The_Family.cfg
+   branches/1.4/The_Heist/The_Heist/scenarios/09_The_Labyrinth.cfg
+   branches/1.4/The_Heist/The_Heist/scenarios/10_The_Persuasion.cfg
+   branches/1.4/The_Heist/The_Heist/scenarios/11_The_Statues.cfg
+   branches/1.4/The_Heist/The_Heist/scenarios/12_The_Guillotine.cfg
+   branches/1.4/The_Heist/The_Heist/scenarios/14_The_Siege_Part_I.cfg
+   branches/1.4/The_Heist/The_Heist/scenarios/15_The_Breakout.cfg
+   branches/1.4/The_Heist/The_Heist/utils/utils.cfg
+Log:
+wescamp_client: automatic update of addon 'The_Heist'
+
+Modified: branches/1.4/The_Heist/The_Heist/_main.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/_main.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/_main.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -6,14 +6,20 @@
+ [campaign]
+     icon=items/chest.png
+     name= _ &quot;The Heist&quot;
+-    abbrev=HEIST
+-    description= _ &quot;A plot to steal a king's treasure goes awry.&quot; + _ &quot; (Version&quot; + &quot; 1.3.4, 04-08-2008)&quot;
++    abbrev= _ &quot;HEIST&quot;
++    description= _ &quot;A plot to steal a king's treasure goes awry.&quot; + _ &quot; (Version&quot; + &quot; 1.3.6, 04-22-2008)&quot;
+     define=CAMPAIGN_THE_HEIST
+     first_scenario=The_Plan
+     difficulties=EASY,NORMAL,HARD
+     difficulty_descriptions={MENU_IMG_TXT &quot;units\human-loyalists\sergeant.png~TC(5,magenta)&quot; _&quot;Easy&quot;} +
+     &quot;;*&quot; + {MENU_IMG_TXT &quot;units\human-loyalists\lieutenant.png~TC(5,magenta)&quot; _&quot;Normal&quot;} + &quot;;&quot; +
+     {MENU_IMG_TXT &quot;units\human-loyalists\general.png~TC(5,magenta)&quot; _&quot;Hard&quot;}
++    [about]
++        title = _ &quot;Campaign Design&quot;
++        [entry]
++            name = &quot;Sam M. (Genosuke)&quot;
++        [/entry]
++    [/about]
+ [/campaign]
+ 
+ #ifdef CAMPAIGN_THE_HEIST
+
+Modified: branches/1.4/The_Heist/The_Heist/maps/The_Guillotine.map
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/maps/The_Guillotine.map	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/maps/The_Guillotine.map	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -1,25 +1,25 @@
+-border_size=1
+-usage=map
+-
+-Hh          ,Hh          , Hh          , Wo          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Wo          , Wo          , Wo          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Re          
+-Hh          ,Hh          , Hh          , Wo          , Ch          , Ch          , Ch          , Kh          , Ch          , Ch          , Ch          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Wo          , Wo          , Wo          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Re          
+-Hh          ,Hh          , Gs^Fp       , Wo          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Hh          , Hh          , Wo          , Wo          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ss          , Ss          , Ss          , Gs^Fp       , Ss          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Re          
+-Hh          ,Hh          , Gs^Fp       , Wo          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Wo          , Wo          , Wo          , Wo          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ss          , Ss          , Ss          , Ss          , Ss          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Re          , Gs^Fp       , Gs^Fp       
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Hh          , Hh          , Wo          , Wo          , Wo          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Mm          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ss          , Gs^Fp       , Ss          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ch          , Rr          , Ch          , Gs^Fp       , Wo          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Wo          , Wo          , Gs^Fp       , Wo          , Wo          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Mm          , Mm          , Mm          , Mm          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Mm          , Mm          , Mm          , Mm          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Re          , Re          , Re          , Re          , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Mm          , Hh          , Mm          , Mm          , Hh          , Gs^Fp       , Gs^Fp       , Re          , Re          , Re          , Re          , Re          , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Rr          , Gg          , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Wo          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Rr          , Gg          , Gg          , Gg          , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Wo          , Wo          , Wo          , Wo          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Rr          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Wo          , Wo          , Gg          , Gg          , Gg          , Re          , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
+-Gs^Fp       ,Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Rr          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Wo          , Gg          , Re          , Re          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Gs^Fp       , Hh          , Hh          , Hh          , Hh          
+-Gs^Fp       ,Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Ch          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Rr          , Wo^Bw/      , Wo          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Mm          , Hh          , Hh          , Hh          
+-Gg          ,Gg          , Gg          , Gg          , Ch          , Ch          , Rr          , Rr          , Rr          , Ch          , Ch          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gg          , Gg          , Gg          , Wo          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Mm          , Mm          , Mm          , Mm          , Mm          
+-Gg          ,Gg          , Gg          , Ch          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Ch          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gs^Fp       , Gg          , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Ch          , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Wo          , Wo          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Mm          , Mm          , Mm          , Mm          , Mm          
+-Gg          ,Gg          , Gg          , Ch          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Ch          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ch          , Kh          , Ch          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Wo          , Wo          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Mm          , Mm          , Mm          , Mm          
+-Gg          ,Gg          , Gg          , Ch          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Ch          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ch          , Ch          , Ch          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Wo          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Hh          , Mm          , Hh          , Hh          
+-Gg          ,Gg          , Gg          , Ch          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Ch          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Wo          , Wo          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          
+-Gg          ,Gg          , Gg          , Ch          , Ch          , Rr          , Rr          , Rr          , Rr          , Rr          , Ch          , Ch          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Wo          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
+-Gg          ,Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Rr          , Ch          , Ch          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Wo          , Wo          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
+-Gg          ,Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Ch          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Wo          , Wo          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
+-Gg          ,Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Ch          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Wo          , Wo          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
++border_size=1
++usage=map
++
++Hh          , Hh          , Hh          , Wo          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Wo          , Wo          , Wo          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Re          
++Hh          , Hh          , Hh          , Wo          , Ch          , Ch          , Ch          , Kh          , Ch          , Ch          , Ch          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Wo          , Wo          , Wo          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Re          
++Hh          , Hh          , Gs^Fp       , Wo          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Hh          , Hh          , Wo          , Wo          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ss          , Ss          , Ss          , Gs^Fp       , Ss          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Re          
++Hh          , Hh          , Gs^Fp       , Wo          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Ch          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Wo          , Wo          , Wo          , Wo          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ss          , Ss          , Ss          , Ss          , Ss          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Re          , Gs^Fp       , Gs^Fp       
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Hh          , Hh          , Wo          , Wo          , Wo          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Mm          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ss          , Gs^Fp       , Ss          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ch          , Rr          , Ch          , Gs^Fp       , Wo          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Wo          , Wo          , Gs^Fp       , Wo          , Wo          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Mm          , Mm          , Mm          , Mm          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Mm          , Mm          , Mm          , Mm          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Re          , Re          , Re          , Re          , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Mm          , Hh          , Mm          , Mm          , Hh          , Gs^Fp       , Gs^Fp       , Re          , Re          , Re          , Re          , Re          , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Rr          , Gg          , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Wo          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Rr          , Gg          , Gg          , Gg          , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Wo          , Wo          , Wo          , Wo          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Rr          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Wo          , Wo          , Gg          , Gg          , Gg          , Re          , Re          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
++Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Rr          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Wo          , Gg          , Re          , Re          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Gs^Fp       , Hh          , Hh          , Hh          , Hh          
++Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Ch          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Rr          , Wo^Bw/      , Wo          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Mm          , Hh          , Hh          , Hh          
++Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Rr          , Rr          , Rr          , Ch          , Ch          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gg          , Gg          , Gg          , Wo          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Mm          , Mm          , Mm          , Mm          , Mm          
++Gg          , Gg          , Gg          , Ch          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Ch          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gs^Fp       , Gg          , Gs^Fp       , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Ch          , Gs^Fp       , Rr          , Rr          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Wo          , Wo          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Mm          , Mm          , Mm          , Mm          , Mm          
++Gg          , Gg          , Gg          , Ch          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Ch          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ch          , Kh          , Ch          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Wo          , Wo          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Mm          , Mm          , Mm          , Mm          
++Gg          , Gg          , Gg          , Ch          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Ch          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ch          , Ch          , Ch          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Wo          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Hh          , Mm          , Hh          , Hh          
++Gg          , Gg          , Gg          , Ch          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Rr          , Ch          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Wo          , Wo          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          
++Gg          , Gg          , Gg          , Ch          , Ch          , Rr          , Rr          , Rr          , Rr          , Rr          , Ch          , Ch          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Wo          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
++Gg          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Rr          , Ch          , Ch          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Wo          , Wo          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
++Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Ch          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Wo          , Wo          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
++Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Wo          , Wo          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       
+
+Modified: branches/1.4/The_Heist/The_Heist/maps/The_Statues.map
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/maps/The_Statues.map	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/maps/The_Statues.map	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -1,28 +1,28 @@
+-border_size=1
+-usage=map
+-
+-Chw         ,Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo^Bw/      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
+-Chw         ,Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo^Bw/      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
+-Chw         ,Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Gg          , Wo^Bw\      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
+-Chw         ,Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          
+-Wo          ,Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Wo          
+-Wo          ,Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Wo          , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Kh          , Wo          , Ce          , Ce          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gg          , Wo^Bw/      , Wo^Bw/      , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Ce          , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo^Bw\      , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Gs^Fp       , Gg          , Wo          , Wo^Bw\      , Kh          , Wo          , Ce          , Ce          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          
+-Gs^Fp       ,Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
+-Wo          ,Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          
+-Wo          ,Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Gg          , Wo          , Wo          , Wo          , Wo          
+-Chw         ,Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo^Bw/      , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          
+-Chw         ,Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Gg          , Wo^Bw\      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
+-Chw         ,Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
+-Chw         ,Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
++border_size=1
++usage=map
++
++Chw         , Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
++Chw         , Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo^Bw/      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
++Chw         , Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Rp          , Wo^Bw\      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
++Chw         , Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          
++Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Wo          
++Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Wo          , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Ch          , Wo          , Ch          , Wo          , Cud         , Wo          , Cud         , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Kh          , Wo          , Ce          , Ce          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Wo^Bw/      , Wo^Bw/      , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Ce          , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Ch          , Wo          , Wo          , Wo          , Cud         , Wo          , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo^Bw\      , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Wo          , Wo^Bw\      , Kh          , Wo          , Ce          , Ce          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Cud         , Cud         , Cud         , Wo          , Ch          , Ch          , Ch          , Wo          , Wo          , Wo          
++Gs^Fp       , Gs^Fp       , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
++Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Ce          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          
++Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Ce          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Rp          , Wo          , Wo          , Wo          , Wo          
++Chw         , Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo^Bw/      , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo^Bw|      , Wo          , Wo          , Wo          , Wo          
++Chw         , Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Rp          , Wo^Bw\      , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
++Chw         , Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
++Chw         , Chw         , Chw         , Chw         , Chw         , Chw         , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          , Wo          
+
+Modified: branches/1.4/The_Heist/The_Heist/scenarios/03_The_Heist.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/scenarios/03_The_Heist.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/scenarios/03_The_Heist.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -137,33 +137,33 @@
+     {CELL_OPEN_EVENTS (
+ 
+     #Cell 1
+-    {LOYAL_UNIT 1 Peasant $revealed_locs[0].x $revealed_locs[0].y Varcyn ( _ &quot;Varcyn&quot;)}
++    {LOYAL_UNIT 1 Thief $revealed_locs[0].x $revealed_locs[0].y Varcyn ( _ &quot;Varcyn&quot;)}
+     ) (
+ 
+     #Cell 2
+-    {LOYAL_UNIT 1 Peasant $revealed_locs[1].x $revealed_locs[1].y Aethun ( _ &quot;Aethun&quot;)}
++    {LOYAL_UNIT 1 Poacher $revealed_locs[1].x $revealed_locs[1].y Aethun ( _ &quot;Aethun&quot;)}
+     ) (
+ 
+     #Cell 3
+-    {LOYAL_UNIT 1 Bowman $revealed_locs[2].x $revealed_locs[2].y Cadry ( _ &quot;Cadry&quot;)}
++    {LOYAL_UNIT 1 Spearman $revealed_locs[2].x $revealed_locs[2].y Cadry ( _ &quot;Cadry&quot;)}
+     ) (
+ 
+     #Cell 4
+-    {LOYAL_UNIT 1 Longbowman $revealed_locs[4].x $revealed_locs[4].y Tarcyn ( _ &quot;Tarcyn&quot;)}
++    {LOYAL_UNIT 1 Javelineer $revealed_locs[4].x $revealed_locs[4].y Tarcyn ( _ &quot;Tarcyn&quot;)}
+     ) (
+ 
+     #Cell 5
+-    {LOYAL_UNIT 1 Spearman $revealed_locs[5].x $revealed_locs[5].y Gwadoc ( _ &quot;Gwadoc&quot;)}
++    {LOYAL_UNIT 1 Assassin $revealed_locs[5].x $revealed_locs[5].y Gwadoc ( _ &quot;Gwadoc&quot;)}
+     ) (
+ 
+     #Cell 6
+-    {LOYAL_UNIT 1 Javelineer $revealed_locs[6].x $revealed_locs[6].y Iago ( _ &quot;Iago&quot;)}
++    {LOYAL_UNIT 1 Ranger $revealed_locs[6].x $revealed_locs[6].y Iago ( _ &quot;Iago&quot;)}
+     {VARIABLE guard_body_x $revealed_locs[3].x}
+     {VARIABLE guard_body_y $revealed_locs[3].y}
+     ) (
+ 
+     #Cell 7
+-    {LOYAL_UNIT 1 Assassin $revealed_locs[0].x $revealed_locs[0].y Claudius ( _ &quot;Claudius&quot;)}
++    {LOYAL_UNIT 1 Huntsman $revealed_locs[0].x $revealed_locs[0].y Claudius ( _ &quot;Claudius&quot;)}
+     {VARIABLE_OP guard_body_x format ($guard_body_x|,$revealed_locs[3].x)}
+     {VARIABLE_OP guard_body_y format ($guard_body_y|,$revealed_locs[3].y)}
+     ) (
+
+Modified: branches/1.4/The_Heist/The_Heist/scenarios/05_The_Collision.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/scenarios/05_The_Collision.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/scenarios/05_The_Collision.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -49,7 +49,7 @@
+         name=prestart
+ 
+         [objectives]
+-            note=&quot;Hint: Your actions determine which side enemies will attack&quot;
++            note=_&quot;Hint: Your actions determine which side enemies will attack&quot;
+             [objective]
+                 description= _ &quot;Kill everyone but Zilead&quot;
+                 condition=win
+@@ -73,6 +73,9 @@
+ 
+         {VARIABLE gerald_team gerald}
+         {VARIABLE zilead_team zilead}
++
++        #Give Zilead, Bill, Baltizar and Judas 10 HP
++        {PARTIAL_HEAL (side=3) 10}
+     [/event]
+ 
+     [event]
+
+Modified: branches/1.4/The_Heist/The_Heist/scenarios/06_The_Hideout.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/scenarios/06_The_Hideout.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/scenarios/06_The_Hideout.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -150,6 +150,9 @@
+         {CLEAR_VARIABLE rogan_store}
+         {CLEAR_VARIABLE side_ardella_store}
+ 
++        #Give your units 8 HP
++        {PARTIAL_HEAL (side=1) 8}
++
+         #Create tough orc
+         {UNIT_LEADER (Orcish Warrior) Ug ( _ &quot;Ug&quot;) 2 21 2}
+ 
+
+Modified: branches/1.4/The_Heist/The_Heist/scenarios/08_The_Family.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/scenarios/08_The_Family.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/scenarios/08_The_Family.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -57,10 +57,6 @@
+ 
+         {PLACE_IMAGE units/transport/galleon.png 9 37}
+ 
+-        #Non-hero units are in the cave
+-        {UNSTORE_AT side_ardella_store 1 20 1}
+-        {CLEAR_VARIABLE side_ardella_store}
+-
+         #Neighbours appear below house
+         {LOYAL_UNIT 3 Peasant 19 23 Norbert ( _ &quot;Norbert&quot;)}
+         {UNIT_FILL Peasant 3 (16-22) (24)}
+@@ -80,6 +76,13 @@
+         {UNSTORE_AT rogan_store 1 19 21}
+         {UNSTORE_AT ardella_store 1 21 21}
+ 
++        #Non-hero units
++        {UNSTORE_AT side_ardella_store 1 23-25 19-21} #You shouldn't have more than 9
++        {CLEAR_VARIABLE side_ardella_store}
++
++        #They got some rest
++        {FULL_HEAL side=1}
++
+         {UNIT_MSG (description=Leana) ( _ &quot;Who are you, stranger? And what brings you here at this early hour?&quot;)}
+         {UNIT_MSG (description=Norbert) ( _ &quot;Princess Leana? So, you're the one they're after. I don't know what you've done, but Gerald's men are headed this way.&quot;)}
+ 
+@@ -95,6 +98,12 @@
+         {CLEAR_VARIABLE kid2_store}
+         {CLEAR_VARIABLE kid3_store}
+ 
++        #Anna's family are rested
++        {FULL_HEAL (
++            side=3
++            x,y=19-21,19-20
++        )}
++
+         {UNIT_MSG (description=Anna) ( _ &quot;What's going on?&quot;)}
+         {UNIT_MSG (description=Norbert) ( _ &quot;It seems your guests have put you and your family in jeopardy. The princess and her cohorts must leave before it's too late.&quot;)}
+         {UNIT_MSG (description=Zeke) ( _ &quot;Is there something you haven't told us, your highness?&quot;)}
+
+Modified: branches/1.4/The_Heist/The_Heist/scenarios/09_The_Labyrinth.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/scenarios/09_The_Labyrinth.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/scenarios/09_The_Labyrinth.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -52,7 +52,7 @@
+         name=prestart
+ 
+         [objectives]
+-            note=&quot;Hint: Don't let Bill attack the cockatrice&quot;
++            note=_&quot;Hint: Don't let Bill attack the cockatrice&quot;
+             [objective]
+                 description= _ &quot;Move to the castle at the heart of the labyrinth&quot;
+                 condition=win
+@@ -78,6 +78,9 @@
+         {CLEAR_VARIABLE bill_store}
+         {CLEAR_VARIABLE judas_store}
+ 
++        #Give Zilead, Bill and Judas 14 HP
++        {PARTIAL_HEAL () 14}
++
+         {UNIT_LEADER (Elder Mage) Randalf ( _ &quot;Randalf&quot;) 3 20 20}
+ 
+ #ifdef EASY
+@@ -123,7 +126,7 @@
+         {UNIT_MSG (description=Zilead) ( _ &quot;Relax, she's harmless.&quot;)}
+ 
+         [message]
+-            caption=Mysterious Voice
++            caption= _ &quot;Mysterious Voice&quot;
+             description=Randalf
+             image=unknown-unit.png
+             message= _ &quot;She will pave the way for those she knows, but block the path with her foes.&quot;
+
+Modified: branches/1.4/The_Heist/The_Heist/scenarios/10_The_Persuasion.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/scenarios/10_The_Persuasion.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/scenarios/10_The_Persuasion.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -32,6 +32,9 @@
+         name=prestart
+ 
+         {UNSTORE_AT zilead_store 1 20 36}
++
++        {PARTIAL_HEAL (description=Zilead) 14}
++
+         {UNIT_LEADER (Warrior King) (King Theomund) ( _ &quot;King Theomund&quot;) 2 21 38}
+         {UNIT_LEADER (Dark Queen) (Queen Edina) ( _ &quot;Queen Edina&quot;) 2 20 38}
+         {UNIT_LEADER (Grand Marshal) (Horomir) ( _ &quot;Horomir&quot;) 2 22 38}
+
+Modified: branches/1.4/The_Heist/The_Heist/scenarios/11_The_Statues.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/scenarios/11_The_Statues.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/scenarios/11_The_Statues.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -1050,8 +1050,8 @@
+         name=prestart
+ 
+         [objectives]
+-            summary=Play a game of backgammon
+-            note=&quot;Press 'End Turn' to begin&quot;
++            summary=_&quot;Play a game of backgammon&quot;
++            note=_&quot;Press 'End Turn' to begin&quot;
+             [objective]
+                 description= _ &quot;Beat Ursula&quot;
+                 condition=win
+@@ -1096,6 +1096,9 @@
+         {CLEAR_VARIABLE bill_store}
+         {CLEAR_VARIABLE judas_store}
+ 
++        {FULL_HEAL description=Bill}
++        {FULL_HEAL description=Judas}
++
+         {CREATE_CHECKER (Goblin Knight) 1 13 17}
+ 
+         {CREATE_CHECKER (Dwarvish Dragonguard) 1 33 7}
+
+Modified: branches/1.4/The_Heist/The_Heist/scenarios/12_The_Guillotine.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/scenarios/12_The_Guillotine.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/scenarios/12_The_Guillotine.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -58,7 +58,7 @@
+         name=prestart
+ 
+         [objectives]
+-            note=&quot;Hint: try not to kill too many of Theomund's men&quot;
++            note=_&quot;Hint: try not to kill too many of Theomund's men&quot;
+             [objective]
+                 description= _ &quot;Free Zilead and survive until end of turns&quot;
+                 condition=win
+
+Modified: branches/1.4/The_Heist/The_Heist/scenarios/14_The_Siege_Part_I.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/scenarios/14_The_Siege_Part_I.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/scenarios/14_The_Siege_Part_I.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -45,9 +45,10 @@
+         name=prestart
+ 
+         [objectives]
+-            note=&quot;Attack a rock to push it forward. It will only move if
+-    (1) 2 units are adjacent
+-    (2) It is being pushed onto flat terrain or into a moat&quot;
++            note=_&quot;Attack a rock to push it forward.
++   (1) 2 or more units must be adjacent
++   (2) It can only be pushed onto flat terrain 
++       or into deep water&quot;
+             [objective]
+                 description= _ &quot;Push a rock into each moat and kill Elgareth&quot;
+                 condition=win
+@@ -57,17 +58,9 @@
+                 condition=lose
+             [/objective]
+             [objective]
+-                description= _ &quot;Death of&quot;
++                description= _ &quot;Death of a leader&quot;
+                 condition=lose
+             [/objective]
+-            [objective]
+-                description= _ &quot;  Randalf, Zilead, Bill,&quot;
+-                condition=lose
+-            [/objective]
+-            [objective]
+-                description= _ &quot;  Theomund, Edina, or Horomir&quot;
+-                condition=lose
+-            [/objective]
+         [/objectives]
+ 
+         #Unstore good guys
+@@ -84,6 +77,9 @@
+         {UNSTORE_AT side_randalf_store 1 (26-39) (34-36)}
+         {CLEAR_VARIABLE side_randalf_store}
+ 
++        #Units got some rest
++        {PARTIAL_HEAL side=1 18}
++
+         #Create Elgareth
+         {LOYAL_UNIT 2 (Great Mage) 20 5 Elgareth ( _ &quot;Elgareth&quot;)}
+ 
+@@ -369,7 +365,7 @@
+                     [store_locations]
+                         variable=locs
+                         x=$x
+-                        y=1-32
++                        y=1-36
+                         [filter]
+                             side=1
+                             [not]
+
+Modified: branches/1.4/The_Heist/The_Heist/scenarios/15_The_Breakout.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/scenarios/15_The_Breakout.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/scenarios/15_The_Breakout.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -59,6 +59,7 @@
+         {VARIABLE guard_idx 0}
+ 
+         {UNSTORE_AT zilead_store 1 13 12}
++
+         {CLEAR_VARIABLE zilead_store}
+     [/event]
+ 
+@@ -92,27 +93,25 @@
+             name=ardella_idx
+             less_than=$side_ardella_store.length
+         [/variable]
+-
+         [do]
+             {UNSTORE_AT_INDEX side_ardella_store $ardella_idx 1 $revealed_locs[$cell_count].x $revealed_locs[$cell_count].y}
+             {VARIABLE_OP cell_count add 1}
+             {VARIABLE_OP ardella_idx add 1}
+         [/do]
+     [/while]
+-
+-    #Then create peasants
+-    [while]
++   
++    #Create a peasant and woodsman if the cell is empty
++    [if]
+         [variable]
+             name=cell_count
+-            less_than={N}
++            equals=0
+         [/variable]
+-        [do]
+-            {VARIABLE_OP x to_variable revealed_locs[$cell_count].x}
+-            {VARIABLE_OP y to_variable revealed_locs[$cell_count].y}
+-            {UNIT_NAMELESS Peasant 1 $x $y}
+-            {VARIABLE_OP cell_count add 1}
+-        [/do]
+-    [/while]
++        [then]
++            {UNIT_NAMELESS Peasant 1 $revealed_locs[0].x $revealed_locs[0].y}
++            {UNIT_NAMELESS Woodsman 1 $revealed_locs[1].x $revealed_locs[1].y}
++            {UNIT_NAMELESS Bowman 1 $revealed_locs[2].x $revealed_locs[2].y}
++        [/then]
++    [/if]
+ 
+     {CLEAR_VARIABLE cell_count}
+     {CLEAR_VARIABLE x}
+@@ -122,7 +121,7 @@
+     {CELL_OPEN_EVENTS (
+ 
+     #Cell 1: Ardella
+-    {UNSTORE_AT ardella_store 1 $revealed_locs[0].x $revealed_locs[0].y}
++    {UNSTORE_AT ardella_store 1 $revealed_locs[2].x $revealed_locs[2].y}
+     {CLEAR_VARIABLE ardella_store}
+     [redraw] [/redraw]
+     {UNIT_MSG (description=Ardella) ( _ &quot;Who are you?&quot;)}
+@@ -138,7 +137,12 @@
+     [redraw] [/redraw]
+     {UNIT_MSG (
+     x=$x2
+-    y=$y2) ( _ &quot;King Theomund has taken over this castle. Help us free the other prisoners.&quot;)}
++    y=$y2) ( _ &quot;You're Gerald's men! What are you doing in here?&quot;)}
++    {UNIT_MSG (description=Fagan) ( _ &quot;We fell asleep while on guard duty...&quot;)}
++    {UNIT_MSG (
++    x=$x2
++    y=$y2) ( _ &quot;King Theomund has taken over this castle. Will you help us free the other prisoners?&quot;)}
++    {UNIT_MSG (description=Keegan) ( _ &quot;Gladly!&quot;)}
+     ) (
+ 
+     #Cell 3: Non-hero survivors and peasants
+@@ -188,8 +192,8 @@
+     ) (
+ 
+     #Cell 8: Leana and Rogan (both poisoned)
+-    {UNSTORE_AT leana_store 1 $revealed_locs[0].x $revealed_locs[0].y}
+-    {UNSTORE_AT rogan_store 1 $revealed_locs[1].x $revealed_locs[1].y}
++    {UNSTORE_AT leana_store 1 $revealed_locs[5].x $revealed_locs[5].y}
++    {UNSTORE_AT rogan_store 1 $revealed_locs[6].x $revealed_locs[6].y}
+     {CLEAR_VARIABLE leana_store}
+     {CLEAR_VARIABLE rogan_store}
+     [redraw] [/redraw]
+@@ -218,10 +222,15 @@
+     {CORRIDOR_OPEN_EVENTS (
+ 
+     #Corridor 1
+-    {UNIT_NAMELESS (Blood Bat) 2 $revealed_locs[6].x $revealed_locs[6].y}
++    [redraw] [/redraw]
++    [delay]
++        time=1000
++    [/delay]
++    {UNIT_MSG (description=Zilead) ( _ &quot;No guards? That's odd...&quot;)}
+     ) (
+ 
+     #Corridor 2
++    {UNIT_NAMELESS (Blood Bat) 2 $revealed_locs[3].x $revealed_locs[3].y}
+     {UNIT_NAMELESS (Blood Bat) 2 $revealed_locs[4].x $revealed_locs[4].y}
+     {UNIT_NAMELESS (Blood Bat) 2 $revealed_locs[5].x $revealed_locs[5].y}
+     {UNIT_NAMELESS (Blood Bat) 2 $revealed_locs[6].x $revealed_locs[6].y}
+
+Modified: branches/1.4/The_Heist/The_Heist/utils/utils.cfg
+===================================================================
+--- branches/1.4/The_Heist/The_Heist/utils/utils.cfg	2008-05-01 13:49:40 UTC (rev 2187)
++++ branches/1.4/The_Heist/The_Heist/utils/utils.cfg	2008-05-01 13:49:57 UTC (rev 2188)
+@@ -10,6 +10,34 @@
+     [/time]
+ #enddef
+ 
++#define PARTIAL_HEAL FILTER HP
++    [store_unit]
++        [filter]
++            {FILTER}
++        [/filter]
++
++        kill=no
++        variable=PARTIAL_HEAL_store
++    [/store_unit]
++
++    {FOREACH PARTIAL_HEAL_store PARTIAL_HEAL_i}
++    [object]
++        silent=yes
++    
++        [filter]
++            x,y=$PARTIAL_HEAL_store[$PARTIAL_HEAL_i].x,$PARTIAL_HEAL_store[$PARTIAL_HEAL_i].y
++        [/filter]
++    
++        [effect]
++            apply_to=hitpoints
++            increase={HP}
++        [/effect]
++    [/object]
++    {NEXT PARTIAL_HEAL_i}
++
++    {CLEAR_VARIABLE PARTIAL_HEAL_store}
++#enddef
++
+ #define UNIT_MSG FILTER MSG
+     [scroll_to_unit]
+         {FILTER}
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001375.html">[Wescamp-i18n-commit] r2187 - in	branches/1.4/Extended_Era/Extended_Era: . eras	images/units/chaos races units/aragwaith units/chaos	units/dark_elves units/dwarves units/kalifa units/nagas	units/orcs units/outlaws units/sidhe units/steppe_orcs	units/sylvan_fairies units/trolls units/woses
+</A></li>
+	<LI>Next message: <A HREF="001377.html">[Wescamp-i18n-commit] r2189 - in branches/1.4/Legend_of_Wesmere: .	Legend_of_Wesmere Legend_of_Wesmere/external_binary_data/images	Legend_of_Wesmere/images Legend_of_Wesmere/images/portraits	Legend_of_Wesmere/images/story Legend_of_Wesmere/scenarios
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1376">[ date ]</a>
+              <a href="thread.html#1376">[ thread ]</a>
+              <a href="subject.html#1376">[ subject ]</a>
+              <a href="author.html#1376">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

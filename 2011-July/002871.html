@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r3756 - in branches/1.10/Trinity/Trinity: .	dist scenarios units utils
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2011-July/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3756%20-%20in%20branches/1.10/Trinity/Trinity%3A%20.%0A%09dist%20scenarios%20units%20utils&In-Reply-To=%3C20110711192230.340C24813CA%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002870.html">
+   <LINK REL="Next"  HREF="002872.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r3756 - in branches/1.10/Trinity/Trinity: .	dist scenarios units utils</H1>
+    <B>mordante at mail.berlios.de</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3756%20-%20in%20branches/1.10/Trinity/Trinity%3A%20.%0A%09dist%20scenarios%20units%20utils&In-Reply-To=%3C20110711192230.340C24813CA%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r3756 - in branches/1.10/Trinity/Trinity: .	dist scenarios units utils">mordante at mail.berlios.de
+       </A><BR>
+    <I>Mon Jul 11 21:22:29 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002870.html">[Wescamp-i18n-commit] r3755 - in branches/1.10/PantherLord: .	PantherLord PantherLord/images PantherLord/images/scenery	PantherLord/maps PantherLord/scenarios PantherLord/units	PantherLord/units/Dark_Outlaws PantherLord/utils
+</A></li>
+        <LI>Next message: <A HREF="002872.html">[Wescamp-i18n-commit] r3757 - in	branches/1.10/Swamplings/Swamplings: . images/items	images/portraits images/portraits/transparent images/units	maps scenarios units utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2871">[ date ]</a>
+              <a href="thread.html#2871">[ thread ]</a>
+              <a href="subject.html#2871">[ subject ]</a>
+              <a href="author.html#2871">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2011-07-11 21:22:29 +0200 (Mon, 11 Jul 2011)
+New Revision: 3756
+
+Added:
+   branches/1.10/Trinity/Trinity/dist/
+   branches/1.10/Trinity/Trinity/dist/BASEDIRS
+   branches/1.10/Trinity/Trinity/dist/VERSION
+   branches/1.10/Trinity/Trinity/dist/WMAPDIRS
+   branches/1.10/Trinity/Trinity/dist/WMLDIRS
+Modified:
+   branches/1.10/Trinity/Trinity/_main.cfg
+   branches/1.10/Trinity/Trinity/about.cfg
+   branches/1.10/Trinity/Trinity/scenarios/00_Intro.cfg
+   branches/1.10/Trinity/Trinity/scenarios/00_Pre.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H01_Beggar.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H02_Weldyn.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H03_Spirits.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H04_Signal.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H05_Encounter.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H06_Reversal.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K01_Ship.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K02_Elves.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K03_Lord.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K04_Storm.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K05_Interrogation.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K06_Choice.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P01_Village.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P02_Entrance.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P03_Cave.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P04_Engine.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P04p2_Blockage.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P05_Landing.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F1a_Onslaught.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F1b_Wesmere.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F2a_Air.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F2b_Pass.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F3a_Phantom.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F3b_Vrug.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F4a_Hera.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F4b_Betrayal.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F5a_Destroyer.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F5b_Illusions.cfg
+   branches/1.10/Trinity/Trinity/scenarios/Z_Epilogue.cfg
+   branches/1.10/Trinity/Trinity/scenarios/Zb_Epilogue.cfg
+   branches/1.10/Trinity/Trinity/units/Ancient_Avatar.cfg
+   branches/1.10/Trinity/Trinity/units/Ball.cfg
+   branches/1.10/Trinity/Trinity/units/Battle_Queen.cfg
+   branches/1.10/Trinity/Trinity/units/Bresda.cfg
+   branches/1.10/Trinity/Trinity/units/Cannon.cfg
+   branches/1.10/Trinity/Trinity/units/Chariot.cfg
+   branches/1.10/Trinity/Trinity/units/Dardrus.cfg
+   branches/1.10/Trinity/Trinity/units/Echidna-Low.cfg
+   branches/1.10/Trinity/Trinity/units/Echidna-Mid.cfg
+   branches/1.10/Trinity/Trinity/units/Echidna.cfg
+   branches/1.10/Trinity/Trinity/units/Haldrad-Commander.cfg
+   branches/1.10/Trinity/Trinity/units/Haldrad-Fighter.cfg
+   branches/1.10/Trinity/Trinity/units/Hostage.cfg
+   branches/1.10/Trinity/Trinity/units/Keldan.cfg
+   branches/1.10/Trinity/Trinity/units/Ponce.cfg
+   branches/1.10/Trinity/Trinity/units/Primeval_Hera.cfg
+   branches/1.10/Trinity/Trinity/units/Primeval_Nemesis-Hi.cfg
+   branches/1.10/Trinity/Trinity/units/Primeval_Nemesis-Low.cfg
+   branches/1.10/Trinity/Trinity/units/Primeval_Nemesis-Mid.cfg
+   branches/1.10/Trinity/Trinity/units/Sea-Monsters.cfg
+   branches/1.10/Trinity/Trinity/units/Seth.cfg
+   branches/1.10/Trinity/Trinity/units/Trinity_Destroyer.cfg
+   branches/1.10/Trinity/Trinity/units/Trinity_Echidna.cfg
+   branches/1.10/Trinity/Trinity/units/Wagon.cfg
+   branches/1.10/Trinity/Trinity/utils/Mask_F4a.cfg
+   branches/1.10/Trinity/Trinity/utils/TRIabilities.cfg
+   branches/1.10/Trinity/Trinity/utils/cannons.cfg
+   branches/1.10/Trinity/Trinity/utils/fog.cfg
+   branches/1.10/Trinity/Trinity/utils/items.cfg
+   branches/1.10/Trinity/Trinity/utils/schedules.cfg
+   branches/1.10/Trinity/Trinity/utils/sides.cfg
+   branches/1.10/Trinity/Trinity/utils/terrain.cfg
+   branches/1.10/Trinity/Trinity/utils/utils.cfg
+Log:
+wescamp_client: automatic update of addon 'Trinity'
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002870.html">[Wescamp-i18n-commit] r3755 - in branches/1.10/PantherLord: .	PantherLord PantherLord/images PantherLord/images/scenery	PantherLord/maps PantherLord/scenarios PantherLord/units	PantherLord/units/Dark_Outlaws PantherLord/utils
+</A></li>
+	<LI>Next message: <A HREF="002872.html">[Wescamp-i18n-commit] r3757 - in	branches/1.10/Swamplings/Swamplings: . images/items	images/portraits images/portraits/transparent images/units	maps scenarios units utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2871">[ date ]</a>
+              <a href="thread.html#2871">[ thread ]</a>
+              <a href="subject.html#2871">[ subject ]</a>
+              <a href="author.html#2871">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

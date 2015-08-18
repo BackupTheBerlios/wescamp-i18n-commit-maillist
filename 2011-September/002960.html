@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r3845 - in branches/1.10/Children_of_Dragons:	. Children_of_Dragons/music po
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2011-September/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3845%20-%20in%20branches/1.10/Children_of_Dragons%3A%0A%09.%20Children_of_Dragons/music%20po&In-Reply-To=%3C20110906010642.721E9481223%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002959.html">
+   <LINK REL="Next"  HREF="002961.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r3845 - in branches/1.10/Children_of_Dragons:	. Children_of_Dragons/music po</H1>
+    <B>espreon at mail.berlios.de</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3845%20-%20in%20branches/1.10/Children_of_Dragons%3A%0A%09.%20Children_of_Dragons/music%20po&In-Reply-To=%3C20110906010642.721E9481223%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r3845 - in branches/1.10/Children_of_Dragons:	. Children_of_Dragons/music po">espreon at mail.berlios.de
+       </A><BR>
+    <I>Tue Sep  6 03:06:42 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002959.html">[Wescamp-i18n-commit] r3844 - branches/1.10/Bad_Moon_Rising/po
+</A></li>
+        <LI>Next message: <A HREF="002961.html">[Wescamp-i18n-commit] r3846 - branches/1.10/Elves_and_Wose/po
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2960">[ date ]</a>
+              <a href="thread.html#2960">[ thread ]</a>
+              <a href="subject.html#2960">[ subject ]</a>
+              <a href="author.html#2960">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: espreon
+Date: 2011-09-06 03:06:41 +0200 (Tue, 06 Sep 2011)
+New Revision: 3845
+
+Added:
+   branches/1.10/Children_of_Dragons/Makefile
+   branches/1.10/Children_of_Dragons/campaign.def
+   branches/1.10/Children_of_Dragons/po/
+   branches/1.10/Children_of_Dragons/po/FINDCFG
+   branches/1.10/Children_of_Dragons/po/LINGUAS
+   branches/1.10/Children_of_Dragons/po/Makefile
+   branches/1.10/Children_of_Dragons/po/Makefile.in.in
+   branches/1.10/Children_of_Dragons/po/Makevars
+   branches/1.10/Children_of_Dragons/po/POTFILES.in
+   branches/1.10/Children_of_Dragons/po/af.po
+   branches/1.10/Children_of_Dragons/po/ang.po
+   branches/1.10/Children_of_Dragons/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">ang at latin.po</A>
+   branches/1.10/Children_of_Dragons/po/ar.po
+   branches/1.10/Children_of_Dragons/po/bg.po
+   branches/1.10/Children_of_Dragons/po/ca.po
+   branches/1.10/Children_of_Dragons/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">ca_ES at valencia.po</A>
+   branches/1.10/Children_of_Dragons/po/cs.po
+   branches/1.10/Children_of_Dragons/po/da.po
+   branches/1.10/Children_of_Dragons/po/de.po
+   branches/1.10/Children_of_Dragons/po/el.po
+   branches/1.10/Children_of_Dragons/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">en at shaw.po</A>
+   branches/1.10/Children_of_Dragons/po/en_GB.po
+   branches/1.10/Children_of_Dragons/po/eo.po
+   branches/1.10/Children_of_Dragons/po/es.po
+   branches/1.10/Children_of_Dragons/po/et.po
+   branches/1.10/Children_of_Dragons/po/eu.po
+   branches/1.10/Children_of_Dragons/po/fi.po
+   branches/1.10/Children_of_Dragons/po/fr.po
+   branches/1.10/Children_of_Dragons/po/fur_IT.po
+   branches/1.10/Children_of_Dragons/po/ga.po
+   branches/1.10/Children_of_Dragons/po/gl.po
+   branches/1.10/Children_of_Dragons/po/he.po
+   branches/1.10/Children_of_Dragons/po/hr.po
+   branches/1.10/Children_of_Dragons/po/hu.po
+   branches/1.10/Children_of_Dragons/po/id.po
+   branches/1.10/Children_of_Dragons/po/is.po
+   branches/1.10/Children_of_Dragons/po/it.po
+   branches/1.10/Children_of_Dragons/po/ja.po
+   branches/1.10/Children_of_Dragons/po/ko.po
+   branches/1.10/Children_of_Dragons/po/la.po
+   branches/1.10/Children_of_Dragons/po/lt.po
+   branches/1.10/Children_of_Dragons/po/lv.po
+   branches/1.10/Children_of_Dragons/po/mk.po
+   branches/1.10/Children_of_Dragons/po/mr.po
+   branches/1.10/Children_of_Dragons/po/nb_NO.po
+   branches/1.10/Children_of_Dragons/po/nl.po
+   branches/1.10/Children_of_Dragons/po/pl.po
+   branches/1.10/Children_of_Dragons/po/pt.po
+   branches/1.10/Children_of_Dragons/po/pt_BR.po
+   branches/1.10/Children_of_Dragons/po/racv.po
+   branches/1.10/Children_of_Dragons/po/remove-potcdate.sed
+   branches/1.10/Children_of_Dragons/po/remove-potcdate.sin
+   branches/1.10/Children_of_Dragons/po/ro.po
+   branches/1.10/Children_of_Dragons/po/ru.po
+   branches/1.10/Children_of_Dragons/po/sk.po
+   branches/1.10/Children_of_Dragons/po/sl.po
+   branches/1.10/Children_of_Dragons/po/sr.po
+   branches/1.10/Children_of_Dragons/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">sr at ijekavian.po</A>
+   branches/1.10/Children_of_Dragons/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">sr at ijekavianlatin.po</A>
+   branches/1.10/Children_of_Dragons/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">sr at latin.po</A>
+   branches/1.10/Children_of_Dragons/po/sv.po
+   branches/1.10/Children_of_Dragons/po/tl.po
+   branches/1.10/Children_of_Dragons/po/tr.po
+   branches/1.10/Children_of_Dragons/po/vi.po
+   branches/1.10/Children_of_Dragons/po/wesnoth-Children_of_Dragons.pot
+   branches/1.10/Children_of_Dragons/po/zh_CN.po
+   branches/1.10/Children_of_Dragons/po/zh_TW.po
+Modified:
+   branches/1.10/Children_of_Dragons/Children_of_Dragons/music/wesnoth-3.ogg
+Log:
+Children of Dragons (1.10): added translation stuff.
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002959.html">[Wescamp-i18n-commit] r3844 - branches/1.10/Bad_Moon_Rising/po
+</A></li>
+	<LI>Next message: <A HREF="002961.html">[Wescamp-i18n-commit] r3846 - branches/1.10/Elves_and_Wose/po
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2960">[ date ]</a>
+              <a href="thread.html#2960">[ thread ]</a>
+              <a href="subject.html#2960">[ subject ]</a>
+              <a href="author.html#2960">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

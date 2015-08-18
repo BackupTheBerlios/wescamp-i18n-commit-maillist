@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r3762 - in	branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising: . maps	scenarios1 scenarios2 scenarios3 units units/ghosts	units/monsters utils
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2011-July/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3762%20-%20in%0A%09branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising%3A%20.%20maps%0A%09scenarios1%20scenarios2%20scenarios3%20units%20units/ghosts%0A%09units/monsters%20utils&In-Reply-To=%3C20110711192608.CCB4D4813CA%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002876.html">
+   <LINK REL="Next"  HREF="002878.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r3762 - in	branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising: . maps	scenarios1 scenarios2 scenarios3 units units/ghosts	units/monsters utils</H1>
+    <B>mordante at mail.berlios.de</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3762%20-%20in%0A%09branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising%3A%20.%20maps%0A%09scenarios1%20scenarios2%20scenarios3%20units%20units/ghosts%0A%09units/monsters%20utils&In-Reply-To=%3C20110711192608.CCB4D4813CA%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r3762 - in	branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising: . maps	scenarios1 scenarios2 scenarios3 units units/ghosts	units/monsters utils">mordante at mail.berlios.de
+       </A><BR>
+    <I>Mon Jul 11 21:26:08 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002876.html">[Wescamp-i18n-commit] r3761 - in	branches/1.10/Saving_Elensefar/Saving_Elensefar: . maps	scenarios utils
+</A></li>
+        <LI>Next message: <A HREF="002878.html">[Wescamp-i18n-commit] r3763 - in	branches/1.10/The_Ice_Age/The_Ice_Age: images/terrain	scenarios utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2877">[ date ]</a>
+              <a href="thread.html#2877">[ thread ]</a>
+              <a href="subject.html#2877">[ subject ]</a>
+              <a href="author.html#2877">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2011-07-11 21:26:07 +0200 (Mon, 11 Jul 2011)
+New Revision: 3762
+
+Added:
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/maps/1_07_Visit.map
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/maps/2_05_Orcs.map
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/maps/World.map
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_07_Visit.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_04_Legion.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_05_Orcs.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_07_Salvation.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_07_Volcano.cfg
+Removed:
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/maps/1_02_World.map
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/maps/1_07_Crush.map
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/maps/1_08_RumbleB.map
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/maps/1_08_RumbleD.map
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/maps/2_01_Trouble.map
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/maps/2_05_Blind.map
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/maps/2_05_Tien-old.map
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/maps/2_07_Volcano.map
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_07_Crush.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_04_Escape.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg
+Modified:
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/_main.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/about1.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/about2.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/about3.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios1/0_00_Prologue.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios1/0_01_Abandoned.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios1/0_02_Bad.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios1/0_04_Darkside.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios1/0_05_Payback.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_00_Orders.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_01_Enough.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_02_World.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_03_Camp.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_04_Fort.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_04_World.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_05_Defend.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_06_Guardian.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_06_World.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_07_World.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_08_Rumble.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_08_World.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_09_Pit.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_09_Ruin.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_09_World.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_10_Epilogue.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_10_NewHome.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/1_10_World.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/Shops.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios2/SkirmishCalls_II.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_02_MineMouth.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_02_World.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_03_Fundraising.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_03_Knell.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_03_Pit.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_03_World.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_04_Pond.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_04_River.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_04_West.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_04_World.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_05_Blind.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_05_Shelter.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_05_Tien.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_05_West.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_05_World.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_06_Gate.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/2_07_Epilog.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/Shops.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/scenarios3/SkirmishCalls_III.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Astreya.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Carusoe.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Chimera.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Dark_Messiah.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Echidna.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Grat.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Hostage_Taker.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Hrala.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Huric-phantom.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Huric.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Primeval_Ares.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Primeval_Nemesis.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Primeval_Storm.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Raenna-Bad.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Raenna.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Ukian_Dying.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/Ukian_Dying2.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/ghosts/Ghost_Bowman.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/ghosts/Ghost_Fighter.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/ghosts/Ghost_Footpad.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/ghosts/Ghost_Fugitive.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/ghosts/Ghost_Longbowman.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/ghosts/Ghost_Lord.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/ghosts/Ghost_Master_Bowman.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/ghosts/Ghost_Outlaw.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/ghosts/Ghost_Steelclad.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/ghosts_race.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/monsters/Frost_Wolf.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/monsters/Grey_Wolf.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/units/snow_race.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/1_worldmap.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/ZZ_error.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/intro.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/items.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/mask.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/random_map.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/schedules.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/shops.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/skirmish.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/skirmish_maps.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/terrain.cfg
+   branches/1.10/Bad_Moon_Rising/Bad_Moon_Rising/utils/tribes.cfg
+Log:
+wescamp_client: automatic update of addon 'Bad_Moon_Rising'
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002876.html">[Wescamp-i18n-commit] r3761 - in	branches/1.10/Saving_Elensefar/Saving_Elensefar: . maps	scenarios utils
+</A></li>
+	<LI>Next message: <A HREF="002878.html">[Wescamp-i18n-commit] r3763 - in	branches/1.10/The_Ice_Age/The_Ice_Age: images/terrain	scenarios utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2877">[ date ]</a>
+              <a href="thread.html#2877">[ thread ]</a>
+              <a href="subject.html#2877">[ subject ]</a>
+              <a href="author.html#2877">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r2793 - in branches/1.8/Kromire: . Kromire	Kromire/dist Kromire/external_data	Kromire/external_data/images Kromire/images	Kromire/images/units Kromire/images/units/monsters	Kromire/maps Kromire/scenarios Kromire/utils
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2009-November/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2793%20-%20in%20branches/1.8/Kromire%3A%20.%20Kromire%0A%09Kromire/dist%20Kromire/external_data%0A%09Kromire/external_data/images%20Kromire/images%0A%09Kromire/images/units%20Kromire/images/units/monsters%0A%09Kromire/maps%20Kromire/scenarios%20Kromire/utils&In-Reply-To=%3C200911171822.nAHIM8qj025050%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001907.html">
+   <LINK REL="Next"  HREF="001909.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r2793 - in branches/1.8/Kromire: . Kromire	Kromire/dist Kromire/external_data	Kromire/external_data/images Kromire/images	Kromire/images/units Kromire/images/units/monsters	Kromire/maps Kromire/scenarios Kromire/utils</H1>
+    <B>mordante at BerliOS</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2793%20-%20in%20branches/1.8/Kromire%3A%20.%20Kromire%0A%09Kromire/dist%20Kromire/external_data%0A%09Kromire/external_data/images%20Kromire/images%0A%09Kromire/images/units%20Kromire/images/units/monsters%0A%09Kromire/maps%20Kromire/scenarios%20Kromire/utils&In-Reply-To=%3C200911171822.nAHIM8qj025050%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r2793 - in branches/1.8/Kromire: . Kromire	Kromire/dist Kromire/external_data	Kromire/external_data/images Kromire/images	Kromire/images/units Kromire/images/units/monsters	Kromire/maps Kromire/scenarios Kromire/utils">mordante at mail.berlios.de
+       </A><BR>
+    <I>Tue Nov 17 19:22:08 CET 2009</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001907.html">[Wescamp-i18n-commit] r2792 - branches/1.8
+</A></li>
+        <LI>Next message: <A HREF="001909.html">[Wescamp-i18n-commit] r2794 - branches/1.8
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1908">[ date ]</a>
+              <a href="thread.html#1908">[ thread ]</a>
+              <a href="subject.html#1908">[ subject ]</a>
+              <a href="author.html#1908">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2009-11-17 19:22:05 +0100 (Tue, 17 Nov 2009)
+New Revision: 2793
+
+Added:
+   branches/1.8/Kromire/Kromire/
+   branches/1.8/Kromire/Kromire/COPYING
+   branches/1.8/Kromire/Kromire/_main.cfg
+   branches/1.8/Kromire/Kromire/dist/
+   branches/1.8/Kromire/Kromire/dist/BASEDIRS
+   branches/1.8/Kromire/Kromire/dist/VERSION
+   branches/1.8/Kromire/Kromire/dist/WMAPDIRS
+   branches/1.8/Kromire/Kromire/dist/WMLDIRS
+   branches/1.8/Kromire/Kromire/external_data/
+   branches/1.8/Kromire/Kromire/external_data/images/
+   branches/1.8/Kromire/Kromire/external_data/images/methusalem.png
+   branches/1.8/Kromire/Kromire/external_data/images/noble.png
+   branches/1.8/Kromire/Kromire/external_data/images/sire.png
+   branches/1.8/Kromire/Kromire/images/
+   branches/1.8/Kromire/Kromire/images/units/
+   branches/1.8/Kromire/Kromire/images/units/monsters/
+   branches/1.8/Kromire/Kromire/images/units/monsters/bear-cub.png
+   branches/1.8/Kromire/Kromire/images/units/monsters/bear.png
+   branches/1.8/Kromire/Kromire/maps/
+   branches/1.8/Kromire/Kromire/maps/1Therian-vil.map
+   branches/1.8/Kromire/Kromire/maps/2Devilings.map
+   branches/1.8/Kromire/Kromire/maps/3Michbie.map
+   branches/1.8/Kromire/Kromire/maps/4Counterattack.map
+   branches/1.8/Kromire/Kromire/maps/5Time.map
+   branches/1.8/Kromire/Kromire/maps/6Meetings.map
+   branches/1.8/Kromire/Kromire/maps/8Return.map
+   branches/1.8/Kromire/Kromire/maps/9Prophecy.map
+   branches/1.8/Kromire/Kromire/scenarios/
+   branches/1.8/Kromire/Kromire/scenarios/1Therian_Village.cfg
+   branches/1.8/Kromire/Kromire/scenarios/2Devilings.cfg
+   branches/1.8/Kromire/Kromire/scenarios/3Michbie.cfg
+   branches/1.8/Kromire/Kromire/scenarios/4Counterattack.cfg
+   branches/1.8/Kromire/Kromire/scenarios/5Time.cfg
+   branches/1.8/Kromire/Kromire/scenarios/6Meetings.cfg
+   branches/1.8/Kromire/Kromire/scenarios/7Alliance.cfg
+   branches/1.8/Kromire/Kromire/scenarios/8Return.cfg
+   branches/1.8/Kromire/Kromire/scenarios/9Prophecy.cfg
+   branches/1.8/Kromire/Kromire/utils/
+   branches/1.8/Kromire/Kromire/utils/traits.cfg
+   branches/1.8/Kromire/Kromire/utils/utils.cfg
+Log:
+wescamp_client: automatic update of addon 'Kromire'
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001907.html">[Wescamp-i18n-commit] r2792 - branches/1.8
+</A></li>
+	<LI>Next message: <A HREF="001909.html">[Wescamp-i18n-commit] r2794 - branches/1.8
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1908">[ date ]</a>
+              <a href="thread.html#1908">[ thread ]</a>
+              <a href="subject.html#1908">[ subject ]</a>
+              <a href="author.html#1908">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

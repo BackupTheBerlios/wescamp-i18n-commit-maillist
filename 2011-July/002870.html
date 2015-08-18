@@ -1,0 +1,336 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r3755 - in branches/1.10/PantherLord: .	PantherLord PantherLord/images PantherLord/images/scenery	PantherLord/maps PantherLord/scenarios PantherLord/units	PantherLord/units/Dark_Outlaws PantherLord/utils
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2011-July/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3755%20-%20in%20branches/1.10/PantherLord%3A%20.%0A%09PantherLord%20PantherLord/images%20PantherLord/images/scenery%0A%09PantherLord/maps%20PantherLord/scenarios%20PantherLord/units%0A%09PantherLord/units/Dark_Outlaws%20PantherLord/utils&In-Reply-To=%3C20110711192003.C88A64813CA%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002869.html">
+   <LINK REL="Next"  HREF="002871.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r3755 - in branches/1.10/PantherLord: .	PantherLord PantherLord/images PantherLord/images/scenery	PantherLord/maps PantherLord/scenarios PantherLord/units	PantherLord/units/Dark_Outlaws PantherLord/utils</H1>
+    <B>mordante at mail.berlios.de</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3755%20-%20in%20branches/1.10/PantherLord%3A%20.%0A%09PantherLord%20PantherLord/images%20PantherLord/images/scenery%0A%09PantherLord/maps%20PantherLord/scenarios%20PantherLord/units%0A%09PantherLord/units/Dark_Outlaws%20PantherLord/utils&In-Reply-To=%3C20110711192003.C88A64813CA%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r3755 - in branches/1.10/PantherLord: .	PantherLord PantherLord/images PantherLord/images/scenery	PantherLord/maps PantherLord/scenarios PantherLord/units	PantherLord/units/Dark_Outlaws PantherLord/utils">mordante at mail.berlios.de
+       </A><BR>
+    <I>Mon Jul 11 21:20:03 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002869.html">[Wescamp-i18n-commit] r3754 - branches/1.10
+</A></li>
+        <LI>Next message: <A HREF="002871.html">[Wescamp-i18n-commit] r3756 - in branches/1.10/Trinity/Trinity: .	dist scenarios units utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2870">[ date ]</a>
+              <a href="thread.html#2870">[ thread ]</a>
+              <a href="subject.html#2870">[ subject ]</a>
+              <a href="author.html#2870">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2011-07-11 21:20:03 +0200 (Mon, 11 Jul 2011)
+New Revision: 3755
+
+Added:
+   branches/1.10/PantherLord/PantherLord/
+   branches/1.10/PantherLord/PantherLord/COPYING.txt
+   branches/1.10/PantherLord/PantherLord/_main.cfg
+   branches/1.10/PantherLord/PantherLord/images/
+   branches/1.10/PantherLord/PantherLord/images/Herb_Dark.png
+   branches/1.10/PantherLord/PantherLord/images/Herb_Diseased.png
+   branches/1.10/PantherLord/PantherLord/images/Herb_Elder.png
+   branches/1.10/PantherLord/PantherLord/images/Herb_Mushroom.png
+   branches/1.10/PantherLord/PantherLord/images/Herb_Slicer.png
+   branches/1.10/PantherLord/PantherLord/images/animated-rock-attack.png
+   branches/1.10/PantherLord/PantherLord/images/animated-rock-defend.png
+   branches/1.10/PantherLord/PantherLord/images/animated-rock-die1.png
+   branches/1.10/PantherLord/PantherLord/images/animated-rock-die2.png
+   branches/1.10/PantherLord/PantherLord/images/animated-rock-die3.png
+   branches/1.10/PantherLord/PantherLord/images/animated-rock.png
+   branches/1.10/PantherLord/PantherLord/images/darkbandit-defend-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkbandit-defend-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkbandit-melee-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkbandit-melee-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkbandit-melee-3.png
+   branches/1.10/PantherLord/PantherLord/images/darkbandit-melee-4.png
+   branches/1.10/PantherLord/PantherLord/images/darkbandit-melee-5.png
+   branches/1.10/PantherLord/PantherLord/images/darkbandit-melee-6.png
+   branches/1.10/PantherLord/PantherLord/images/darkbandit-melee-7.png
+   branches/1.10/PantherLord/PantherLord/images/darkbandit-melee-8.png
+   branches/1.10/PantherLord/PantherLord/images/darkbandit.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad-attack1.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad-attack2.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad-defend.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad-idle-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad-idle-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad-idle-3.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad-idle-4.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad-melee-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad-melee-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad-melee-3.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad-melee-4.png
+   branches/1.10/PantherLord/PantherLord/images/darkfootpad.png
+   branches/1.10/PantherLord/PantherLord/images/darkfugitive.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-attack1.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-attack2.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-defend.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-idle-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-idle-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-idle-3.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-idle-4.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-idle-5.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-idle-6.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-idle-7.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-melee-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-melee-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw-melee-3.png
+   branches/1.10/PantherLord/PantherLord/images/darkoutlaw.png
+   branches/1.10/PantherLord/PantherLord/images/darkpoacher-attack.png
+   branches/1.10/PantherLord/PantherLord/images/darkpoacher-attack1.png
+   branches/1.10/PantherLord/PantherLord/images/darkpoacher-attack2.png
+   branches/1.10/PantherLord/PantherLord/images/darkpoacher-attack3.png
+   branches/1.10/PantherLord/PantherLord/images/darkpoacher-bow-defend.png
+   branches/1.10/PantherLord/PantherLord/images/darkpoacher-dagger.png
+   branches/1.10/PantherLord/PantherLord/images/darkpoacher-defend.png
+   branches/1.10/PantherLord/PantherLord/images/darkpoacher.png
+   branches/1.10/PantherLord/PantherLord/images/darkrogue-attack.png
+   branches/1.10/PantherLord/PantherLord/images/darkrogue-defend.png
+   branches/1.10/PantherLord/PantherLord/images/darkrogue-die-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkrogue-die-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkrogue-die-3.png
+   branches/1.10/PantherLord/PantherLord/images/darkrogue-die-4.png
+   branches/1.10/PantherLord/PantherLord/images/darkrogue-die-5.png
+   branches/1.10/PantherLord/PantherLord/images/darkrogue-die-6.png
+   branches/1.10/PantherLord/PantherLord/images/darkrogue-ranged.png
+   branches/1.10/PantherLord/PantherLord/images/darkrogue.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-attack.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-defend-1-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-defend-1-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-defend-2-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-defend-2-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-defend-3-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-defend-3-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-defend.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-die-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-die-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-die-3.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-die-4.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-die-5.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-die-6.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-die-7.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-10.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-11.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-12.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-3.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-4.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-5.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-6.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-7.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-8.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief-idle-9.png
+   branches/1.10/PantherLord/PantherLord/images/darkthief.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-defend-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-defend-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-idle-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-idle-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-idle-3.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-idle-4.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-idle-5.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-melee-1.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-melee-2.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-melee-3.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-melee-4.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-melee-5.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-melee-6.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-melee-7.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug-melee-8.png
+   branches/1.10/PantherLord/PantherLord/images/darkthug.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-attack-melee-2.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-attack-melee.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-attack1.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-attack2.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-attack3.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-bow-defend.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-dagger.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-defend.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-die-1.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-die-2.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-die-3.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-die-4.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-die-5.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-die-6.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-die-7.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper-die-8.png
+   branches/1.10/PantherLord/PantherLord/images/darktrapper.png
+   branches/1.10/PantherLord/PantherLord/images/giant_armadillo.png
+   branches/1.10/PantherLord/PantherLord/images/golem-attack.png
+   branches/1.10/PantherLord/PantherLord/images/golem-defend.png
+   branches/1.10/PantherLord/PantherLord/images/golem-die1.png
+   branches/1.10/PantherLord/PantherLord/images/golem-die2.png
+   branches/1.10/PantherLord/PantherLord/images/golem-die3.png
+   branches/1.10/PantherLord/PantherLord/images/golem.png
+   branches/1.10/PantherLord/PantherLord/images/leopard-attack1.png
+   branches/1.10/PantherLord/PantherLord/images/leopard-attack2.png
+   branches/1.10/PantherLord/PantherLord/images/leopard-attack3.png
+   branches/1.10/PantherLord/PantherLord/images/leopard-attack4.png
+   branches/1.10/PantherLord/PantherLord/images/leopard.png
+   branches/1.10/PantherLord/PantherLord/images/panther-attack1.png
+   branches/1.10/PantherLord/PantherLord/images/panther-attack2.png
+   branches/1.10/PantherLord/PantherLord/images/panther-attack3.png
+   branches/1.10/PantherLord/PantherLord/images/panther-attack4.png
+   branches/1.10/PantherLord/PantherLord/images/panther.png
+   branches/1.10/PantherLord/PantherLord/images/rehdoc-change1.png
+   branches/1.10/PantherLord/PantherLord/images/rehdoc-change2.png
+   branches/1.10/PantherLord/PantherLord/images/rehdoc-change3.png
+   branches/1.10/PantherLord/PantherLord/images/rehdoc.png
+   branches/1.10/PantherLord/PantherLord/images/rockback-hiding.png
+   branches/1.10/PantherLord/PantherLord/images/rockback.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/
+   branches/1.10/PantherLord/PantherLord/images/scenery/doublehouse1E.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/doublehouse1W.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/doublehouse2E.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/doublehouse2W.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/doublehouse3E.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/doublehouse3W.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/house.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/house2.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/house2E.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/house2W.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/house3.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/house3E.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/house3W.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/house4E.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/house4W.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/houseE.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/houseW.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/lighthouse.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/lighthouse.psd
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-cloth.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-cloth2.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-cloth2E.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-cloth2W.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-clothE.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-clothW.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-food.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-food2.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-food2E.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-food2W.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-foodE.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-foodW.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-weapons.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-weapons2.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-weapons2E.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-weapons2W.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-weaponsE.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop-weaponsW.png
+   branches/1.10/PantherLord/PantherLord/images/scenery/tent-shop.psd
+   branches/1.10/PantherLord/PantherLord/images/sorcerer-attack1.png
+   branches/1.10/PantherLord/PantherLord/images/sorcerer-attack2.png
+   branches/1.10/PantherLord/PantherLord/images/sorcerer-attack3.png
+   branches/1.10/PantherLord/PantherLord/images/sorcerer-attack4.png
+   branches/1.10/PantherLord/PantherLord/images/sorcerer-attack5.png
+   branches/1.10/PantherLord/PantherLord/images/sorcerer.png
+   branches/1.10/PantherLord/PantherLord/images/termite.png
+   branches/1.10/PantherLord/PantherLord/images/titan.png
+   branches/1.10/PantherLord/PantherLord/maps/
+   branches/1.10/PantherLord/PantherLord/maps/0Map.map
+   branches/1.10/PantherLord/PantherLord/maps/10Map.map
+   branches/1.10/PantherLord/PantherLord/maps/11Map.map
+   branches/1.10/PantherLord/PantherLord/maps/12Map.map
+   branches/1.10/PantherLord/PantherLord/maps/1Map.map
+   branches/1.10/PantherLord/PantherLord/maps/2Map.map
+   branches/1.10/PantherLord/PantherLord/maps/3Map.map
+   branches/1.10/PantherLord/PantherLord/maps/4Map.map
+   branches/1.10/PantherLord/PantherLord/maps/5Map.map
+   branches/1.10/PantherLord/PantherLord/maps/6Map.map
+   branches/1.10/PantherLord/PantherLord/maps/7Map.map
+   branches/1.10/PantherLord/PantherLord/maps/8Map.map
+   branches/1.10/PantherLord/PantherLord/maps/9Map.map
+   branches/1.10/PantherLord/PantherLord/scenarios/
+   branches/1.10/PantherLord/PantherLord/scenarios/0_Intro.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/1_EarningTheTitle.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/2_CaveOfTheSpirits.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/3_HillClan.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/4_GuildLaw.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/5_ForwardPosition.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/6_DeepWoodWarriors.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/7_Vanguard.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/8_IntoTheDeepwood.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/9_EstablishingAClaim.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/A10_NewEra.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/A11_Raid.cfg
+   branches/1.10/PantherLord/PantherLord/scenarios/A12_BreakingTheSpear.cfg
+   branches/1.10/PantherLord/PantherLord/sounds/
+   branches/1.10/PantherLord/PantherLord/units/
+   branches/1.10/PantherLord/PantherLord/units/Dark_Outlaws/
+   branches/1.10/PantherLord/PantherLord/units/Dark_Outlaws/Outlaw.cfg
+   branches/1.10/PantherLord/PantherLord/units/Dark_Outlaws/Outlaw_Bandit.cfg
+   branches/1.10/PantherLord/PantherLord/units/Dark_Outlaws/Outlaw_Footpad.cfg
+   branches/1.10/PantherLord/PantherLord/units/Dark_Outlaws/Outlaw_Fugitive.cfg
+   branches/1.10/PantherLord/PantherLord/units/Dark_Outlaws/Outlaw_Rogue.cfg
+   branches/1.10/PantherLord/PantherLord/units/Dark_Outlaws/Outlaw_Thief.cfg
+   branches/1.10/PantherLord/PantherLord/units/Dark_Outlaws/Outlaw_Thug.cfg
+   branches/1.10/PantherLord/PantherLord/units/Dark_Outlaws/Woodsman_Poacher.cfg
+   branches/1.10/PantherLord/PantherLord/units/Dark_Outlaws/Woodsman_Trapper.cfg
+   branches/1.10/PantherLord/PantherLord/units/GiantArmadillo.cfg
+   branches/1.10/PantherLord/PantherLord/units/GraniteSprit1.cfg
+   branches/1.10/PantherLord/PantherLord/units/GraniteSprit2.cfg
+   branches/1.10/PantherLord/PantherLord/units/GraniteSprit3.cfg
+   branches/1.10/PantherLord/PantherLord/units/GraniteSprit4.cfg
+   branches/1.10/PantherLord/PantherLord/units/GraniteSprit5.cfg 
+   branches/1.10/PantherLord/PantherLord/units/HerbDark.cfg
+   branches/1.10/PantherLord/PantherLord/units/HerbDiseased.cfg
+   branches/1.10/PantherLord/PantherLord/units/HerbElder.cfg
+   branches/1.10/PantherLord/PantherLord/units/HerbMushroom.cfg
+   branches/1.10/PantherLord/PantherLord/units/HerbSlicer.cfg
+   branches/1.10/PantherLord/PantherLord/units/Leopard.cfg
+   branches/1.10/PantherLord/PantherLord/units/PantherHumanFake.cfg
+   branches/1.10/PantherLord/PantherLord/units/PantherSprit2.cfg
+   branches/1.10/PantherLord/PantherLord/units/PantherSprit3.cfg
+   branches/1.10/PantherLord/PantherLord/units/PantherSprit4.cfg
+   branches/1.10/PantherLord/PantherLord/units/PantherSprit5.cfg
+   branches/1.10/PantherLord/PantherLord/units/SeaStateWallGuard.cfg
+   branches/1.10/PantherLord/PantherLord/units/Snapper.cfg
+   branches/1.10/PantherLord/PantherLord/units/Sorceror.cfg
+   branches/1.10/PantherLord/PantherLord/units/Termite.cfg
+   branches/1.10/PantherLord/PantherLord/units/movetypes.cfg
+   branches/1.10/PantherLord/PantherLord/units/races.cfg
+   branches/1.10/PantherLord/PantherLord/utils/
+   branches/1.10/PantherLord/PantherLord/utils/Neurti-utils.cfg
+Log:
+wescamp_client: automatic update of addon 'PantherLord'
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002869.html">[Wescamp-i18n-commit] r3754 - branches/1.10
+</A></li>
+	<LI>Next message: <A HREF="002871.html">[Wescamp-i18n-commit] r3756 - in branches/1.10/Trinity/Trinity: .	dist scenarios units utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2870">[ date ]</a>
+              <a href="thread.html#2870">[ thread ]</a>
+              <a href="subject.html#2870">[ subject ]</a>
+              <a href="author.html#2870">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

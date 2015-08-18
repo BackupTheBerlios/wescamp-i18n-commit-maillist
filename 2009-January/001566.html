@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r2451 - in branches/1.4/Trolls: . Trolls po
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2009-January/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2451%20-%20in%20branches/1.4/Trolls%3A%20.%20Trolls%20po&In-Reply-To=%3C200901030222.n032MHL5027371%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001565.html">
+   <LINK REL="Next"  HREF="001567.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r2451 - in branches/1.4/Trolls: . Trolls po</H1>
+    <B>torangan at BerliOS</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2451%20-%20in%20branches/1.4/Trolls%3A%20.%20Trolls%20po&In-Reply-To=%3C200901030222.n032MHL5027371%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r2451 - in branches/1.4/Trolls: . Trolls po">torangan at mail.berlios.de
+       </A><BR>
+    <I>Sat Jan  3 03:22:17 CET 2009</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001565.html">[Wescamp-i18n-commit] r2450 - in branches/1.4/The_Final_Exam:	The_Final_Exam/translations/cs/LC_MESSAGES	The_Final_Exam/translations/sk/LC_MESSAGES po
+</A></li>
+        <LI>Next message: <A HREF="001567.html">[Wescamp-i18n-commit] r2452 - in branches/1.4/Trolls/Trolls: .	images images/orcs images/trolls macros maps scenarios units
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1566">[ date ]</a>
+              <a href="thread.html#1566">[ thread ]</a>
+              <a href="subject.html#1566">[ subject ]</a>
+              <a href="author.html#1566">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: torangan
+Date: 2009-01-03 03:22:14 +0100 (Sat, 03 Jan 2009)
+New Revision: 2451
+
+Added:
+   branches/1.4/Trolls/Makefile
+   branches/1.4/Trolls/Trolls/translations/
+   branches/1.4/Trolls/campaign.def
+   branches/1.4/Trolls/config.status
+   branches/1.4/Trolls/po/
+   branches/1.4/Trolls/po/FINDCFG
+   branches/1.4/Trolls/po/LINGUAS
+   branches/1.4/Trolls/po/Makefile
+   branches/1.4/Trolls/po/Makefile.in.in
+   branches/1.4/Trolls/po/Makevars
+   branches/1.4/Trolls/po/POTFILES.in
+   branches/1.4/Trolls/po/af.po
+   branches/1.4/Trolls/po/ar.po
+   branches/1.4/Trolls/po/bg.po
+   branches/1.4/Trolls/po/ca.po
+   branches/1.4/Trolls/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">ca_ES at valencia.po</A>
+   branches/1.4/Trolls/po/cs.po
+   branches/1.4/Trolls/po/da.po
+   branches/1.4/Trolls/po/de.po
+   branches/1.4/Trolls/po/el.po
+   branches/1.4/Trolls/po/en_GB.po
+   branches/1.4/Trolls/po/eo.po
+   branches/1.4/Trolls/po/es.po
+   branches/1.4/Trolls/po/et.po
+   branches/1.4/Trolls/po/eu.po
+   branches/1.4/Trolls/po/fi.po
+   branches/1.4/Trolls/po/fr.po
+   branches/1.4/Trolls/po/fur_IT.po
+   branches/1.4/Trolls/po/gl.po
+   branches/1.4/Trolls/po/he.po
+   branches/1.4/Trolls/po/hr.po
+   branches/1.4/Trolls/po/hu.po
+   branches/1.4/Trolls/po/id.po
+   branches/1.4/Trolls/po/it.po
+   branches/1.4/Trolls/po/ja.po
+   branches/1.4/Trolls/po/ko.po
+   branches/1.4/Trolls/po/la.po
+   branches/1.4/Trolls/po/lt.po
+   branches/1.4/Trolls/po/lv.po
+   branches/1.4/Trolls/po/mk.po
+   branches/1.4/Trolls/po/nb_NO.po
+   branches/1.4/Trolls/po/nl.po
+   branches/1.4/Trolls/po/pl.po
+   branches/1.4/Trolls/po/pt.po
+   branches/1.4/Trolls/po/pt_BR.po
+   branches/1.4/Trolls/po/remove-potcdate.sed
+   branches/1.4/Trolls/po/remove-potcdate.sin
+   branches/1.4/Trolls/po/ro.po
+   branches/1.4/Trolls/po/ru.po
+   branches/1.4/Trolls/po/sk.po
+   branches/1.4/Trolls/po/sl.po
+   branches/1.4/Trolls/po/sr.po
+   branches/1.4/Trolls/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">sr at latin.po</A>
+   branches/1.4/Trolls/po/sv.po
+   branches/1.4/Trolls/po/tl.po
+   branches/1.4/Trolls/po/tr.po
+   branches/1.4/Trolls/po/wesnoth-Trolls.pot
+   branches/1.4/Trolls/po/zh_CN.po
+   branches/1.4/Trolls/po/zh_TW.po
+Log:
+added i18n stuff
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001565.html">[Wescamp-i18n-commit] r2450 - in branches/1.4/The_Final_Exam:	The_Final_Exam/translations/cs/LC_MESSAGES	The_Final_Exam/translations/sk/LC_MESSAGES po
+</A></li>
+	<LI>Next message: <A HREF="001567.html">[Wescamp-i18n-commit] r2452 - in branches/1.4/Trolls/Trolls: .	images images/orcs images/trolls macros maps scenarios units
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1566">[ date ]</a>
+              <a href="thread.html#1566">[ thread ]</a>
+              <a href="subject.html#1566">[ subject ]</a>
+              <a href="author.html#1566">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

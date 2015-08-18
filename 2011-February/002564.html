@@ -1,0 +1,437 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r3449 - in branches/1.10/Grafted_Era: .	Grafted_Era Grafted_Era/abilities Grafted_Era/dist	Grafted_Era/doc Grafted_Era/doc/nightmares	Grafted_Era/doc/nightmares/how_to_play Grafted_Era/factions	Grafted_Era/factions/_default Grafted_Era/factions/_fake	Grafted_Era/images Grafted_Era/images/attacks	Grafted_Era/images/projectiles Grafted_Era/images/units	Grafted_Era/images/units/darklands	Grafted_Era/images/units/halflings	Grafted_Era/images/units/nightmares	Grafted_Era/images/units/steppe Grafted_Era/images/utils	Grafted_Era/macros Grafted_Era/macros/nightmares	Grafted_Era/movetypes Grafted_Era/movetypes/nightmares	Grafted_Era/races Grafted_Era/sounds Grafted_Era/traits	Grafted_Era/units Grafted_Era/units/_fake	Grafted_Era/units/darklands Grafted_Era/units/halflings	Grafted_Era/units/nightmares Grafted_Era/units/steppe
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2011-February/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3449%20-%20in%20branches/1.10/Grafted_Era%3A%20.%0A%09Grafted_Era%20Grafted_Era/abilities%20Grafted_Era/dist%0A%09Grafted_Era/doc%20Grafted_Era/doc/nightmares%0A%09Grafted_Era/doc/nightmares/how_to_play%20Grafted_Era/factions%0A%09Grafted_Era/factions/_default%20Grafted_Era/factions/_fake%0A%09Grafted_Era/images%20Grafted_Era/images/attacks%0A%09Grafted_Era/images/projectiles%20Grafted_Era/images/units%0A%09Grafted_Era/images/units/darklands%0A%09Grafted_Era/images/units/halflings%0A%09Grafted_Era/images/units/nightmares%0A%09Grafted_Era/images/units/steppe%20Grafted_Era/images/utils%0A%09Grafted_Era/macros%20Grafted_Era/macros/nightmares%0A%09Grafted_Era/movetypes%20Grafted_Era/movetypes/nightmares%0A%09Grafted_Era/races%20Grafted_Era/sounds%20Grafted_Era/traits%0A%09Grafted_Era/units%20Grafted_Era/units/_fake%0A%09Grafted_Era/units/darklands%20Grafted_Era/units/halflings%0A%09Grafted_Era/units/nightmares%20Grafted_Era/units/steppe&In-Reply-To=%3C20110219141614.04B504813DD%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002563.html">
+   <LINK REL="Next"  HREF="002565.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r3449 - in branches/1.10/Grafted_Era: .	Grafted_Era Grafted_Era/abilities Grafted_Era/dist	Grafted_Era/doc Grafted_Era/doc/nightmares	Grafted_Era/doc/nightmares/how_to_play Grafted_Era/factions	Grafted_Era/factions/_default Grafted_Era/factions/_fake	Grafted_Era/images Grafted_Era/images/attacks	Grafted_Era/images/projectiles Grafted_Era/images/units	Grafted_Era/images/units/darklands	Grafted_Era/images/units/halflings	Grafted_Era/images/units/nightmares	Grafted_Era/images/units/steppe Grafted_Era/images/utils	Grafted_Era/macros Grafted_Era/macros/nightmares	Grafted_Era/movetypes Grafted_Era/movetypes/nightmares	Grafted_Era/races Grafted_Era/sounds Grafted_Era/traits	Grafted_Era/units Grafted_Era/units/_fake	Grafted_Era/units/darklands Grafted_Era/units/halflings	Grafted_Era/units/nightmares Grafted_Era/units/steppe</H1>
+    <B>mordante at mail.berlios.de</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3449%20-%20in%20branches/1.10/Grafted_Era%3A%20.%0A%09Grafted_Era%20Grafted_Era/abilities%20Grafted_Era/dist%0A%09Grafted_Era/doc%20Grafted_Era/doc/nightmares%0A%09Grafted_Era/doc/nightmares/how_to_play%20Grafted_Era/factions%0A%09Grafted_Era/factions/_default%20Grafted_Era/factions/_fake%0A%09Grafted_Era/images%20Grafted_Era/images/attacks%0A%09Grafted_Era/images/projectiles%20Grafted_Era/images/units%0A%09Grafted_Era/images/units/darklands%0A%09Grafted_Era/images/units/halflings%0A%09Grafted_Era/images/units/nightmares%0A%09Grafted_Era/images/units/steppe%20Grafted_Era/images/utils%0A%09Grafted_Era/macros%20Grafted_Era/macros/nightmares%0A%09Grafted_Era/movetypes%20Grafted_Era/movetypes/nightmares%0A%09Grafted_Era/races%20Grafted_Era/sounds%20Grafted_Era/traits%0A%09Grafted_Era/units%20Grafted_Era/units/_fake%0A%09Grafted_Era/units/darklands%20Grafted_Era/units/halflings%0A%09Grafted_Era/units/nightmares%20Grafted_Era/units/steppe&In-Reply-To=%3C20110219141614.04B504813DD%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r3449 - in branches/1.10/Grafted_Era: .	Grafted_Era Grafted_Era/abilities Grafted_Era/dist	Grafted_Era/doc Grafted_Era/doc/nightmares	Grafted_Era/doc/nightmares/how_to_play Grafted_Era/factions	Grafted_Era/factions/_default Grafted_Era/factions/_fake	Grafted_Era/images Grafted_Era/images/attacks	Grafted_Era/images/projectiles Grafted_Era/images/units	Grafted_Era/images/units/darklands	Grafted_Era/images/units/halflings	Grafted_Era/images/units/nightmares	Grafted_Era/images/units/steppe Grafted_Era/images/utils	Grafted_Era/macros Grafted_Era/macros/nightmares	Grafted_Era/movetypes Grafted_Era/movetypes/nightmares	Grafted_Era/races Grafted_Era/sounds Grafted_Era/traits	Grafted_Era/units Grafted_Era/units/_fake	Grafted_Era/units/darklands Grafted_Era/units/halflings	Grafted_Era/units/nightmares Grafted_Era/units/steppe">mordante at mail.berlios.de
+       </A><BR>
+    <I>Sat Feb 19 15:16:13 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002563.html">[Wescamp-i18n-commit] r3448 - branches/1.10
+</A></li>
+        <LI>Next message: <A HREF="002565.html">[Wescamp-i18n-commit] r3450 - branches/1.8/Grafted_Era/po
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2564">[ date ]</a>
+              <a href="thread.html#2564">[ thread ]</a>
+              <a href="subject.html#2564">[ subject ]</a>
+              <a href="author.html#2564">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2011-02-19 15:16:13 +0100 (Sat, 19 Feb 2011)
+New Revision: 3449
+
+Added:
+   branches/1.10/Grafted_Era/Grafted_Era/
+   branches/1.10/Grafted_Era/Grafted_Era/COPYING
+   branches/1.10/Grafted_Era/Grafted_Era/COPYRIGHT
+   branches/1.10/Grafted_Era/Grafted_Era/_main.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/abilities/
+   branches/1.10/Grafted_Era/Grafted_Era/abilities/abilities_darklands.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/abilities/abilities_steppe.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/abilities/distract.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/changelog.txt
+   branches/1.10/Grafted_Era/Grafted_Era/credits.txt
+   branches/1.10/Grafted_Era/Grafted_Era/detect.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/dist/
+   branches/1.10/Grafted_Era/Grafted_Era/dist/VERSION
+   branches/1.10/Grafted_Era/Grafted_Era/doc/
+   branches/1.10/Grafted_Era/Grafted_Era/doc/known_issues.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/MeloenNightmares.tree
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/default_general_strategy.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/drakes.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/loyalists.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/nom_general_strategy.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/nom_vs_drakes.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/nom_vs_knalga.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/nom_vs_loyalist.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/nom_vs_nightmares.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/nom_vs_northerners.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/nom_vs_rebels.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/nom_vs_undead.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/how_to_play/undead.txt
+   branches/1.10/Grafted_Era/Grafted_Era/doc/nightmares/story.txt
+   branches/1.10/Grafted_Era/Grafted_Era/era_basic.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/era_guaranteed.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_default/
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_default/drakes-default.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_default/knalgans-default.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_default/loyalists-default.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_default/northerners-default.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_default/rebels-default.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_default/undead-default.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_fake/
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_fake/_rand_all.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_fake/_rand_all_g.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_fake/_rand_def.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_fake/_rand_def_g.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_fake/_rand_ext.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/_fake/_rand_ext_g.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/darklands.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/halflings.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/nightmares.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/factions/steppe.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/images/
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/cold_aura.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/egg.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/graft_crossbow-fire.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/graft_crossbow.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/graft_curse_demonic.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/graft_fire-breath.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/graft_fire_candle.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/graft_morning_star.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/graft_morning_star_demonic.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/graft_pitchfork.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/graft_spear.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/graft_superb_candle.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/icicle.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/monster_paw.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/ue_melee_sandstorm.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/ue_melee_tornado.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/attacks/ue_melee_whirlpool.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/projectiles/
+   branches/1.10/Grafted_Era/Grafted_Era/images/projectiles/fire-candle-n.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/projectiles/fire-candle-ne.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/projectiles/superb-candle-n.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/projectiles/superb-candle-ne.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/ambusher.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/archer-ranged-1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/archer.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/dark_knight.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/dark_rider.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/dark_rider_attack.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/dark_rider_move.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/demon_knight.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/demon_lord.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/demon_wolf.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/dread_wolf.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/forester.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/giant.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/henchman.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/overlord.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/overseer.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/possessed_knight.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/soldier.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/strongman.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/warlock.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/darklands/wolf.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/alchemist_0.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/alchemist_1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/alchemist_2.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/alchemist_3.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/armor_1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/armor_2.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/charger_2.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/falcon-elder.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/militia_0.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/militia_1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/militia_2.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/net_0.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/net_1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/net_2.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/pony_1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/pony_2.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/slinger_0.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/slinger_1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/slinger_2.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/stalker_1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/stalker_2.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/veteran_1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/veteran_2.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/halflings/veteran_3.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/angry_one.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/black_cat.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/calamity.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/cloud_of_gloom.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/creep_1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/creep_2.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/creep_3.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/creep_4.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/creep_shadow.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/creepers.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/death_spectre.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/eternal_night.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/experienced_creepers.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/howling_darkness.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/inquisitor.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/jinx_beast.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/life_thief.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/raging_one.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/rash_one.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/reckless_one.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/scornful_watcher.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/scornful_watcher_attack.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/scornful_watcher_move.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/soul_snatcher.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/spiteful_watcher.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unhatched-defend-1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unhatched-defend-2.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unhatched.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unhatched_attack_1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unhatched_attack_1A.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unhatched_attack_1B.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unstable_bramble_form.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unstable_frost_form.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unstable_quake_form.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unstable_sandstorm_form.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unstable_tornado_form.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unstable_whirlpool_form-swamp.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/unstable_whirlpool_form.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/nightmares/veteran_creepers.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/bladesman.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/drover.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/flanker.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/herder.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/hunter.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/icy_water_1.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/juggernaut.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/khan.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/massif.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/master.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/outcast.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/pariah.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/rigid.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/savage.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/shieldbearer.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/skewer.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/spearhead.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/spearman.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/stoic.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/striker.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/vanguard.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/units/steppe/warrior.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/utils/
+   branches/1.10/Grafted_Era/Grafted_Era/images/utils/empty.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/utils/graft_curse.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/utils/graft_topic.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/utils/random-dice-default.png
+   branches/1.10/Grafted_Era/Grafted_Era/images/utils/random-dice-extra.png
+   branches/1.10/Grafted_Era/Grafted_Era/macros/
+   branches/1.10/Grafted_Era/Grafted_Era/macros/animation.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/demonic_pull.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/main_function.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/mark_demonic_pull.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/menu_item.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/message.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/name_replacement.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/names.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/amla_creepers.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/arcane_focus.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/attack_anim.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/band.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/horror.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/jinx.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/macro_curse.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/regen.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/reveal_variations.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/terrain_link.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/nightmares/upkeep_band.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/quickify.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/macros/reveal_units.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/mainline-strings.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/halfling_armoredfoot.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/halfling_smallfoot.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/movetype_cat.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/movetype_darkness.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/movetype_egg.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/movetype_elemental_bramble.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/movetype_elemental_frost.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/movetype_elemental_quake.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/movetype_elemental_sandstorm.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/movetype_elemental_tornado.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/movetype_elemental_whirpool.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/movetype_eye.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/nightmares/movetype_insect.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/movetypes/steppe.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/races/
+   branches/1.10/Grafted_Era/Grafted_Era/races/icy_water.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/races/race_abberation.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/races/race_eagle_folk.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/races/race_elemental.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/races/race_halfling.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/races/race_insect.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/races/race_nightmare.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/readme.txt
+   branches/1.10/Grafted_Era/Grafted_Era/sounds/
+   branches/1.10/Grafted_Era/Grafted_Era/sounds/beast-die.ogg
+   branches/1.10/Grafted_Era/Grafted_Era/sounds/beast-hit.ogg
+   branches/1.10/Grafted_Era/Grafted_Era/sounds/cat-die.ogg
+   branches/1.10/Grafted_Era/Grafted_Era/sounds/cat-hit.ogg
+   branches/1.10/Grafted_Era/Grafted_Era/sounds/elemental-attack-miss.ogg
+   branches/1.10/Grafted_Era/Grafted_Era/sounds/elemental-attack.ogg
+   branches/1.10/Grafted_Era/Grafted_Era/traits/
+   branches/1.10/Grafted_Era/Grafted_Era/traits/trait_elemental.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/traits/trait_insect.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/traits/trait_nightmare.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/traits/trait_strongman.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/traits/trait_unhatched.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_all.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_all_g.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_darklands.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_def.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_def_g.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_drakes.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_ext.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_ext_g.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_halflings.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_knalgan.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_loyalists.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_nightmares.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_northerners.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_rebels.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_spawn.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_spawn_def.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_spawn_ext.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_steppe.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/_fake/_rand_undead.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Ambusher.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Archer.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Dark_Knight.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Dark_Rider.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Demon_Knight.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Demon_Lord.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Demon_Wolf.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Dread_Wolf.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Forester.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Giant.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Henchman.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Overlord.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Overseer.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Possessed_Knight.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Soldier.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Strongman.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Warlock.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/Wolf.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/darklands/gvim
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/0_alchemist.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/0_militia.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/0_net.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/0_slinger.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/1_alchemist.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/1_armor.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/1_eagle.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/1_militia.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/1_net.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/1_pony.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/1_slinger.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/1_stalker.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/1_veteran.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/2_alchemist.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/2_armor.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/2_charger.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/2_eagle.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/2_militia.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/2_net.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/2_pony.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/2_slinger.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/2_stalker.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/2_veteran.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/3_alchemist.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/3_eagle.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/halflings/3_veteran.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ab_bc_01_black_cat.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ab_bc_02_jinx_beast.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ab_bc_03_calamity.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ab_sw_01_scornful_watcher.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ab_sw_02_spiteful_watcher.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ab_sw_03_inquisitor.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ab_un_01_unhatched_.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ab_un_02_angry_one.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ab_un_02b_rash_one.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ab_un_03_raging_one.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ab_un_03b_reckless_one.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/el_ue_01_unstable_elemental.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/el_ue_02_nature_wrath.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/in_cr_00_creepers.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ni_hd_01_howling_darkness.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ni_hd_02_cloud_of_gloom.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ni_hd_03_eternal_night.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ni_lt_01_life_thief.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ni_lt_02_soul_snatcher.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/ni_lt_03_death_spectre.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/nightmares/temp_unit.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Icewind_Drover.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Icewind_Herder.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Icewind_Master.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Bladesman.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Flanker.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Hunter.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Juggernaut.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Khan.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Massif.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Outcast.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Pariah.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Rigid.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Savage.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Shieldbearer.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Skewer.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Spearhead.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Spearman.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Stoic.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Striker.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Vanguard.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/Steppe_Warrior.cfg
+   branches/1.10/Grafted_Era/Grafted_Era/units/steppe/icy_water_1.cfg
+Log:
+wescamp_client: automatic update of addon 'Grafted_Era'
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002563.html">[Wescamp-i18n-commit] r3448 - branches/1.10
+</A></li>
+	<LI>Next message: <A HREF="002565.html">[Wescamp-i18n-commit] r3450 - branches/1.8/Grafted_Era/po
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2564">[ date ]</a>
+              <a href="thread.html#2564">[ thread ]</a>
+              <a href="subject.html#2564">[ subject ]</a>
+              <a href="author.html#2564">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

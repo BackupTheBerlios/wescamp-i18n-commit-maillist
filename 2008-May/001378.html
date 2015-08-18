@@ -1,0 +1,3136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r2192 - in branches/1.4/Raajal/Raajal: .	images/misc images/units maps scenarios units utils
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2008-May/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2192%20-%20in%20branches/1.4/Raajal/Raajal%3A%20.%0A%09images/misc%20images/units%20maps%20scenarios%20units%20utils&In-Reply-To=%3C200805011358.m41DwL2O011308%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001381.html">
+   <LINK REL="Next"  HREF="001379.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r2192 - in branches/1.4/Raajal/Raajal: .	images/misc images/units maps scenarios units utils</H1>
+    <B>mordante at BerliOS</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2192%20-%20in%20branches/1.4/Raajal/Raajal%3A%20.%0A%09images/misc%20images/units%20maps%20scenarios%20units%20utils&In-Reply-To=%3C200805011358.m41DwL2O011308%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r2192 - in branches/1.4/Raajal/Raajal: .	images/misc images/units maps scenarios units utils">mordante at mail.berlios.de
+       </A><BR>
+    <I>Thu May  1 15:58:21 CEST 2008</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001381.html">[Wescamp-i18n-commit] r2191 - in	branches/1.4/Bad_Moon_Rising/Bad_Moon_Rising: .	external_binary_data/images images/attacks images/misc	images/portraits images/units images/units/primeval	images/units/ukians maps scenarios units units/primeval	units/ukians utils
+</A></li>
+        <LI>Next message: <A HREF="001379.html">[Wescamp-i18n-commit] r2193 - in branches/1.4/Eliador/Eliador: .	utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1378">[ date ]</a>
+              <a href="thread.html#1378">[ thread ]</a>
+              <a href="subject.html#1378">[ subject ]</a>
+              <a href="author.html#1378">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2008-05-01 15:58:20 +0200 (Thu, 01 May 2008)
+New Revision: 2192
+
+Added:
+   branches/1.4/Raajal/Raajal/images/misc/soul-overlay-randalf.png
+   branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-1.png
+   branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-2.png
+   branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-3.png
+   branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-4.png
+   branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-5.png
+   branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-6.png
+   branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-7.png
+   branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-8.png
+   branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-9.png
+Modified:
+   branches/1.4/Raajal/Raajal/_main.cfg
+   branches/1.4/Raajal/Raajal/images/units/zilead-altar-se.png
+   branches/1.4/Raajal/Raajal/images/units/zilead-altar-sw.png
+   branches/1.4/Raajal/Raajal/maps/King_Theomund.map
+   branches/1.4/Raajal/Raajal/maps/Red_Sea.map
+   branches/1.4/Raajal/Raajal/scenarios/01_Resurrection.cfg
+   branches/1.4/Raajal/Raajal/scenarios/02_A_New_Vitality.cfg
+   branches/1.4/Raajal/Raajal/scenarios/04_Overboard.cfg
+   branches/1.4/Raajal/Raajal/scenarios/05_Prisoners_of_Angalas.cfg
+   branches/1.4/Raajal/Raajal/scenarios/08_The_Apprentice.cfg
+   branches/1.4/Raajal/Raajal/scenarios/10_Six_Years_Earlier.cfg
+   branches/1.4/Raajal/Raajal/scenarios/13_A_Failed_Attempt.cfg
+   branches/1.4/Raajal/Raajal/scenarios/Day1_Angalas.cfg
+   branches/1.4/Raajal/Raajal/scenarios/Day1_Randalf.cfg
+   branches/1.4/Raajal/Raajal/scenarios/Day1_Zilead.cfg
+   branches/1.4/Raajal/Raajal/scenarios/Day2_Angalas.cfg
+   branches/1.4/Raajal/Raajal/scenarios/Day2_Randalf.cfg
+   branches/1.4/Raajal/Raajal/scenarios/Day2_Theomund.cfg
+   branches/1.4/Raajal/Raajal/units/Lost_Soul.cfg
+   branches/1.4/Raajal/Raajal/units/Outlaw_Altar.cfg
+   branches/1.4/Raajal/Raajal/units/Outlaw_Altar_SE.cfg
+   branches/1.4/Raajal/Raajal/utils/mission-randalf.cfg
+   branches/1.4/Raajal/Raajal/utils/mission-red-sea.cfg
+   branches/1.4/Raajal/Raajal/utils/mission-theomund.cfg
+   branches/1.4/Raajal/Raajal/utils/raajal-powers.cfg
+   branches/1.4/Raajal/Raajal/utils/terrain.cfg
+   branches/1.4/Raajal/Raajal/utils/utils.cfg
+Log:
+wescamp_client: automatic update of addon 'Raajal'
+
+Modified: branches/1.4/Raajal/Raajal/_main.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/_main.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/_main.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -6,12 +6,8 @@
+ [campaign]
+     icon=units/human-magi/arch-mage.png
+     name= _ &quot;Raajal&quot;
+-    abbrev=RAAJAL
+-    description= _ &quot;An Arch Mage with the power of resurrection seeks a new apprentice.
+-
+-Note:The last three scenarios are still being tweaked.
+-
+-Version&quot; + &quot; 0.9.8, 04-09-2008&quot;
++    abbrev= _ &quot;RAAJAL&quot;
++    description= _ &quot;An Arch Mage with the power of resurrection seeks a new apprentice. Version&quot; + &quot; 1.0.8, 04-29-2008&quot;
+     define=CAMPAIGN_RAAJAL
+     difficulties=EASY,NORMAL,HARD
+     difficulty_descriptions={MENU_IMG_TXT &quot;units/undead-skeletal/skeleton.png~TC(5,magenta)&quot; _&quot;Easy&quot;} +
+@@ -22,7 +18,6 @@
+         title = _ &quot;Campaign Design&quot;
+         [entry]
+             name = &quot;Sam M. (Genosuke)&quot;
+-            email = &quot;<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">genosuke69 at hotmail.com</A>&quot;
+         [/entry]
+     [/about]
+ [/campaign]
+
+Added: branches/1.4/Raajal/Raajal/images/misc/soul-overlay-randalf.png
+===================================================================
+(Binary files differ)
+
+
+Property changes on: branches/1.4/Raajal/Raajal/images/misc/soul-overlay-randalf.png
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Added: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-1.png
+===================================================================
+(Binary files differ)
+
+
+Property changes on: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-1.png
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Added: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-2.png
+===================================================================
+(Binary files differ)
+
+
+Property changes on: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-2.png
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Added: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-3.png
+===================================================================
+(Binary files differ)
+
+
+Property changes on: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-3.png
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Added: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-4.png
+===================================================================
+(Binary files differ)
+
+
+Property changes on: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-4.png
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Added: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-5.png
+===================================================================
+(Binary files differ)
+
+
+Property changes on: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-5.png
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Added: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-6.png
+===================================================================
+(Binary files differ)
+
+
+Property changes on: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-6.png
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Added: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-7.png
+===================================================================
+(Binary files differ)
+
+
+Property changes on: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-7.png
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Added: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-8.png
+===================================================================
+(Binary files differ)
+
+
+Property changes on: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-8.png
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Added: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-9.png
+===================================================================
+(Binary files differ)
+
+
+Property changes on: branches/1.4/Raajal/Raajal/images/misc/sudoku-overlay-9.png
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Modified: branches/1.4/Raajal/Raajal/images/units/zilead-altar-se.png
+===================================================================
+(Binary files differ)
+
+Modified: branches/1.4/Raajal/Raajal/images/units/zilead-altar-sw.png
+===================================================================
+(Binary files differ)
+
+Modified: branches/1.4/Raajal/Raajal/maps/King_Theomund.map
+===================================================================
+--- branches/1.4/Raajal/Raajal/maps/King_Theomund.map	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/maps/King_Theomund.map	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -8,11 +8,11 @@
+ Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Hh          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Hh          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Mm          , Gg          , Mm          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm      !
+     , Mm          , Mm          , Gs^Fp       , Gg          , Gg          , Gs^Fp       , Mm          , Mm          , Mm          , Mm^Xm       , Mm          , Mm          , Gs^Fp       , Gg          , Gg          , Gg          , Ww          , Ww          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg^Vh       , Gg          , Gg          , Gs^Fp       , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Mm          , Mm          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Wo          , Ch          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Ch          , Ch!
+           , Ch          , Mm          , Mm          
+ Mm          , Mm          , Mm          , Gs^Fp       , Gg          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Ww          , Ww          , Ww          , Gg          , Mm          , Mm          , Mm          , Hh          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm      !
+     , Mm          , Mm          , Mm          , Re          , Gg          , Gs^Fp       , Mm          , Re          , Re          , Re          , Mm          , Mm          , Gs^Fp       , Gg          , Gg          , Re          , Gg          , Gg          , Ww          , Ww          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Mm          , Mm          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Wo          , Ch          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Kh          , Ch!
+           , Ch          , Mm          , Mm          
+ Mm          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Mm          , Hh          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Mm          , Mm          , Mm^Xm       , Mm          , Mm^Xm       , Mm          , Mm          , Mm          , Mm          , Hh          , Gg          , Gg          , Ww          , Gs^Fp       , Mm          , Mm          , Mm          , Mm          , Gs^Fp       , Gs^Fp       , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Ch          , Ch          , Ch          , Gg          , Gg          , Re          , Mm          , Mm      !
+     , Mm          , Re          , Re          , Gs^Fp       , Re          , Re          , Re          , Mm          , Mm          , Re          , Mm          , Gs^Fp       , Gg          , Re          , Re          , Mm          , Re          , Re          , Ww          , Ww          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Hh          , Mm          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Wo          , Ch          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Ch          , Ch!
+           , Ch          , Mm          , Mm          
+-Mm          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm^Xm       , Mm          , Gg          , Mm          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Hh          , Mm          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Gg          , Ww          , Ww          , Mm          , Mm          , Mm          , Mm          , Gg          , Gs^Fp       , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Kh          , Ch          , Ch          , Re          , Re          , Gs^Fp       , Re          , Re      !
+     , Re          , Mm          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Gg          , Re          , Re          , Re          , Mm          , Mm          , Mm          , Mm          , Ww          , Ww^Bw\      , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Hh          , Ww          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Wo          , Ch          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Ch          , Ch!
+           , Ch          , Mm          , Mm          
+-Mm          , Mm          , Mm          , Gg          , Gg          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Gg          , Gg          , Gg          , Mm          , Gg          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Hh          , Mm          , Mm          , Mm^Xm       , Mm          , Mm^Xm       , Mm          , Mm          , Hh          , Hh          , Gg          , Gg          , Gg          , Ww          , Ww          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm          , Gg          , Gg          , Ch          , Ch          , Ch          , Ch          , Ch          , Gg          , Gg          , Mm          , Mm          , Mm      !
+     , Mm          , Mm          , Mm          , Ww          , Gg          , Gg          , Mm          , Gg          , Mm          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Ww          , Ww          , Ww          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Ww          , Ww          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Ch          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Ch          , Ch!
+           , Ch          , Mm          , Mm          
++Mm          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Gg          , Mm          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Hh          , Mm          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Gg          , Ww          , Ww          , Mm          , Mm          , Mm          , Mm          , Gg          , Gs^Fp       , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Kh          , Ch          , Ch          , Re          , Re          , Gs^Fp       , Re          , Re      !
+     , Re          , Mm          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Gg          , Re          , Re          , Re          , Mm          , Mm          , Mm          , Mm          , Ww          , Ww^Bw\      , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Hh          , Ww          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Wo          , Ch          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Ch          , Ch!
+           , Ch          , Mm          , Mm          
++Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Mm          , Gg          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Hh          , Mm          , Mm          , Mm^Xm       , Mm          , Mm^Xm       , Mm          , Mm          , Hh          , Hh          , Gg          , Gg          , Gg          , Ww          , Ww          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm          , Gg          , Gg          , Ch          , Ch          , Ch          , Ch          , Ch          , Gg          , Gg          , Mm          , Mm          , Mm      !
+     , Mm          , Mm          , Mm          , Ww          , Gg          , Gg          , Mm          , Gg          , Mm          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Ww          , Ww          , Ww          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Ww          , Ww          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Wo          , Ch          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Ch          , Ch!
+           , Ch          , Mm          , Mm          
+ Mm          , Mm          , Mm          , Gg          , Mm          , Gg          , Gg          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Gg          , Gg^Vh       , Gg          , Ww          , Ww          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Gg          , Gs^Fp       , Mm          , Gs^Fp       , Mm          , Mm          , Gg          , Gg          , Ch          , Ch          , Ch          , Ch          , Ch          , Gg          , Gg          , Mm          , Mm          , Mm      !
+     , Mm          , Ww          , Ww          , Mm          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Ww          , Ww          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Ww          , Ww          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Wo          , Ch          , Gg          , Gg          , Gg          , Gg          , Ch          , Ch          , Ch          , Ch!
+           , Ch          , Mm          , Mm          
+-Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm^Xm       , Mm^Xm       , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Mm          , Hh          , Mm          , Hh          , Mm          , Mm          , Hh          , Mm          , Hh          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm      !
+     , Mm          , Ww          , Mm          , Mm          , Mm          , Gs^Fp       , Gg          , Gg          , Mm          , Mm          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Gs^Fp       , Gg          , Gg          , Gg          , Ww          , Ww          , Ww          , Gg          , Gg          , Gg          , Gg^Vh       , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Mm          , Mm          , Hh          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gs^Fp       , Gg          , Gs^Fp       , Wo^Bw/      , Ch          , Ch          , Gg          , Gg          , Gg          , Mm          , Ch          , Mm          , Ch!
+           , Mm          , Mm          , Mm          
+-Mm          , Mm          , Mm^Xm       , Gg          , Mm^Xm       , Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm^Xm       , Mm          , Mm          , Hh          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Gg          , Hh          , Gs^Fp       , Hh          , Hh          , Hh          , Mm^Xm       , Mm          , Mm          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Mm          , Mm          , Gg          , Mm          , Gg          , Gg          , Gg          , Mm          , Mm          , Gg          , Gs^Fp       , Gg          , Mm          , Gg          , Gs^Fp       , Gg          , Gg          , Mm          , Gg          , Gg          , Mm          , Mm          , Ww          , Ww          , Mm          , Gs^Fp   !
+     , Ww          , Ww          , Ww          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Mm          , Mm          , Mm          , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ww          , Ww          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Mm          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Rr          , Rr          , Gs^Fp       , Wo          , Wo          , Ch          , Mm^Xm       , Mm          , Mm          , Mm          , Mm          , Mm!
+           , Mm          , Mm          , Mm          
+-Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Gg          , Gg          , Mm          , Gg          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ww          , Ww          , Hh          , Mm^Xm       , Mm^Xm       , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Gg          , Gg          , Ww          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Ww          , Mm          , Mm          , Gg      !
+     , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Ww          , Ww          , Ww          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Hh          , Mm          , Mm          , Mm          , Mm          , Mm^Xm       , Mm          , Mm          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Rr          , Gg          , Gg          , Gg          , Gg          , Wo          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Mm!
+           , Mm^Xm       , Mm          , Mm          
++Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Mm          , Hh          , Mm          , Hh          , Mm          , Mm          , Hh          , Mm          , Hh          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm      !
+     , Mm          , Ww          , Mm          , Mm          , Mm          , Gs^Fp       , Gg          , Gg          , Mm          , Mm          , Gs^Fp       , Gs^Fp       , Hh          , Hh          , Gs^Fp       , Gg          , Gg          , Gg          , Ww          , Ww          , Ww          , Gg          , Gg          , Gg          , Gg^Vh       , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Mm          , Mm          , Hh          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gs^Fp       , Gg          , Gs^Fp       , Wo^Bw/      , Ch          , Ch          , Gg          , Gg          , Gg          , Mm          , Ch          , Mm          , Ch!
+           , Mm          , Mm          , Mm          
++Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm          , Hh          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Hh          , Gg          , Hh          , Gs^Fp       , Hh          , Hh          , Hh          , Mm^Xm       , Mm          , Mm          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Mm          , Mm          , Gg          , Mm          , Gg          , Gg          , Gg          , Mm          , Mm          , Gg          , Gs^Fp       , Gg          , Mm          , Gg          , Gs^Fp       , Gg          , Gg          , Mm          , Gg          , Gg          , Mm          , Mm          , Ww          , Ww          , Mm          , Gs^Fp   !
+     , Ww          , Ww          , Ww          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Mm          , Mm          , Mm          , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ww          , Ww          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Mm          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Rr          , Rr          , Gs^Fp       , Wo          , Wo          , Ch          , Mm^Xm       , Mm          , Mm          , Mm          , Mm          , Mm!
+           , Mm          , Mm          , Mm          
++Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Gg          , Gg          , Mm          , Gg          , Mm          , Mm          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm^Xm       , Mm          , Mm          , Hh          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Ww          , Ww          , Hh          , Mm^Xm       , Mm^Xm       , Mm          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Gg          , Gg          , Mm          , Gg          , Gg          , Ww          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Ww          , Mm          , Mm          , Gg      !
+     , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Ww          , Ww          , Ww          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Hh          , Mm          , Mm          , Mm          , Mm          , Mm^Xm       , Mm          , Mm          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Rr          , Gg          , Gg          , Gg          , Gg          , Wo          , Mm^Xm       , Mm^Xm       , Mm^Xm       , Mm          , Mm          , Mm!
+           , Mm^Xm       , Mm          , Mm          
+ Mm          , Mm          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Gg          , Gg          , Gg          , Ww          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Ww          , Ww          , Ww          , Mm          , Mm          , Mm^Xm       , Mm          , Gg          , Gs^Fp       , Gg          , Gg          , Gg^Vh       , Gg          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Gg          , Ww          , Ww          , Ww          , Ww          , Gs^Fp       , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg      !
+     , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Ww          , Ww          , Gs          , Gg          , Gg          , Gg^Vh       , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Mm          , Mm          , Mm          , Mm          , Mm^Xm       , Mm          , Mm          , Hh          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Mm          , Mm          , Mm          , Mm^Xm       , Mm          , Mm          , Mm!
+           , Mm          , Mm          , Mm          
+ Mm          , Mm          , Mm          , Mm          , Mm          , Gg          , Mm          , Mm          , Mm          , Mm          , Gs^Fp       , Gs^Fp       , Ww          , Ww          , Ww          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Hh          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gs^Fp       , Ww          , Ww          , Ww          , Mm          , Mm          , Mm^Xm       , Mm          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Mm          , Gs^Fp       , Ww          , Ww          , Ww          , Ww          , Gs^Fp       , Gg          , Gg          , Gs^Fp       , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg      !
+     , Gg          , Gg          , Gg          , Gg          , Gg          , Mm          , Mm          , Mm          , Mm          , Gs^Fp       , Hh          , Hh          , Hh          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Ww          , Ww          , Gs          , Gg          , Gg          , Gg          , Gg          , Gg          , Gg          , Gs^Fp       , Gg          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Mm          , Mm          , Mm          , Mm          , Mm^Xm       , Mm          , Mm          , Hh          , Hh          , Hh          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gg          , Gg          , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Rr          , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs^Fp       , Gs          , Mm          , Mm          , Mm^Xm       , Mm          , Mm          , Mm!
+           , Mm          , Mm          , Mm          
+
+Modified: branches/1.4/Raajal/Raajal/maps/Red_Sea.map
+===================================================================
+--- branches/1.4/Raajal/Raajal/maps/Red_Sea.map	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/maps/Red_Sea.map	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -31,12 +31,12 @@
+ Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y4          , Y4          , Y4          , Y2          , Y2          
+ Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Uu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Y2          , Y2          , Xu          , Xu          , Xu          , Y2          , Y2          , Y4          , Y4          , Y4          , Y2          , Y2          
+ Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Uh          , Uh          , Uu          , Xu          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          
+-Xu          , Y2          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Uh          , Uh          , Uh          , Uu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Xu          , Xu          
+-Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Uu^Vud      , Uh          , Uh          , Uh          , Xu          , Xu          , Y2          , Xu          , Y2          , Xu          , Y2          , Y2          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Y2          , Xu          , Y2          , Xu          , Xu          
+-Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Uh          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          
+-Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          
+-Xu          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          
+-Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Uu          , Xu          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Uu          , Xu          , Uu          , Xu          , Xu          , Xu          
++Xu          , Y2          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Uu^Vud          , Uh          , Uh          , Uu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Xu          , Xu          
++Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Uu      , Uh          , Uh          , Uh          , Xu          , Xu          , Y2          , Xu          , Y2          , Xu          , Y2          , Y2          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Y2          , Xu          , Y2          , Xu          , Xu          
++Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Y2          , Uu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          
++Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          
++Xu          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Xu          , Xu          , Y2          , Y2          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          
++Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Uu          , Xu          , Uu          , Xu          , Xu          , Xu          
+ Xu          , Xu          , Uu          , Uu          , Y2          , Y2          , Y2          , Y2          , Uu          , Xu          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Uu          , Uu          , Uu          , Uu          , Uu          , Uu^Vu          , Xu          , Xu          
+ Uu          , Uu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Uu          , Uu          , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Uu          , Uu          , Cud         , Cud         , Cud         , Uu          , Xu          , Xu          
+ Uu          , Uu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Uu          , Uu^Vu       , Xu          , Xu          , Xu          , Xu          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Y2          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Xu          , Uu          , Uu          , Cud         , Kud         , Cud         , Uu          , Xu          , Xu          
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/01_Resurrection.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/01_Resurrection.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/01_Resurrection.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -119,10 +119,10 @@
+ 
+         #General screams at king who banished him while waves lap shore
+         {WAVE_ON}
+-        {UNIT_MSG description=Geodry ( _ &quot;After years of loyal service, I am sent into exile. Why?&quot;)}
++        {UNIT_MSG (description=Geodry) ( _ &quot;After years of loyal service, I am sent into exile. Why?&quot;)}
+         {WAVE_OFF}
+         {WAVE_ON}
+-        {UNIT_MSG description=Geodry ( _ &quot;What have I done to deserve this fate?&quot;)}
++        {UNIT_MSG (description=Geodry) ( _ &quot;What have I done to deserve this fate?&quot;)}
+         {WAVE_OFF}
+         {WAVE_ON}
+         {REPLACE_GENERAL_VARIATION mad}
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/02_A_New_Vitality.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/02_A_New_Vitality.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/02_A_New_Vitality.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -240,19 +240,19 @@
+ 
+         [objectives]
+             [objective]
+-                description=&quot;Kill 7 elves and 7 dwarves&quot;
++                description=_&quot;Kill 7 elves and 7 dwarves&quot;
+                 condition=win
+             [/objective]
+             [objective]
+-                description=&quot;Death of Raajal&quot;
++                description=_&quot;Death of Raajal&quot;
+                 condition=lose
+             [/objective]
+             [objective]
+-                description=&quot;Not enough elves remain&quot;
++                description=_&quot;Not enough elves remain&quot;
+                 condition=lose
+             [/objective]
+             [objective]
+-                description=&quot;Not enough dwarves remain&quot;
++                description=_&quot;Not enough dwarves remain&quot;
+                 condition=lose
+             [/objective]
+         [/objectives]
+@@ -313,7 +313,7 @@
+         name=attack
+         first_time_only=yes
+         [filter]
+-            description=Raajal
++            description=&quot;Raajal&quot;
+         [/filter]
+         [filter_second]
+             side=3
+@@ -367,7 +367,7 @@
+     #Soul goes to castle whn killed
+     {SOUL_TO_CASTLE (
+     [not]
+-        description=Raajal
++        description=&quot;Raajal&quot;
+     [/not]) () 5 20 1}
+ 
+ #define TURN_INTO_SOUL TYPE SOUL_VARIATION
+@@ -516,7 +516,7 @@
+     [event]
+         name=last breath
+         [filter]
+-            description=Raajal
++            description=&quot;Raajal&quot;
+         [/filter]
+         {UNIT_MSG description=Raajal ( _ &quot;You haven't seen the last of me...&quot;)}
+         [endlevel]
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/04_Overboard.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/04_Overboard.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/04_Overboard.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -279,19 +279,17 @@
+         name=prestart
+ 
+         [objectives]
+-            note=&quot;An overboard unit will be rescued if a galleon
+-is adjacent to it at the end of your turn
+-(maximum 4 rescues per galleon)&quot;
++            note=_&quot;An overboard unit will be rescued if a galleon is adjacent to it at the end of your turn (maximum 4 rescues per galleon)&quot;
+             [objective]
+-                description=&quot;End of turns&quot;
++                description=_&quot;End of turns&quot;
+                 condition=win
+             [/objective]
+             [objective]
+-                description=&quot;Or, kill 1 witch&quot;
++                description=_&quot;Or, kill 1 witch&quot;
+                 condition=win
+             [/objective]
+             [objective]
+-                description=&quot;Death of Horomir&quot;
++                description=_&quot;Death of Horomir&quot;
+                 condition=lose
+             [/objective]
+         [/objectives]
+@@ -429,7 +427,7 @@
+ 
+         {SHORT_DELAY}
+ 
+-        #move Zilead's galleon to Akhban
++        #move Zilead's galleon to Angalas
+         [move_unit_fake]
+             type=Pirate Galleon
+             x=30,19,19,11
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/05_Prisoners_of_Angalas.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/05_Prisoners_of_Angalas.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/05_Prisoners_of_Angalas.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -173,7 +173,7 @@
+         {MOVE_UNIT (description=Randalf) 10 5}
+ 
+         {UNIT_MSG (description=Agatha) ( _ &quot;I suppose you are all wondering why you have been summoned.&quot;)}
+-        {UNIT_MSG (description=Agatha) ( _ &quot;There exists a being that has caused us all great grief. With your help, we believe we can finally end his reign of terror.&quot;)}
++        {UNIT_MSG (description=Agatha) ( _ &quot;There exists a being who has caused us all great grief. With your help, we believe we can finally end his reign of terror.&quot;)}
+         {UNIT_MSG (description=King Theomund) ( _ &quot;To whom do you refer?&quot;)}
+         {UNIT_MSG (description=Randalf) ( _ &quot;She speaks of Raajal.&quot;)}
+         {UNIT_MSG (description=King Theomund) ( _ &quot;I have not heard of him... Who is he?&quot;)}
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/08_The_Apprentice.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/08_The_Apprentice.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/08_The_Apprentice.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -78,17 +78,17 @@
+ 
+         {VARIABLE skeletons_left 200}
+         [objectives]
+-            note=&quot;
++            note=_&quot;
+ (1) A skeleton will become a leader if it kills an enemy leader
+ (2) Each turn, you get one skeleton for each leader on a keep
+ (3) Raajal has 200 skeletons&quot;
+             [objective]
+                 condition=win
+-                description=&quot;Kill all players&quot;
++                description=_&quot;Kill all players&quot;
+             [/objective]
+             [objective]
+                 condition=lose
+-                description=&quot;Death of Randalf&quot;
++                description=_&quot;Death of Randalf&quot;
+             [/objective]
+         [/objectives]
+ 
+@@ -168,7 +168,7 @@
+     [/if]
+ 
+     {UNIT_NAMELESS $type ({SIDE}) ({X}) ({Y})}
+-
++    {CLEAR_VARIABLE type}
+ #enddef
+ 
+     #For each leader on keep, spawn a skeleton
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/10_Six_Years_Earlier.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/10_Six_Years_Earlier.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/10_Six_Years_Earlier.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -159,6 +159,7 @@
+             description=Raajal
+         [/scroll_to_unit]
+         {MODIFY_UNIT (description=Raajal) type (Undead General Power)}
++        {MODIFY_UNIT (description=Raajal) hitpoints $raajal_store.hitpoints}
+         {MODIFY_UNIT (description=Raajal) max_hitpoints $raajal_store.max_hitpoints}
+         [redraw] [/redraw]
+         [delay]
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/13_A_Failed_Attempt.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/13_A_Failed_Attempt.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/13_A_Failed_Attempt.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -76,7 +76,7 @@
+         team_name=good
+         controller=null
+         no_leader=yes
+-        colour=blue
++        colour=green
+     [/side]
+ 
+     [side]
+@@ -116,25 +116,21 @@
+         name=prestart
+ 
+         [objectives]
+-            note=&quot;After you attack one of the castle guards,
+-  (1) Raajal summons his soul army
+-  (2) The witches arrive
+-  (3) Theomund's reinforcements arrive
+-Hint: Don't make Raajal too powerful&quot;
++            note=_&quot;After you attack one of the castle guards, Raajal summons his soul army, the witches arrive, and Theomund's reinforcements arrive. Hint: Don't make Raajal too powerful&quot;
+             [objective]
+-                description=&quot;Kill all witches&quot;
++                description=_&quot;Kill all witches&quot;
+                 condition=win
+             [/objective]
+             [objective]
+-                description=&quot;Death of Raajal&quot;
++                description=_&quot;Death of Raajal&quot;
+                 condition=lose
+             [/objective]
+             [objective]
+-                description=&quot;A human kills a witch&quot;
++                description=_&quot;A human kills a witch&quot;
+                 condition=lose
+             [/objective]
+             [objective]
+-                description=&quot;Turns run out&quot;
++                description=_&quot;Turns run out&quot;
+                 condition=lose
+             [/objective]
+         [/objectives]
+@@ -430,42 +426,44 @@
+         [/if]
+         {NEXT i}
+ 
++        {CLEAR_VARIABLE x}
++        {CLEAR_VARIABLE y}
+         {CLEAR_VARIABLE locs}
+         {CLEAR_VARIABLE store}
+         {CLEAR_VARIABLE n}
+         {CLEAR_VARIABLE fill_count}
+     [/event]
+ 
+-    #Units on side 4 can only be attacked by side 1
+-    #Units on side 5 can't be attacked by any side
+     [event]
+         name=new turn
+         first_time_only=no
+ 
+-        #You can attack all humans
++        #If Raajal summoned his soul army
+         [if]
+             [have_unit]
+                 type=Lost Soul
+             [/have_unit]
+             [then]
++                #You can attack all humans
+                 {MODIFY_UNIT (side=4) side 3}
++
++                #Move souls in soul castle back to your side
++                {MODIFY_UNIT (side=5) side 1}
++                [modify_side]
++                    side=5
++                    team_name=ugly
++                [/modify_side]
+             [/then]
+             [else]
+-                #You can attack castle guards
++                #You can only attack castle guards
+                 [modify_side]
+                     side=4
+                     team_name=good
+                 [/modify_side]
+             [/else]
+         [/if]
+-
+-        #Move souls back to your side
+-        {MODIFY_UNIT (side=5) side 1}
+-        [modify_side]
+-            side=5
+-            team_name=ugly
+-        [/modify_side]
+     [/event]
++
+     [event]
+         name=ai turn
+         first_time_only=no
+@@ -475,49 +473,18 @@
+                 equals=2
+             [/variable]
+             [then]
+-                #Humans on side 4 can't be attacked by orcs or witches
+-                [modify_side]
+-                    side=4
+-                    team_name=bad
+-                [/modify_side]
+-
+-                #Store each witch adjacent to Raajal
+-                {STORE_UNITS store (
++                #Witches adjacent to Raajal will not move
++                {MODIFY_UNIT (
+                 type=Witch
+                 [filter_adjacent]
+                     description=Raajal
+-                [/filter_adjacent]) no}
++                [/filter_adjacent]) moves 0}
+ 
+-                {FOREACH store i}
+-                {VARIABLE_OP x to_variable store[$i].x}
+-                {VARIABLE_OP y to_variable store[$i].y}
+-                #Witch won't move
++                #Souls in soul castle can't be attacked by witches or orcs
+                 {MODIFY_UNIT (
+-                x=$x
+-                y=$y) moves 0}
+-                #Move souls adjacent to witch to side 5
+-                {MODIFY_UNIT (
+-                side=1
+                 type=Lost Soul
+-                [filter_adjacent]
+-                    x=$x
+-                    y=$y
+-                [/filter_adjacent]) side 5}
+-                #Move adjacent humans to side 4
+-                {MODIFY_UNIT (
+-                side=3
+-                [filter_adjacent]
+-                    x=$x
+-                    y=$y
+-                [/filter_adjacent]) side 4}
+-                {NEXT i}
+-
+-                #Souls in soul castle can't be attacked
+-                {MODIFY_UNIT (
+-                type=Lost Soul
+                 [filter_location]
+-                    x,y=7,10
+-                    radius=2
++                    terrain=Y5
+                 [/filter_location]) side 5}
+                 [modify_side]
+                     side=5
+@@ -525,30 +492,24 @@
+                 [/modify_side]
+             [/then]
+             [else]
+-                #Humans can't attack humans on side 4 or souls on side 5
++                #If souls were summoned by Raajal
+                 [if]
+                     [have_unit]
+                         type=Lost Soul
+                     [/have_unit]
+                     [then]
++                        #Souls in soul castle can't be attacked by humans
+                         [modify_side]
+-                            side=4
+-                            team_name=good
+-                        [/modify_side]
+-                        [modify_side]
+                             side=5
+                             team_name=good
+                         [/modify_side]
+                     [/then]
+                     [else]
++                        #Humans can't attack Royal guards
+                         [modify_side]
+                             side=4
+                             team_name=ugly
+                         [/modify_side]
+-                        [modify_side]
+-                            side=5
+-                            team_name=ugly
+-                        [/modify_side]
+                     [/else]
+                 [/if]
+             [/else]
+@@ -597,6 +558,7 @@
+ 
+                 #Raajal's head glows
+                 {MODIFY_UNIT description=Raajal type (Undead General Power)}
++                {MODIFY_UNIT description=Raajal hitpoints $raajal_store.hitpoints}
+                 {MODIFY_UNIT description=Raajal max_hitpoints $raajal_store.max_hitpoints}
+                 [redraw] [/redraw]
+                 [delay]
+@@ -665,6 +627,7 @@
+         [if]
+             {RAAJAL_EXPOSED_CONDITIONS}
+             [then]
++                #Soul army is unstored at the soul castle
+                 [scroll_to]
+                     x=$castle_x
+                     y=$castle_y
+@@ -676,6 +639,7 @@
+                     time=1500
+                 [/delay]
+ 
++                #All humans are now your enemies
+                 {MODIFY_UNIT (side=4) side 3}
+                 [modify_side]
+                     side=3
+@@ -832,6 +796,7 @@
+                 type=Witch
+             [/have_unit]
+             [else]
++                {CLEAR_VARIABLE raajal_attacked_guards}
+                 [endlevel]
+                     result=continue
+                 [/endlevel]
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/Day1_Angalas.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/Day1_Angalas.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/Day1_Angalas.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -38,27 +38,6 @@
+         name=loyalists.ogg
+     [/music]
+ 
+-    [side]
+-        side=1
+-        team_name=good
+-        controller=human
+-        no_leader=yes
+-    [/side]
+-
+-    [side]
+-        side=2
+-        team_name=bad
+-        controller=ai
+-        no_leader=yes
+-    [/side]
+-
+-    [side]
+-        side=3
+-        team_name=good
+-        controller=ai
+-        no_leader=yes
+-    [/side]
+-
+     [event]
+         name=prestart
+ 
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/Day1_Randalf.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/Day1_Randalf.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/Day1_Randalf.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -20,7 +20,7 @@
+         colour=green
+     [/side]
+     [side]
+-        side=1
++        side=2
+         team_name=good
+         controller=human
+         no_leader=yes
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/Day1_Zilead.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/Day1_Zilead.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/Day1_Zilead.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -51,7 +51,7 @@
+         {UNIT_MSG (
+         description=Zilead
+         image=units/witch.png
+-        caption=Agatha) ( _ &quot;Get out of the cave, Zilead!&quot;)}
++        caption=_&quot;Agatha&quot;) ( _ &quot;Get out of the cave, Zilead!&quot;)}
+         [redraw] [/redraw]
+         [delay]
+             time=1000
+@@ -59,7 +59,7 @@
+         {UNIT_MSG (
+         description=Zilead
+         image=units/witch.png
+-        caption=Agatha) ( _ &quot;Move!&quot;)}
++        caption=_&quot;Agatha&quot;) ( _ &quot;Move!&quot;)}
+ 
+         [sound]
+             name=soul-hit.ogg
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/Day2_Angalas.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/Day2_Angalas.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/Day2_Angalas.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -96,17 +96,17 @@
+         {MODIFY_UNIT type=Witch canrecruit 0}
+ 
+         [objectives]
+-            note=&quot;Each turn, the elf closest to a human will enter the arena&quot;
++            note=_&quot;Each turn, the elf closest to a human will enter the arena&quot;
+             [objective]
+-                description=&quot;Only Ardella remains&quot;
++                description=_&quot;Only Ardella remains&quot;
+                 condition=win
+             [/objective]
+             [objective]
+-                description=&quot;Or, end of turns&quot;
++                description=_&quot;Or, end of turns&quot;
+                 condition=win
+             [/objective]
+             [objective]
+-                description=&quot;Death of Ardella&quot;
++                description=_&quot;Death of Ardella&quot;
+                 condition=lose
+             [/objective]
+         [/objectives]
+@@ -273,7 +273,7 @@
+         {VARIABLE witches_arrive_hour 12}
+ 
+         {UNIT_CREATE (Gryphon Boy) Zeke ( _ &quot;Zeke&quot;) 1 12 19 ()}
+-        {UNIT_MSG (description=Zeke) ( _ &quot;Stop this madness at once!&quot;)}
++        {UNIT_MSG (description=Zeke) ( _ &quot;Leave my momma alone!&quot;)}
+ 
+         {STORE_UNITS angalas_witch_store type=Witch no}
+         {STORE_UNITS angalas_survivor_store side=1 no}
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/Day2_Randalf.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/Day2_Randalf.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/Day2_Randalf.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -60,7 +60,7 @@
+         [delay]
+             time=2000
+         [/delay]
+-        {UNIT_MSG (description=Raajal) ( _ &quot;I have been searching for a worthy apprentice for many years to no avail. You were the only one that showed any promise.&quot;)}
++        {UNIT_MSG (description=Raajal) ( _ &quot;I have been searching for a worthy apprentice for many years to no avail. You were the only one who showed any promise.&quot;)}
+         [redraw] [/redraw]
+         [delay]
+             time=1000
+
+Modified: branches/1.4/Raajal/Raajal/scenarios/Day2_Theomund.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/scenarios/Day2_Theomund.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/scenarios/Day2_Theomund.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -37,7 +37,7 @@
+         {PLACE_IMAGE units/transport/boat.png 2 19}
+ 
+         {UNSTORE_AT horomir_store 1 7 14}
+-        {UNIT_CREATE (Warrior King) (King Theomund) ( _ &quot;King Theomund&quot;) 1 6 14 canrecruit=1}
++        {UNIT_CREATE (Warrior King) (King Theomund) ( _ &quot;King Theomund&quot;) 1 6 14 canrecruit=yes}
+         {UNSTORE_AT overboard_store 1 11 16}
+         {FULL_HEAL side=1}
+     [/event]
+@@ -57,18 +57,18 @@
+         {UNIT_MSG (
+         description=King Theomund
+         image=units/witch.png
+-        caption=Meredith) ( _ &quot;You must make your way to Barruk's castle.&quot;)}
++        caption=_&quot;Meredith&quot;) ( _ &quot;You must make your way to Barruk's castle.&quot;)}
+         {UNIT_MSG (description=King Theomund) ( _ &quot;Barruk?&quot;)}
+         {UNIT_MSG (description=Horomir) ( _ &quot;Father?&quot;)}
+         {UNIT_MSG (
+         description=King Theomund
+         image=units/witch.png
+-        caption=Meredith) ( _ &quot;He is the commander of our orcs. His castle is in the mountains west of Hector's territory.&quot;)}
++        caption=_&quot;Meredith&quot;) ( _ &quot;He is the commander of our orcs. His castle is in the mountains west of Hector's territory.&quot;)}
+         {UNIT_MSG (description=King Theomund) ( _ &quot;And why...&quot;)}
+         {UNIT_MSG (
+         description=King Theomund
+         image=units/witch.png
+-        caption=Meredith) ( _ &quot;Just do as your told! I will give you further instructions after you reach the castle.&quot;)}
++        caption=_&quot;Meredith&quot;) ( _ &quot;Just do as your told! I will give you further instructions after you reach the castle.&quot;)}
+         {UNIT_MSG (description=Horomir) ( _ &quot;What is the plan, father? How are we to defeat Gerald II?&quot;)}
+         {UNIT_MSG (description=King Theomund) ( _ &quot;We must go to Barruk's castle.&quot;)}
+         {UNIT_MSG (description=Horomir) ( _ &quot;Who is Barruk?&quot;)}
+
+Modified: branches/1.4/Raajal/Raajal/units/Lost_Soul.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/units/Lost_Soul.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/units/Lost_Soul.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -19,6 +19,7 @@
+     usage=fighter
+     unit_description= _ &quot;Lost souls.&quot;
+     die_sound=soul-die.ogg
++    {MAGENTA_IS_THE_TEAM_COLOR}
+     [movement_costs]
+         deep_water=1
+         shallow_water=1
+@@ -1931,7 +1932,7 @@
+             type=blade
+             icon=attacks/greatsword-human.png
+             range=melee
+-            damage=11
++            damage=6
+             number=4
+         [/attack]
+         [attack]
+@@ -1939,7 +1940,7 @@
+             description=_&quot;bow&quot;
+             type=pierce
+             range=ranged
+-            damage=8
++            damage=4
+             number=3
+             icon=attacks/bow.png
+         [/attack])}
+
+Modified: branches/1.4/Raajal/Raajal/units/Outlaw_Altar.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/units/Outlaw_Altar.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/units/Outlaw_Altar.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -16,4 +16,5 @@
+     cost=10
+     usage=mixed fighter
+     unit_description=&quot;&quot;
++    {MAGENTA_IS_THE_TEAM_COLOR}
+ [/unit]
+
+Modified: branches/1.4/Raajal/Raajal/units/Outlaw_Altar_SE.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/units/Outlaw_Altar_SE.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/units/Outlaw_Altar_SE.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -16,4 +16,5 @@
+     cost=10
+     usage=mixed fighter
+     unit_description=&quot;&quot;
++    {MAGENTA_IS_THE_TEAM_COLOR}
+ [/unit]
+
+Modified: branches/1.4/Raajal/Raajal/utils/mission-randalf.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/utils/mission-randalf.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/utils/mission-randalf.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -1,3 +1,5 @@
++#textdomain wesnoth-Raajal
++
+ disallow_recall=yes
+ next_scenario=null
+ victory_when_enemies_defeated=no
+@@ -48,15 +50,15 @@
+ #define RANDALF_COMMON_OBJECTIVES
+     [objective]
+         condition=win
+-        description=&quot;Complete the 3 puzzles&quot;
++        description=_&quot;Complete the 3 puzzles&quot;
+     [/objective]
+     [objective]
+         condition=win
+-        description=&quot;Or, end of turns (you can continue next day)&quot;
++        description=_&quot;Or, end of turns (you can continue next day)&quot;
+     [/objective]
+     [objective]
+         condition=win
+-        description=&quot;Or, death of Randalf&quot;
++        description=_&quot;Or, death of Randalf&quot;
+     [/objective]
+ #enddef
+ 
+@@ -70,16 +72,8 @@
+             [objectives]
+                 victory_string=&quot;End of day:&quot;
+                 {RANDALF_COMMON_OBJECTIVES}
+-                summary=&quot;Puzzle 3: Each road hex must have a skeleton on your side&quot;
+-                note=&quot;
+-1) To recruit, right click and select 'recruit skeleton'
+-2) Ensure that each skeleton type appears
+-        once per row,
+-        once per column,
+-        and once per group
+-3) Skeletons on wrong hexes will be enemies
+-4) You can't recruit adjacent to an enemy
+-5) To restart, move to the puzzle entrance bridge&quot;
++                note=_&quot;Sudoku:
++(1)To recruit, right click and select 'recruit skeleton'; (2)Each skeleton type must appear once per row, once per column, and once per group; (3)You can't recruit adjacent to an enemy; (4)To restart, move to the puzzle entrance bridge&quot;
+             [/objectives]
+         [/then]
+         [else]
+@@ -92,22 +86,16 @@
+                     [objectives]
+                         victory_string=&quot;End of day:&quot;
+                         {RANDALF_COMMON_OBJECTIVES}
+-                        summary=&quot;Puzzle 2: Sort the skull numerals&quot;
+-                        note=&quot;
+-1) Attack a skeleton to move across its bridge
+-2) You have unlimited attacks
+-3) To restart, move to the puzzle entrance bridge&quot;
++                        note=_&quot;Sort the skull numerals:
++(1)Attack a skeleton to move across its bridge; (2)You have unlimited attacks; (3)To restart, move to the puzzle entrance bridge&quot;
+                     [/objectives]
+                 [/then]
+                 [else]
+                     [objectives]
+                         victory_string=&quot;End of day:&quot;
+                         {RANDALF_COMMON_OBJECTIVES}
+-                        summary=&quot;Puzzle 1: Move each spider to a web&quot;
+-                        note=&quot;
+-1) Attack a spider to move it one hex forward
+-2) You have unlimited moves and attacks
+-3) To restart, move to the puzzle entrance bridge&quot;
++                        note=_&quot;Move each spider to a web:
++(1)Attack a spider to move it one hex forward; (2)You have unlimited moves and attacks; (3)To restart, move to the puzzle entrance bridge&quot;
+                     [/objectives]
+                 [/else]
+             [/if]
+@@ -141,137 +129,212 @@
+     [/endlevel]
+ #enddef
+ 
+-#define NEXT_PUZZLE
+-    {VARIABLE_OP puzzle add 1}
++#define CLEAR_EIGHT_VARIABLES
++    {CLEAR_VARIABLE num_eight_moves}
++    {CLEAR_VARIABLE eight_randalf}
++    {CLEAR_VARIABLE empty_hex}
++    {CLEAR_VARIABLE eight_x24y14}
++    {CLEAR_VARIABLE eight_x26y13}
++    {CLEAR_VARIABLE eight_x26y15}
++    {CLEAR_VARIABLE eight_x28y12}
++    {CLEAR_VARIABLE eight_x28y14}
++    {CLEAR_VARIABLE eight_x28y16}
++    {CLEAR_VARIABLE eight_x30y13}
++    {CLEAR_VARIABLE eight_x30y15}
++    {CLEAR_VARIABLE eight_x32y14}
++#enddef
+ 
+-    #Clear 8-puzzle variables
+-    [if]
+-        [variable]
+-            name=puzzle
+-            equals=3
+-        [/variable]
+-        [then]
+-            {CLEAR_VARIABLE num_eight_moves}
+-            {CLEAR_VARIABLE eight_randalf}
+-            {CLEAR_VARIABLE empty_hex}
+-            {CLEAR_VARIABLE eight_x24y14}
+-            {CLEAR_VARIABLE eight_x26y13}
+-            {CLEAR_VARIABLE eight_x26y15}
+-            {CLEAR_VARIABLE eight_x28y12}
+-            {CLEAR_VARIABLE eight_x28y14}
+-            {CLEAR_VARIABLE eight_x28y16}
+-            {CLEAR_VARIABLE eight_x30y13}
+-            {CLEAR_VARIABLE eight_x30y15}
+-            {CLEAR_VARIABLE eight_x32y14}
+-        [/then]
+-    [/if]
++#define CLEAR_SUDOKU_VARIABLES
++    {CLEAR_VARIABLE sudoku_unit_1}
++    {CLEAR_VARIABLE sudoku_unit_2}
++    {CLEAR_VARIABLE sudoku_unit_3}
++    {CLEAR_VARIABLE sudoku_unit_4}
++    {CLEAR_VARIABLE sudoku_unit_5}
++    {CLEAR_VARIABLE sudoku_unit_6}
++    {CLEAR_VARIABLE sudoku_unit_7}
++    {CLEAR_VARIABLE sudoku_unit_8}
++    {CLEAR_VARIABLE sudoku_unit_9}
++    {CLEAR_VARIABLE sudoku_x10y10}
++    {CLEAR_VARIABLE sudoku_x10y8}
++    {CLEAR_VARIABLE sudoku_x10y9}
++    {CLEAR_VARIABLE sudoku_x11y10}
++    {CLEAR_VARIABLE sudoku_x11y9}
++    {CLEAR_VARIABLE sudoku_x12y11}
++    {CLEAR_VARIABLE sudoku_x12y7}
++    {CLEAR_VARIABLE sudoku_x12y9}
++    {CLEAR_VARIABLE sudoku_x13y11}
++    {CLEAR_VARIABLE sudoku_x13y12}
++    {CLEAR_VARIABLE sudoku_x13y7}
++    {CLEAR_VARIABLE sudoku_x13y8}
++    {CLEAR_VARIABLE sudoku_x14y10}
++    {CLEAR_VARIABLE sudoku_x14y11}
++    {CLEAR_VARIABLE sudoku_x14y12}
++    {CLEAR_VARIABLE sudoku_x14y6}
++    {CLEAR_VARIABLE sudoku_x14y7}
++    {CLEAR_VARIABLE sudoku_x14y8}
++    {CLEAR_VARIABLE sudoku_x15y11}
++    {CLEAR_VARIABLE sudoku_x15y12}
++    {CLEAR_VARIABLE sudoku_x15y7}
++    {CLEAR_VARIABLE sudoku_x15y8}
++    {CLEAR_VARIABLE sudoku_x16y11}
++    {CLEAR_VARIABLE sudoku_x16y13}
++    {CLEAR_VARIABLE sudoku_x16y5}
++    {CLEAR_VARIABLE sudoku_x16y7}
++    {CLEAR_VARIABLE sudoku_x16y9}
++    {CLEAR_VARIABLE sudoku_x17y10}
++    {CLEAR_VARIABLE sudoku_x17y13}
++    {CLEAR_VARIABLE sudoku_x17y14}
++    {CLEAR_VARIABLE sudoku_x17y5}
++    {CLEAR_VARIABLE sudoku_x17y6}
++    {CLEAR_VARIABLE sudoku_x17y9}
++    {CLEAR_VARIABLE sudoku_x18y10}
++    {CLEAR_VARIABLE sudoku_x18y12}
++    {CLEAR_VARIABLE sudoku_x18y13}
++    {CLEAR_VARIABLE sudoku_x18y14}
++    {CLEAR_VARIABLE sudoku_x18y4}
++    {CLEAR_VARIABLE sudoku_x18y5}
++    {CLEAR_VARIABLE sudoku_x18y6}
++    {CLEAR_VARIABLE sudoku_x18y8}
++    {CLEAR_VARIABLE sudoku_x18y9}
++    {CLEAR_VARIABLE sudoku_x19y10}
++    {CLEAR_VARIABLE sudoku_x19y13}
++    {CLEAR_VARIABLE sudoku_x19y14}
++    {CLEAR_VARIABLE sudoku_x19y5}
++    {CLEAR_VARIABLE sudoku_x19y6}
++    {CLEAR_VARIABLE sudoku_x19y9}
++    {CLEAR_VARIABLE sudoku_x20y11}
++    {CLEAR_VARIABLE sudoku_x20y13}
++    {CLEAR_VARIABLE sudoku_x20y5}
++    {CLEAR_VARIABLE sudoku_x20y7}
++    {CLEAR_VARIABLE sudoku_x20y9}
++    {CLEAR_VARIABLE sudoku_x21y11}
++    {CLEAR_VARIABLE sudoku_x21y12}
++    {CLEAR_VARIABLE sudoku_x21y7}
++    {CLEAR_VARIABLE sudoku_x21y8}
++    {CLEAR_VARIABLE sudoku_x22y10}
++    {CLEAR_VARIABLE sudoku_x22y11}
++    {CLEAR_VARIABLE sudoku_x22y12}
++    {CLEAR_VARIABLE sudoku_x22y6}
++    {CLEAR_VARIABLE sudoku_x22y7}
++    {CLEAR_VARIABLE sudoku_x22y8}
++    {CLEAR_VARIABLE sudoku_x23y11}
++    {CLEAR_VARIABLE sudoku_x23y12}
++    {CLEAR_VARIABLE sudoku_x23y7}
++    {CLEAR_VARIABLE sudoku_x23y8}
++    {CLEAR_VARIABLE sudoku_x24y11}
++    {CLEAR_VARIABLE sudoku_x24y7}
++    {CLEAR_VARIABLE sudoku_x24y9}
++    {CLEAR_VARIABLE sudoku_x25y10}
++    {CLEAR_VARIABLE sudoku_x25y9}
++    {CLEAR_VARIABLE sudoku_x26y10}
++    {CLEAR_VARIABLE sudoku_x26y8}
++    {CLEAR_VARIABLE sudoku_x26y9}
++    {CLEAR_VARIABLE sudoku_x27y10}
++    {CLEAR_VARIABLE sudoku_x27y9}
++    {CLEAR_VARIABLE sudoku_x28y9}
++    {CLEAR_VARIABLE sudoku_x8y9}
++    {CLEAR_VARIABLE sudoku_x9y10}
++    {CLEAR_VARIABLE sudoku_x9y9}
++    {CLEAR_VARIABLE sudoku_locs}
++    
++    #Clear the menu
++    [set_menu_item]
++        id=recruit
++        [show_if]
++            [variable]
++                name=puzzle
++                equals=999
++            [/variable]
++        [/show_if]
++        [command]
++        [/command]
++    [/set_menu_item]
++#enddef
+ 
+-    #Victory when Randalf finishes all puzzles
++[event]
++    name=menu item recruit
++    first_time_only=no
++    [message]
++        speaker=narrator
++        caption=_&quot;Select a unit to recruit.&quot;
++        [option]
++            message= _ &quot;1. Skeleton&quot;
++            [command]
++                {CREATE_SUDOKU_SKELETON $x1 $y1 Skeleton 1}
++            [/command]
++        [/option]
++        [option]
++            message= _ &quot;2. Skeleton Archer&quot;
++            [command]
++                {CREATE_SUDOKU_SKELETON $x1 $y1 (Skeleton Archer) 2}
++            [/command]
++        [/option]
++        [option]
++            message= _ &quot;3. Chocobone&quot;
++            [command]
++                {CREATE_SUDOKU_SKELETON $x1 $y1 Chocobone 3}
++            [/command]
++        [/option]
++        [option]
++            message= _ &quot;4. Bone Shooter&quot;
++            [command]
++                {CREATE_SUDOKU_SKELETON $x1 $y1 (Bone Shooter) 4}
++            [/command]
++        [/option]
++        [option]
++            message= _ &quot;5. Revenant&quot;
++            [command]
++                {CREATE_SUDOKU_SKELETON $x1 $y1 Revenant 5}
++            [/command]
++        [/option]
++        [option]
++            message= _ &quot;6. Deathblade&quot;
++            [command]
++                {CREATE_SUDOKU_SKELETON $x1 $y1 Deathblade 6}
++            [/command]
++        [/option]
++        [option]
++            message= _ &quot;7. Death Knight&quot;
++            [command]
++                {CREATE_SUDOKU_SKELETON $x1 $y1 (Death Knight) 7}
++            [/command]
++        [/option]
++        [option]
++            message= _ &quot;8. Draug&quot;
++            [command]
++                {CREATE_SUDOKU_SKELETON $x1 $y1 Draug 8}
++            [/command]
++        [/option]
++        [option]
++            message= _ &quot;9. Skeletal Dragon&quot;
++            [command]
++                {CREATE_SUDOKU_SKELETON $x1 $y1 (Skeletal Dragon) 9}
++            [/command]
++        [/option]
++        image=wesnoth-icon.png
++    [/message]
++
++    #Check if Randalf was victorious
++    {STORE_UNITS store (
++    side=1
++    [not]
++        description=Randalf
++    [/not]) no}
+     [if]
+         [variable]
+-            name=puzzle
+-            equals=4
++            name=store.length
++            equals=81
+         [/variable]
+         [then]
+-            #Clear Sudoku variables
+-            {CLEAR_VARIABLE sudoku_unit_1}
+-            {CLEAR_VARIABLE sudoku_unit_2}
+-            {CLEAR_VARIABLE sudoku_unit_3}
+-            {CLEAR_VARIABLE sudoku_unit_4}
+-            {CLEAR_VARIABLE sudoku_unit_5}
+-            {CLEAR_VARIABLE sudoku_unit_6}
+-            {CLEAR_VARIABLE sudoku_unit_7}
+-            {CLEAR_VARIABLE sudoku_unit_8}
+-            {CLEAR_VARIABLE sudoku_unit_9}
+-            {CLEAR_VARIABLE sudoku_x10y10}
+-            {CLEAR_VARIABLE sudoku_x10y8}
+-            {CLEAR_VARIABLE sudoku_x10y9}
+-            {CLEAR_VARIABLE sudoku_x11y10}
+-            {CLEAR_VARIABLE sudoku_x11y9}
+-            {CLEAR_VARIABLE sudoku_x12y11}
+-            {CLEAR_VARIABLE sudoku_x12y7}
+-            {CLEAR_VARIABLE sudoku_x12y9}
+-            {CLEAR_VARIABLE sudoku_x13y11}
+-            {CLEAR_VARIABLE sudoku_x13y12}
+-            {CLEAR_VARIABLE sudoku_x13y7}
+-            {CLEAR_VARIABLE sudoku_x13y8}
+-            {CLEAR_VARIABLE sudoku_x14y10}
+-            {CLEAR_VARIABLE sudoku_x14y11}
+-            {CLEAR_VARIABLE sudoku_x14y12}
+-            {CLEAR_VARIABLE sudoku_x14y6}
+-            {CLEAR_VARIABLE sudoku_x14y7}
+-            {CLEAR_VARIABLE sudoku_x14y8}
+-            {CLEAR_VARIABLE sudoku_x15y11}
+-            {CLEAR_VARIABLE sudoku_x15y12}
+-            {CLEAR_VARIABLE sudoku_x15y7}
+-            {CLEAR_VARIABLE sudoku_x15y8}
+-            {CLEAR_VARIABLE sudoku_x16y11}
+-            {CLEAR_VARIABLE sudoku_x16y13}
+-            {CLEAR_VARIABLE sudoku_x16y5}
+-            {CLEAR_VARIABLE sudoku_x16y7}
+-            {CLEAR_VARIABLE sudoku_x16y9}
+-            {CLEAR_VARIABLE sudoku_x17y10}
+-            {CLEAR_VARIABLE sudoku_x17y13}
+-            {CLEAR_VARIABLE sudoku_x17y14}
+-            {CLEAR_VARIABLE sudoku_x17y5}
+-            {CLEAR_VARIABLE sudoku_x17y6}
+-            {CLEAR_VARIABLE sudoku_x17y9}
+-            {CLEAR_VARIABLE sudoku_x18y10}
+-            {CLEAR_VARIABLE sudoku_x18y12}
+-            {CLEAR_VARIABLE sudoku_x18y13}
+-            {CLEAR_VARIABLE sudoku_x18y14}
+-            {CLEAR_VARIABLE sudoku_x18y4}
+-            {CLEAR_VARIABLE sudoku_x18y5}
+-            {CLEAR_VARIABLE sudoku_x18y6}
+-            {CLEAR_VARIABLE sudoku_x18y8}
+-            {CLEAR_VARIABLE sudoku_x18y9}
+-            {CLEAR_VARIABLE sudoku_x19y10}
+-            {CLEAR_VARIABLE sudoku_x19y13}
+-            {CLEAR_VARIABLE sudoku_x19y14}
+-            {CLEAR_VARIABLE sudoku_x19y5}
+-            {CLEAR_VARIABLE sudoku_x19y6}
+-            {CLEAR_VARIABLE sudoku_x19y9}
+-            {CLEAR_VARIABLE sudoku_x20y11}
+-            {CLEAR_VARIABLE sudoku_x20y13}
+-            {CLEAR_VARIABLE sudoku_x20y5}
+-            {CLEAR_VARIABLE sudoku_x20y7}
+-            {CLEAR_VARIABLE sudoku_x20y9}
+-            {CLEAR_VARIABLE sudoku_x21y11}
+-            {CLEAR_VARIABLE sudoku_x21y12}
+-            {CLEAR_VARIABLE sudoku_x21y7}
+-            {CLEAR_VARIABLE sudoku_x21y8}
+-            {CLEAR_VARIABLE sudoku_x22y10}
+-            {CLEAR_VARIABLE sudoku_x22y11}
+-            {CLEAR_VARIABLE sudoku_x22y12}
+-            {CLEAR_VARIABLE sudoku_x22y6}
+-            {CLEAR_VARIABLE sudoku_x22y7}
+-            {CLEAR_VARIABLE sudoku_x22y8}
+-            {CLEAR_VARIABLE sudoku_x23y11}
+-            {CLEAR_VARIABLE sudoku_x23y12}
+-            {CLEAR_VARIABLE sudoku_x23y7}
+-            {CLEAR_VARIABLE sudoku_x23y8}
+-            {CLEAR_VARIABLE sudoku_x24y11}
+-            {CLEAR_VARIABLE sudoku_x24y7}
+-            {CLEAR_VARIABLE sudoku_x24y9}
+-            {CLEAR_VARIABLE sudoku_x25y10}
+-            {CLEAR_VARIABLE sudoku_x25y9}
+-            {CLEAR_VARIABLE sudoku_x26y10}
+-            {CLEAR_VARIABLE sudoku_x26y8}
+-            {CLEAR_VARIABLE sudoku_x26y9}
+-            {CLEAR_VARIABLE sudoku_x27y10}
+-            {CLEAR_VARIABLE sudoku_x27y9}
+-            {CLEAR_VARIABLE sudoku_x28y9}
+-            {CLEAR_VARIABLE sudoku_x8y9}
+-            {CLEAR_VARIABLE sudoku_x9y10}
+-            {CLEAR_VARIABLE sudoku_x9y9}
+-            {CLEAR_VARIABLE sudoku_locs}
+-
+-            {CLEAR_VARIABLE puzzle}
+-
++            {CLEAR_VARIABLE store}
++            {CLEAR_SUDOKU_VARIABLES}
++            {VARIABLE puzzle 4}
++            #Victory
+             {END_RANDALF}
+         [/then]
+     [/if]
+-#enddef
++    {CLEAR_VARIABLE store}
++[/event]
+ 
+ [event]
+     name=prestart
+@@ -351,84 +414,6 @@
+         [filter_location]
+             terrain=Rr
+         [/filter_location]
+-        [command]
+-            [message]
+-                speaker=narrator
+-                caption=&quot;Select a unit to recruit.&quot;
+-                [option]
+-                    message= _ &quot;1. Skeleton&quot;
+-                    [command]
+-                        {CREATE_SUDOKU_SKELETON $x1 $y1 Skeleton 1}
+-                    [/command]
+-                [/option]
+-                [option]
+-                    message= _ &quot;2. Skeleton Archer&quot;
+-                    [command]
+-                        {CREATE_SUDOKU_SKELETON $x1 $y1 (Skeleton Archer) 2}
+-                    [/command]
+-                [/option]
+-                [option]
+-                    message= _ &quot;3. Chocobone&quot;
+-                    [command]
+-                        {CREATE_SUDOKU_SKELETON $x1 $y1 Chocobone 3}
+-                    [/command]
+-                [/option]
+-                [option]
+-                    message= _ &quot;4. Bone Shooter&quot;
+-                    [command]
+-                        {CREATE_SUDOKU_SKELETON $x1 $y1 (Bone Shooter) 4}
+-                    [/command]
+-                [/option]
+-                [option]
+-                    message= _ &quot;5. Revenant&quot;
+-                    [command]
+-                        {CREATE_SUDOKU_SKELETON $x1 $y1 Revenant 5}
+-                    [/command]
+-                [/option]
+-                [option]
+-                    message= _ &quot;6. Deathblade&quot;
+-                    [command]
+-                        {CREATE_SUDOKU_SKELETON $x1 $y1 Deathblade 6}
+-                    [/command]
+-                [/option]
+-                [option]
+-                    message= _ &quot;7. Death Knight&quot;
+-                    [command]
+-                        {CREATE_SUDOKU_SKELETON $x1 $y1 (Death Knight) 7}
+-                    [/command]
+-                [/option]
+-                [option]
+-                    message= _ &quot;8. Draug&quot;
+-                    [command]
+-                        {CREATE_SUDOKU_SKELETON $x1 $y1 Draug 8}
+-                    [/command]
+-                [/option]
+-                [option]
+-                    message= _ &quot;9. Skeletal Dragon&quot;
+-                    [command]
+-                        {CREATE_SUDOKU_SKELETON $x1 $y1 (Skeletal Dragon) 9}
+-                    [/command]
+-                [/option]
+-            [/message]
+-
+-            #Check if Randalf was victorious
+-            {STORE_UNITS store (
+-            side=1
+-            [not]
+-                description=Randalf
+-            [/not]) no}
+-            [if]
+-                [variable]
+-                    name=store.length
+-                    equals=81
+-                [/variable]
+-                [then]
+-                    {CLEAR_VARIABLE store}
+-                    {NEXT_PUZZLE} #Victory
+-                [/then]
+-            [/if]
+-            {CLEAR_VARIABLE store}
+-        [/command]
+     [/set_menu_item]
+ 
+     #Clear common variables
+@@ -477,6 +462,11 @@
+             equals=1
+         [/variable]
+         [then]
++            #Set overlay
++            {VARIABLE_OP img format (misc/sudoku-overlay-{VALUE}.png)}
++            {VARIABLE SUDOKU_SKELETON_store.overlays $img}
++            {CLEAR_VARIABLE img}
++            #Skeleton can't move or advance
+             {VARIABLE SUDOKU_SKELETON_store.movement_costs.shallow_water 50}
+             {VARIABLE SUDOKU_SKELETON_store.movement_costs.grassland 50}
+             {VARIABLE SUDOKU_SKELETON_store.advanceto null}
+@@ -537,12 +527,12 @@
+     {SET_SUDOKU_HEX 15 2 no}
+     {SET_SUDOKU_HEX 16 4 yes}
+     {SET_SUDOKU_HEX 17 5 yes}
+-    {SET_SUDOKU_HEX 21 6 yes}
++    {SET_SUDOKU_HEX 21 6 no}
+     {SET_SUDOKU_HEX 22 1 yes}
+     {SET_SUDOKU_HEX 26 3 no}
+ 
+     #Set (3,1)
+-    {SET_SUDOKU_HEX 25 3 yes}
++    {SET_SUDOKU_HEX 25 3 no}
+     {SET_SUDOKU_HEX 30 1 no}
+     {SET_SUDOKU_HEX 31 8 no}
+     {SET_SUDOKU_HEX 36 6 no}
+@@ -567,9 +557,9 @@
+     {SET_SUDOKU_HEX 27 4 yes}
+     {SET_SUDOKU_HEX 32 5 no}
+     {SET_SUDOKU_HEX 33 6 no}
+-    {SET_SUDOKU_HEX 39 8 yes}
++    {SET_SUDOKU_HEX 39 8 no}
+     {SET_SUDOKU_HEX 40 2 no}
+-    {SET_SUDOKU_HEX 41 3 yes}
++    {SET_SUDOKU_HEX 41 3 no}
+     {SET_SUDOKU_HEX 47 1 no}
+     {SET_SUDOKU_HEX 48 9 no}
+     {SET_SUDOKU_HEX 53 7 yes}
+@@ -599,7 +589,7 @@
+     #Set (2,3)
+     {SET_SUDOKU_HEX 54 1 no}
+     {SET_SUDOKU_HEX 58 6 yes}
+-    {SET_SUDOKU_HEX 59 8 yes}
++    {SET_SUDOKU_HEX 59 8 no}
+     {SET_SUDOKU_HEX 63 9 no}
+     {SET_SUDOKU_HEX 64 7 yes}
+     {SET_SUDOKU_HEX 65 2 no}
+@@ -610,7 +600,7 @@
+     #Set (3,3)
+     {SET_SUDOKU_HEX 71 7 no}
+     {SET_SUDOKU_HEX 73 2 yes}
+-    {SET_SUDOKU_HEX 74 6 yes}
++    {SET_SUDOKU_HEX 74 6 no}
+     {SET_SUDOKU_HEX 75 3 no}
+     {SET_SUDOKU_HEX 76 4 yes}
+     {SET_SUDOKU_HEX 77 5 yes}
+@@ -658,7 +648,7 @@
+     [if]
+         [variable]
+             name=num_eight_moves
+-            greater_than=20
++            greater_than=30
+         [/variable]
+         [then]
+             {VARIABLE type Banebow}
+@@ -667,7 +657,7 @@
+             [if]
+                 [variable]
+                     name=num_eight_moves
+-                    greater_than=10
++                    greater_than=15
+                 [/variable]
+                 [then]
+                     {VARIABLE type (Bone Shooter)}
+@@ -750,6 +740,7 @@
+     {CLEAR_VARIABLE x}
+     {CLEAR_VARIABLE y}
+     {CLEAR_VARIABLE value}
++    {CLEAR_VARIABLE terrain}
+ #enddef
+ 
+ #define SET_EIGHT_HEX X Y VALUE
+@@ -1045,7 +1036,7 @@
+                     [/or]
+                 [/and]
+                 [then]
+-                    {NEXT_PUZZLE}
++                    {CLEAR_EIGHT_VARIABLES}
+                     {INIT_SUDOKU}
+                 [/then]
+             [/if]
+@@ -1183,7 +1174,6 @@
+                             {MOVE_UNIT (description=Randalf) 31 16}
+ 
+                             #Start eight-puzzle
+-                            {NEXT_PUZZLE}
+                             {INIT_EIGHT_PUZZLE}
+                         [/then]
+                     [/if]
+@@ -1213,6 +1203,8 @@
+ #enddef
+ 
+ #define INIT_SOKOBAN
++    {VARIABLE puzzle 1}
++
+     #Kill bats
+     [kill]
+         side=4
+@@ -1316,6 +1308,8 @@
+ #enddef
+ 
+ #define INIT_EIGHT_PUZZLE
++    {VARIABLE puzzle 2}
++
+     #Kill bats
+     [kill]
+         side=4
+@@ -1494,6 +1488,8 @@
+ 
+     {RESET_RANDALF}
+ 
++    {VARIABLE puzzle 3}
++
+     #Kill bats
+     [kill]
+         side=4
+@@ -1631,111 +1627,8 @@
+         description=Randalf
+     [/filter]
+ 
+-    {CLEAR_VARIABLE num_eight_moves}
+-    {CLEAR_VARIABLE eight_randalf}
+-    {CLEAR_VARIABLE empty_hex}
+-    {CLEAR_VARIABLE eight_x24y14}
+-    {CLEAR_VARIABLE eight_x26y13}
+-    {CLEAR_VARIABLE eight_x26y15}
+-    {CLEAR_VARIABLE eight_x28y12}
+-    {CLEAR_VARIABLE eight_x28y14}
+-    {CLEAR_VARIABLE eight_x28y16}
+-    {CLEAR_VARIABLE eight_x30y13}
+-    {CLEAR_VARIABLE eight_x30y15}
+-    {CLEAR_VARIABLE eight_x32y14}
+-
+-    {CLEAR_VARIABLE sudoku_unit_1}
+-    {CLEAR_VARIABLE sudoku_unit_2}
+-    {CLEAR_VARIABLE sudoku_unit_3}
+-    {CLEAR_VARIABLE sudoku_unit_4}
+-    {CLEAR_VARIABLE sudoku_unit_5}
+-    {CLEAR_VARIABLE sudoku_unit_6}
+-    {CLEAR_VARIABLE sudoku_unit_7}
+-    {CLEAR_VARIABLE sudoku_unit_8}
+-    {CLEAR_VARIABLE sudoku_unit_9}
+-    {CLEAR_VARIABLE sudoku_x10y10}
+-    {CLEAR_VARIABLE sudoku_x10y8}
+-    {CLEAR_VARIABLE sudoku_x10y9}
+-    {CLEAR_VARIABLE sudoku_x11y10}
+-    {CLEAR_VARIABLE sudoku_x11y9}
+-    {CLEAR_VARIABLE sudoku_x12y11}
+-    {CLEAR_VARIABLE sudoku_x12y7}
+-    {CLEAR_VARIABLE sudoku_x12y9}
+-    {CLEAR_VARIABLE sudoku_x13y11}
+-    {CLEAR_VARIABLE sudoku_x13y12}
+-    {CLEAR_VARIABLE sudoku_x13y7}
+-    {CLEAR_VARIABLE sudoku_x13y8}
+-    {CLEAR_VARIABLE sudoku_x14y10}
+-    {CLEAR_VARIABLE sudoku_x14y11}
+-    {CLEAR_VARIABLE sudoku_x14y12}
+-    {CLEAR_VARIABLE sudoku_x14y6}
+-    {CLEAR_VARIABLE sudoku_x14y7}
+-    {CLEAR_VARIABLE sudoku_x14y8}
+-    {CLEAR_VARIABLE sudoku_x15y11}
+-    {CLEAR_VARIABLE sudoku_x15y12}
+-    {CLEAR_VARIABLE sudoku_x15y7}
+-    {CLEAR_VARIABLE sudoku_x15y8}
+-    {CLEAR_VARIABLE sudoku_x16y11}
+-    {CLEAR_VARIABLE sudoku_x16y13}
+-    {CLEAR_VARIABLE sudoku_x16y5}
+-    {CLEAR_VARIABLE sudoku_x16y7}
+-    {CLEAR_VARIABLE sudoku_x16y9}
+-    {CLEAR_VARIABLE sudoku_x17y10}
+-    {CLEAR_VARIABLE sudoku_x17y13}
+-    {CLEAR_VARIABLE sudoku_x17y14}
+-    {CLEAR_VARIABLE sudoku_x17y5}
+-    {CLEAR_VARIABLE sudoku_x17y6}
+-    {CLEAR_VARIABLE sudoku_x17y9}
+-    {CLEAR_VARIABLE sudoku_x18y10}
+-    {CLEAR_VARIABLE sudoku_x18y12}
+-    {CLEAR_VARIABLE sudoku_x18y13}
+-    {CLEAR_VARIABLE sudoku_x18y14}
+-    {CLEAR_VARIABLE sudoku_x18y4}
+-    {CLEAR_VARIABLE sudoku_x18y5}
+-    {CLEAR_VARIABLE sudoku_x18y6}
+-    {CLEAR_VARIABLE sudoku_x18y8}
+-    {CLEAR_VARIABLE sudoku_x18y9}
+-    {CLEAR_VARIABLE sudoku_x19y10}
+-    {CLEAR_VARIABLE sudoku_x19y13}
+-    {CLEAR_VARIABLE sudoku_x19y14}
+-    {CLEAR_VARIABLE sudoku_x19y5}
+-    {CLEAR_VARIABLE sudoku_x19y6}
+-    {CLEAR_VARIABLE sudoku_x19y9}
+-    {CLEAR_VARIABLE sudoku_x20y11}
+-    {CLEAR_VARIABLE sudoku_x20y13}
+-    {CLEAR_VARIABLE sudoku_x20y5}
+-    {CLEAR_VARIABLE sudoku_x20y7}
+-    {CLEAR_VARIABLE sudoku_x20y9}
+-    {CLEAR_VARIABLE sudoku_x21y11}
+-    {CLEAR_VARIABLE sudoku_x21y12}
+-    {CLEAR_VARIABLE sudoku_x21y7}
+-    {CLEAR_VARIABLE sudoku_x21y8}
+-    {CLEAR_VARIABLE sudoku_x22y10}
+-    {CLEAR_VARIABLE sudoku_x22y11}
+-    {CLEAR_VARIABLE sudoku_x22y12}
+-    {CLEAR_VARIABLE sudoku_x22y6}
+-    {CLEAR_VARIABLE sudoku_x22y7}
+-    {CLEAR_VARIABLE sudoku_x22y8}
+-    {CLEAR_VARIABLE sudoku_x23y11}
+-    {CLEAR_VARIABLE sudoku_x23y12}
+-    {CLEAR_VARIABLE sudoku_x23y7}
+-    {CLEAR_VARIABLE sudoku_x23y8}
+-    {CLEAR_VARIABLE sudoku_x24y11}
+-    {CLEAR_VARIABLE sudoku_x24y7}
+-    {CLEAR_VARIABLE sudoku_x24y9}
+-    {CLEAR_VARIABLE sudoku_x25y10}
+-    {CLEAR_VARIABLE sudoku_x25y9}
+-    {CLEAR_VARIABLE sudoku_x26y10}
+-    {CLEAR_VARIABLE sudoku_x26y8}
+-    {CLEAR_VARIABLE sudoku_x26y9}
+-    {CLEAR_VARIABLE sudoku_x27y10}
+-    {CLEAR_VARIABLE sudoku_x27y9}
+-    {CLEAR_VARIABLE sudoku_x28y9}
+-    {CLEAR_VARIABLE sudoku_x8y9}
+-    {CLEAR_VARIABLE sudoku_x9y10}
+-    {CLEAR_VARIABLE sudoku_x9y9}
+-    {CLEAR_VARIABLE sudoku_locs}
+-
++    {CLEAR_EIGHT_VARIABLES}
++    {CLEAR_SUDOKU_VARIABLES}
+     {CLEAR_VARIABLE puzzle}
+ 
+     {END_RANDALF}
+@@ -1851,14 +1744,14 @@
+         [then]
+             #Store bats
+             {STORE_UNITS store (race=bats) no}
+-            
++
+             #If there are 2 or less bats, spawn another
+             [if]
+                 [variable]
+                     name=store.length
+                     less_than=3
+                 [/variable]
+-                [then]            
++                [then]
+                     [unit]
+                         side=4
+                         type=Vampire Bat
+
+Modified: branches/1.4/Raajal/Raajal/utils/mission-red-sea.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/utils/mission-red-sea.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/utils/mission-red-sea.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -1,3 +1,5 @@
++#textdomain wesnoth-Raajal
++
+ disallow_recall=yes
+ next_scenario=null
+ victory_when_enemies_defeated=no
+@@ -24,7 +26,7 @@
+     controller=ai
+     no_leader=yes
+     [ai]
+-        protect_leader=10.0
++        protect_leader=10
+         protect_leader_radius=7
+         caution=0.0
+         aggression=1.0
+@@ -63,7 +65,6 @@
+             icon=items/potion-red.png
+             type=arcane
+             range=melee
+-            special=magical
+             damage=1
+             number=1
+             [sound]
+@@ -92,10 +93,12 @@
+         {VARIABLE witch_store.goto_x 0}
+         {VARIABLE witch_store.goto_y 0}
+         {UNSTORE_AT witch_store 1 19 38}
+-        {UNIT_CREATE (Sea Serpent Anna) Balthor ( _ &quot;Balthor&quot;) 1 18 38 (canrecruit=1)}
++        {UNIT_CREATE (Sea Serpent Anna) Balthor ( _ &quot;Balthor&quot;) 1 18 38 (canrecruit=yes)}
+ 
+         {GIVE_POTION potion1 type=Witch}
+ 
++        {PARTIAL_HEAL type=Witch 16}
++
+         {RED_SEA_SHARK 16 37}
+         {RED_SEA_SHARK 17 37}
+         {RED_SEA_SHARK 18 36}
+@@ -176,6 +179,8 @@
+         [/unstore_unit]
+         {NEXT i}
+ 
++        {CLEAR_VARIABLE var}
++        {CLEAR_VARIABLE val}
+         {CLEAR_VARIABLE soul_store}
+ 
+         #Souls belong to Raajal
+@@ -205,7 +210,7 @@
+             [if]
+                 [have_unit]
+                     side=1
+-                    canrecruit=1
++                    canrecruit=yes
+                     [not]
+                         type=Witch
+                     [/not]
+@@ -229,7 +234,7 @@
+                     #Note: Balthor counts as a human
+                     {UNIT_MSG (
+                     side=1
+-                    canrecruit=1
++                    canrecruit=yes
+                     [not]
+                         type=Witch
+                     [/not]
+@@ -261,12 +266,12 @@
+                         [then]
+                             {UNIT_MSG (
+                             side=1
+-                            canrecruit=1) ( _ &quot;Raajal is unstoppable!&quot;)}
++                            canrecruit=yes) ( _ &quot;Raajal is unstoppable!&quot;)}
+                         [/then]
+                         [else]
+                             {UNIT_MSG (
+                             side=1
+-                            canrecruit=1) ( _ &quot;How are we to defeat Raajal if he does not show up?&quot;)}
++                            canrecruit=yes) ( _ &quot;How are we to defeat Raajal if he does not show up?&quot;)}
+                         [/else]
+                     [/if]
+                     [endlevel]
+@@ -332,85 +337,74 @@
+     #Block the witch cave if they didn't arrive yet
+     [if]
+         [variable]
+-            name=witches_arrive_hour
+-            greater_than=0
+-        [/variable]
+-        [variable]
+             name=hour_number
+             less_than=$witches_arrive_hour
+         [/variable]
+         [then]
+             [terrain]
+-                x=4,5,6,7,8
+-                y=32,32,31,31,30
++                x=4,5,6,7,8,12
++                y=32,32,31,31,30,32
+                 terrain=Y3
+             [/terrain]
+         [/then]
+     [/if]
+ 
+-    #Block Randalf's cave if he didn't arrive
++    #Block Raajal's and Randalf's caves if Raajal hasn't arrived
+     [if]
+-        [variable]
+-            name=raajal_randalf_arrive_hour
+-            greater_than=0
+-        [/variable]
+-        [variable]
+-            name=hour_number
+-            less_than=$raajal_randalf_arrive_hour
+-        [/variable]
+-        [then]
+-            [terrain]
+-                x=31,32,33
+-                y=35,34,34
+-                terrain=Y3
+-            [/terrain]
+-        [/then]
+-    [/if]
+-
+-    #Block Raajal's cave if he hasn't arrived
+-    [if]
+         [not]
+             [have_unit]
+                 description=Raajal
+             [/have_unit]
+         [/not]
+         [then]
++            #Raajal's cave
+             [terrain]
+                 x=10,11,12,13
+                 y=9,9,8,8
+                 terrain=Y3
+             [/terrain]
++            #Randalf's cave
++            [terrain]
++                x=31,32,33
++                y=35,34,34
++                terrain=Y3
++            [/terrain]
+         [/then]
+         [else]
+             #Show his boat
+-            {PLACE_IMAGE units/transport/boat.png 1 4}
++            {PLACE_IMAGE units/transport/boat.png 40 40}
+         [/else]
+     [/if]
+ 
++    {VARIABLE note ( _ &quot;(1)Witches can steal witch souls and humans can steal human souls by attacking with potion; (2)Souls return to Raajal's side when killed&quot;)}
++    [if]
++        [variable]
++            name=raajal_randalf_arrive_hour
++            greater_than=0
++        [/variable]
++        [then]
++            {VARIABLE note ( _ &quot;(1)Witches can steal witch souls and humans can steal human souls by attacking with potion; (2)Raajal and Randalf can steal each other's souls and hitpoints; (3)Souls return to their owner's side when killed&quot;)}
++        [/then]
++    [/if]
+     [objectives]
+-        summary=&quot;Steal souls from Raajal; attack his castle when ready&quot;
++        note=$note
+         victory_string=&quot;End of day:&quot;
+         [objective]
+             condition=win
+-            description=&quot;Death of Raajal&quot;
++            description=_&quot;Death of Raajal&quot;
+         [/objective]
+         [objective]
+             condition=win
+-            description=&quot;Or, end of turns (you can continue next day)&quot;
++            description=_&quot;Or, end of turns (you can continue next day)&quot;
+         [/objective]
+         [objective]
+             condition=lose
+-            description=&quot;Death of all leaders&quot;
++            description=_&quot;Death of all leaders&quot;
+         [/objective]
+-        note=&quot;
+-How to steal a soul:
+-  1. Attack with potion (Raajal keeps his hp)
+-        (a) Witches can only steal witch souls
+-        (b) Humans can only steal human souls
+-  2. Attack with Randalf's soul (Raajal loses hp)&quot;
+     [/objectives]
+-
+-    #If Ardella's daughter is a soul, make sure here name is Anna (not Balthor)
++    {CLEAR_VARIABLE note}
++    
++    #If Ardella's daughter is a soul, make sure her name is Anna (not Balthor)
+     [if]
+         [have_unit]
+             type=Lost Soul
+@@ -589,26 +583,26 @@
+         [/variable]
+         [then]
+             {ACTIVATE_GUARDIANS (
+-                type=Lost Soul
+-                side=2
++            type=Lost Soul
++            side=2
++            [wml_filter]
++                ai_special=guardian
++            [/wml_filter]
++            [and]
+                 [wml_filter]
+-                    ai_special=guardian
++                    variation=dwarvish-dragonguard
+                 [/wml_filter]
+-                [and]
++                [or]
+                     [wml_filter]
+-                        variation=dwarvish-dragonguard
++                        variation=dwarvish-berserker
+                     [/wml_filter]
+-                    [or]
+-                        [wml_filter]
+-                            variation=dwarvish-berserker
+-                        [/wml_filter]
+-                    [/or]
+-                    [or]
+-                        [wml_filter]
+-                            variation=dwarvish-lord
+-                        [/wml_filter]
+-                    [/or]
+-                [/and]
++                [/or]
++                [or]
++                    [wml_filter]
++                        variation=dwarvish-lord
++                    [/wml_filter]
++                [/or]
++            [/and]
+             )}
+         [/then]
+     [/if]
+@@ -621,26 +615,26 @@
+         [/variable]
+         [then]
+             {ACTIVATE_GUARDIANS (
+-                type=Lost Soul
+-                side=2
++            type=Lost Soul
++            side=2
++            [wml_filter]
++                ai_special=guardian
++            [/wml_filter]
++            [and]
+                 [wml_filter]
+-                    ai_special=guardian
++                    variation=elvish-sharpshooter
+                 [/wml_filter]
+-                [and]
++                [or]
+                     [wml_filter]
+-                        variation=elvish-sharpshooter
++                        variation=elvish-marksman
+                     [/wml_filter]
+-                    [or]
+-                        [wml_filter]
+-                            variation=elvish-marksman
+-                        [/wml_filter]
+-                    [/or]
+-                    [or]
+-                        [wml_filter]
+-                            variation=elvish-champion
+-                        [/wml_filter]
+-                    [/or]
+-                [/and]
++                [/or]
++                [or]
++                    [wml_filter]
++                        variation=elvish-champion
++                    [/wml_filter]
++                [/or]
++            [/and]
+             )}
+         [/then]
+     [/if]
+@@ -729,17 +723,12 @@
+             equals=$raajal_randalf_arrive_hour
+         [/variable]
+         [then]
+-            #Unblock Randalf and Raajal's caves
++            #Unblock Raajal's caves
+             [terrain]
+                 x=10,11,12,13
+                 y=9,9,8,8
+                 terrain=Y2
+             [/terrain]
+-            [terrain]
+-                x=31,32,33
+-                y=35,34,34
+-                terrain=Y2
+-            [/terrain]
+ 
+             {MODIFY_UNIT side=3 side 2}
+ 
+@@ -804,6 +793,13 @@
+             equals=$randalf_arrive_cave_hour
+         [/variable]
+         [then]
++            #Unblock Randalf's cave
++            [terrain]
++                x=31,32,33
++                y=35,34,34
++                terrain=Y2
++            [/terrain]
++
+             {PLACE_IMAGE units/transport/boat.png 40 40}
+             {UNSTORE_AT randalf_store 1 37 38}
+             {UNSTORE_AT mordoc_store 2 38 39}
+@@ -833,6 +829,7 @@
+                     [variables]
+                         owner=Randalf
+                     [/variables]
++                    overlays=misc/soul-overlay-randalf.png
+                     )}
+                 [/then]
+                 [else]
+@@ -841,6 +838,7 @@
+                     [variables]
+                         owner=Randalf
+                     [/variables]
++                    overlays=misc/soul-overlay-randalf.png
+                     )}
+                 [/else]
+             [/if]
+@@ -872,20 +870,20 @@
+         [then]
+             #Unblock witch cave
+             [terrain]
+-                x=4,5,6,7,8
+-                y=32,32,31,31,30
++                x=4,5,6,7,8,12
++                y=32,32,31,31,30,32
+                 terrain=Y2
+             [/terrain]
+ 
+             #Unstore Angalas survivors
+-            {UNSTORE_AT angalas_survivor_store 1 (8,9) (35-38,37)}
++            {UNSTORE_AT angalas_survivor_store 1 (8,9) (36-38,37-38)}
+             {MODIFY_UNIT (
+             x=8,9
+-            y=35-38,37) facing sw}
++            y=36-38,37-38) facing sw}
+             #Let them move on castle terrain again
+             {MODIFY_UNIT (
+             x=8,9
+-            y=35-38,37) movement_costs.castle 1}
++            y=36-38,37-38) movement_costs.castle 1}
+ 
+             {UNSTORE_AT angalas_witch_store 1 5 (35-39)}
+             {MODIFY_UNIT (
+@@ -899,6 +897,9 @@
+                 side=1
+             [/redraw]
+ 
++            #Heal witches and angalas survivors
++            {PARTIAL_HEAL (x=5-9,y=35-39) 16}
++
+             {UNIT_MSG (x,y=5,35) ( _ &quot;Wait here. We will lure the souls towards you.&quot;)}
+             {UNIT_MSG (x,y=5,36) ( _ &quot;Remember, the potion will only work on souls that knew you intimately before their demise.&quot;)}
+ 
+@@ -921,7 +922,7 @@
+             equals=$orcs_arrive_hour
+         [/variable]
+         [then]
+-            {UNIT_CREATE (Pirate Galleon) (Theomund's Galleon) ( _ &quot;Theomund's Galleon&quot;) 1 19 39 (canrecruit=1)}
++            {UNIT_CREATE (Pirate Galleon) (Theomund's Galleon) ( _ &quot;Theomund's Galleon&quot;) 1 19 39 ()}
+             {UNIT_CREATE (Pirate Galleon) (Orc Galleon 1) ( _ &quot;Barruk's Galleon&quot;) 1 18 39 ()}
+             {UNIT_CREATE (Pirate Galleon) (Orc Galleon 2) ( _ &quot;Orc Galleon&quot;) 1 16 40 ()}
+             {UNIT_CREATE (Pirate Galleon) (Orc Galleon 3) ( _ &quot;Orc Galleon&quot;) 1 17 40 ()}
+@@ -935,91 +936,154 @@
+ 
+             {UNIT_MSG (
+             description=Orc Galleon 1
+-            caption=Barruk) ( _ &quot;Death to Raajal!&quot;)}
++            caption=_&quot;Barruk&quot;) ( _ &quot;Death to Raajal!&quot;)}
+         [/then]
+     [/if]
+ [/event]
+ 
+-[event]
+-    name=die
+-    [filter]
+-        description=Theomund's Galleon
+-    [/filter]
++#define FILTER_NOT_SURROUNDED_BY_WALLS X Y RADIUS
++    #On cave wall
++    terrain=Xu
++    #Not adjacent to six cavewalls
++    [not]
++        [filter_adjacent_location]
++            terrain=Xu
++            count=6
++        [/filter_adjacent_location]
++    [/not]
++    #No unit on hex
++    [not]
++        [filter]
++        [/filter]
++    [/not]
++    #And it is within the specified radius
++    [and]
++        x={X}
++        y={Y}
++        radius={RADIUS}
++    [/and]
++#enddef
++
++#define RED_SEA_GALLEON_DESTROY DESC WML_UNITS
++    [event]
++        name=die
++        [filter]
++            description={DESC}
++        [/filter]
++
++        [kill]
++            description={DESC}
++        [/kill]
++
++        {WML_UNITS}
++    
++        #Store all units not adjacent to a non-cavewall hex
++        {STORE_UNITS UNIT_store (
++            side=1
++            [filter_location]
++                terrain=Xu
++                [filter_adjacent_location]
++                    terrain=Xu
++                    count=6
++                [/filter_adjacent_location]
++            [/filter_location]) no}
++
++        #For each unit on a cavewall and surrounded by cavewalls
++        {FOREACH UNIT_store UNIT_i}
++        {VARIABLE_OP UNIT_x to_variable UNIT_store[$UNIT_i].x}
++        {VARIABLE_OP UNIT_y to_variable UNIT_store[$UNIT_i].y}
++        #Find the nearest cavewall location that isn't surrounded by cavewalls
++        {VARIABLE RADIUS 1}
++        {VARIABLE MAX_RADIUS 30}
++        [while]
++            [variable]
++                name=RADIUS
++                less_than=$MAX_RADIUS
++            [/variable]
++            [not]
++                [have_location]
++                    {FILTER_NOT_SURROUNDED_BY_WALLS $UNIT_x $UNIT_y $RADIUS}
++                [/have_location]
++            [/not]
++            [do]
++                {VARIABLE_OP RADIUS add 1}
++            [/do]
++        [/while]
++        #Store the nearest locations
++        [store_locations]
++            variable=UNIT_locs
++            {FILTER_NOT_SURROUNDED_BY_WALLS $UNIT_x $UNIT_y $RADIUS}
++        [/store_locations]
++        {MOVE_UNIT (
++            x=$UNIT_x
++            y=$UNIT_y) $UNIT_locs[0].x $UNIT_locs[0].y}
++        {NEXT UNIT_i}
++    
++        {CLEAR_VARIABLE MAX_RADIUS}
++        {CLEAR_VARIABLE RADIUS}
++        {CLEAR_VARIABLE UNIT_x}
++        {CLEAR_VARIABLE UNIT_y}
++        {CLEAR_VARIABLE UNIT_store}
++        {CLEAR_VARIABLE UNIT_locs}
++    [/event]
++#enddef
++
++{RED_SEA_GALLEON_DESTROY (Theomund's Galleon) (
+     {UNSTORE_AT theomund_store 1 $x1 $y1}
+     {UNSTORE_AT horomir_store 1 $x1 $y1}
+     {FULL_HEAL (description=King Theomund)}
+     {FULL_HEAL (description=Horomir)}
+-[/event]
++)}
+ 
+-[event]
+-    name=die
+-    [filter]
+-        description=Orc Galleon 1
+-    [/filter]
++{RED_SEA_GALLEON_DESTROY (Orc Galleon 1) (
+     {UNSTORE_AT theomund_orc_store 1 $x1 $y1}
+-    {FULL_HEAL race=orc}
++    {FULL_HEAL description=Barruk}
++    {FULL_HEAL description=Olag}
++    {FULL_HEAL description=Igok}
++    {FULL_HEAL (type=Orcish Assassin)}
++    {FULL_HEAL (type=Orcish Slayer)}
+     {MODIFY_UNIT (description=Barruk) canrecruit 0}
+-[/event]
++)}
+ 
+-[event]
+-    name=die
+-    [filter]
+-        description=Orc Galleon 2
+-    [/filter]
++{RED_SEA_GALLEON_DESTROY (Orc Galleon 2) (
+     {NOTRAIT_UNIT 1 (Orcish Crossbowman) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Archer) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Archer) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Archer) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Archer) $x1 $y1}
+-[/event]
++)}
+ 
+-[event]
+-    name=die
+-    [filter]
+-        description=Orc Galleon 3
+-    [/filter]
++{RED_SEA_GALLEON_DESTROY (Orc Galleon 3) (
+     {NOTRAIT_UNIT 1 (Orcish Warrior) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Grunt) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Grunt) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Grunt) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Grunt) $x1 $y1}
+-[/event]
++)}
+ 
+-[event]
+-    name=die
+-    [filter]
+-        description=Orc Galleon 4
+-    [/filter]
++{RED_SEA_GALLEON_DESTROY (Orc Galleon 4) (
+     {NOTRAIT_UNIT 1 (Orcish Slurbow) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Archer) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Archer) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Archer) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Archer) $x1 $y1}
+-[/event]
++)}
+ 
+-[event]
+-    name=die
+-    [filter]
+-        description=Orc Galleon 5
+-    [/filter]
++{RED_SEA_GALLEON_DESTROY (Orc Galleon 5) (
+     {NOTRAIT_UNIT 1 (Orcish Ruler) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Leader) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Leader) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Leader) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Grunt) $x1 $y1}
+-[/event]
++)}
+ 
+-[event]
+-    name=die
+-    [filter]
+-        description=Orc Galleon 6
+-    [/filter]
++{RED_SEA_GALLEON_DESTROY (Orc Galleon 6) (
+     {NOTRAIT_UNIT 1 (Orcish Leader) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Grunt) $x1 $y1}
+-    {NOTRAIT_UNIT 1 (Orcish Assassin) $x1 $y1}
++    {NOTRAIT_UNIT 1 (Orcish Crossbowman) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Archer) $x1 $y1}
+     {NOTRAIT_UNIT 1 (Orcish Grunt) $x1 $y1}
+-[/event]
++)}
+ 
+ #After first idle soul attacked, all idle souls will be controlled by AI
+ [event]
+@@ -1050,6 +1114,8 @@
+         [/filter]
+     [/store_unit]
+     {MODIFY_UNIT (description={DESC}) type ({POWER_TYPE})}
++    {MODIFY_UNIT (description={DESC}) hitpoints $SOUL_POWER_STORE.hitpoints}
++    {MODIFY_UNIT (description={DESC}) max_hitpoints $SOUL_POWER_STORE.max_hitpoints}
+     {FACE_X (description={DESC}) ({X})}
+ 
+     [redraw] [/redraw]
+@@ -1160,6 +1226,97 @@
+     {CLEAR_VARIABLE soul_hp}
+ #enddef
+ 
++#define FIND_EMPTY_SOUL_CASTLE X0 Y0 X1 Y1 X2 Y2 X3 Y3 X4 Y4 X5 Y5 X6 Y6 X7 Y7 X8 Y8 VAR_X VAR_Y
++    {VARIABLE EMPTY_x0 ({X0})}
++    {VARIABLE EMPTY_y0 ({Y0})}
++    {VARIABLE EMPTY_x1 ({X1})}
++    {VARIABLE EMPTY_y1 ({Y1})}
++    {VARIABLE EMPTY_x2 ({X2})}
++    {VARIABLE EMPTY_y2 ({Y2})}
++    {VARIABLE EMPTY_x3 ({X3})}
++    {VARIABLE EMPTY_y3 ({Y3})}
++    {VARIABLE EMPTY_x4 ({X4})}
++    {VARIABLE EMPTY_y4 ({Y4})}
++    {VARIABLE EMPTY_x5 ({X5})}
++    {VARIABLE EMPTY_y5 ({Y5})}
++    {VARIABLE EMPTY_x6 ({X6})}
++    {VARIABLE EMPTY_y6 ({Y6})}
++    {VARIABLE EMPTY_x7 ({X7})}
++    {VARIABLE EMPTY_y7 ({Y7})}
++    {VARIABLE EMPTY_x8 ({X8})}
++    {VARIABLE EMPTY_y8 ({Y8})}
++
++    #Initialize x and y variables to the center of the first castle
++    {VARIABLE ({VAR_X}) ({X0})}
++    {VARIABLE ({VAR_Y}) ({Y0})}
++
++    #Search the castles in order for an empty castle hex
++    {VARIABLE EMPTY_i 0}
++    [while]
++        [variable]
++            name=EMPTY_i
++            less_than=9
++        [/variable]
++        [do]
++            {VARIABLE_OP EMPTY_x to_variable EMPTY_x$EMPTY_i}
++            {VARIABLE_OP EMPTY_y to_variable EMPTY_y$EMPTY_i}
++
++            #Store empty castle hexes
++            [store_locations]
++                variable=EMPTY_locs
++                [not]
++                    [filter]
++                    [/filter]
++                [/not]
++                [and]
++                    x=$EMPTY_x
++                    y=$EMPTY_y
++                    radius=1
++                [/and]
++            [/store_locations]
++
++            #If an empty castle hex was found, set x and y variables and exit loop
++            [if]
++                [variable]
++                    name=EMPTY_locs.length
++                    greater_than=0
++                [/variable]
++                [then]
++                    {VARIABLE ({VAR_X}) $EMPTY_locs[0].x}
++                    {VARIABLE ({VAR_Y}) $EMPTY_locs[0].y}
++                    {VARIABLE EMPTY_i 100} #Exit loop
++                [/then]
++                [else]
++                    {VARIABLE_OP EMPTY_i add 1}
++                [/else]
++            [/if]
++        [/do]
++    [/while]
++
++    {CLEAR_VARIABLE EMPTY_i}
++    {CLEAR_VARIABLE EMPTY_locs}
++    {CLEAR_VARIABLE EMPTY_x}
++    {CLEAR_VARIABLE EMPTY_y}
++    {CLEAR_VARIABLE EMPTY_x0}
++    {CLEAR_VARIABLE EMPTY_y0}
++    {CLEAR_VARIABLE EMPTY_x1}
++    {CLEAR_VARIABLE EMPTY_y1}
++    {CLEAR_VARIABLE EMPTY_x2}
++    {CLEAR_VARIABLE EMPTY_y2}
++    {CLEAR_VARIABLE EMPTY_x3}
++    {CLEAR_VARIABLE EMPTY_y3}
++    {CLEAR_VARIABLE EMPTY_x4}
++    {CLEAR_VARIABLE EMPTY_y4}
++    {CLEAR_VARIABLE EMPTY_x5}
++    {CLEAR_VARIABLE EMPTY_y5}
++    {CLEAR_VARIABLE EMPTY_x6}
++    {CLEAR_VARIABLE EMPTY_y6}
++    {CLEAR_VARIABLE EMPTY_x7}
++    {CLEAR_VARIABLE EMPTY_y7}
++    {CLEAR_VARIABLE EMPTY_x8}
++    {CLEAR_VARIABLE EMPTY_y8}
++#enddef
++
+ [event]
+     name=die
+     first_time_only=no
+@@ -1253,54 +1410,42 @@
+         [/variable]
+         [then]
+             #Raajal's souls go back to one of his soul castles
+-            {VARIABLE s_side 2}
+-            #Find empty castle hexes
+-            [store_locations]
+-                variable=locs
+-                terrain=Y4
+-                [not]
+-                    x=$x1
+-                    y=$y1
+-                    radius=2
+-                [/not]
+-                [not]
+-                    [filter]
+-                    [/filter]
+-                [/not]
+-                {CASTLE_FILTER}
+-            [/store_locations]
++            {VARIABLE s_side 2}         
++
++            #If Raajal was attacked, find an empty soul castle hex near his castle
+             [if]
+                 [variable]
+-                    name=locs.length
+-                    greater_than=0
++                    name=raajal_attacked
++                    equals=yes
+                 [/variable]
+                 [then]
++                    {FIND_EMPTY_SOUL_CASTLE 14 15 2 15 20 2 28 4 16 24 30 22 38 2 36 10 38 27 s_x s_y}
++                [/then]
++                [else]
++                    #If you have units near the right village, find a castle hex near it
+                     [if]
+-                        [variable]
+-                            name=raajal_attacked
+-                            equals=yes
+-                        [/variable]
++                        [have_location]
++                            [filter]
++                                side=1
++                            [/filter]
++                            [and]
++                                x,y=36,10
++                                radius=8
++                            [/and]
++                        [/have_location]
+                         [then]
+-                            #If Raajal was attacked, soul goes to the left side
+-                            {VARIABLE n 0}
++                            {FIND_EMPTY_SOUL_CASTLE 36 10 28 4 38 2 30 22 20 2 38 27 14 15 2 15 16 24 s_x s_y}
+                         [/then]
++    
++                        #Otherwise, find a castle hex near the left villages
+                         [else]
+-                            #Otherwise, soul goes to right side
+-                            {VARIABLE n $locs.length}
+-                            {VARIABLE_OP n add -1}
++                           {FIND_EMPTY_SOUL_CASTLE 16 24 30 22 14 15 2 15 20 2 28 4 38 2 36 10 38 27 s_x s_y}
+                         [/else]
+                     [/if]
+-                    {VARIABLE_OP s_x to_variable locs[$n].x}
+-                    {VARIABLE_OP s_y to_variable locs[$n].y}
+-                    {CLEAR_VARIABLE n}
+-                [/then]
+-                [else]
+-                    #All castle hexes are occupied (shouldn't happen)
+-                    {VARIABLE s_x 20}
+-                    {VARIABLE s_y 2}
+-                [/else]
++                 [/else]
+             [/if]
+         [/then]
++
+         [else]
+             #Randalf's souls go to the bottom of the map
+             {VARIABLE s_side 1}
+@@ -1322,11 +1467,29 @@
+         side=$s_side
+     [/move_unit_fake]
+ 
+-    {UNIT_CREATE ($s_type) ($s_desc) ($s_udesc) $s_side $s_x $s_y (
+-    variation=$s_var
+-    [variables]
+-        owner=$s_owner
+-    [/variables])}
++    [if]
++        [variable]
++            name=s_owner
++            equals=Randalf
++        [/variable]
++        [then]
++            {UNIT_CREATE ($s_type) ($s_desc) ($s_udesc) $s_side $s_x $s_y (
++            variation=$s_var
++            [variables]
++                owner=$s_owner
++            [/variables]
++            overlays=misc/soul-overlay-randalf.png
++            )}
++        [/then]
++        [else]
++            {UNIT_CREATE ($s_type) ($s_desc) ($s_udesc) $s_side $s_x $s_y (
++            variation=$s_var
++            [variables]
++                owner=$s_owner
++            [/variables]
++            )}
++        [/else]
++    [/if]
+ 
+     {MODIFY_UNIT (description=$s_desc) movement_costs.cavewall 99}
+     {MODIFY_UNIT (description=$s_desc) attacks_left 0}
+@@ -1447,7 +1610,9 @@
+                         [have_unit]
+                             x=$nearest_x
+                             y=$nearest_y
+-                            {FILTER_SPECIAL_UNIT}
++                            [and]
++                                {FILTER_SPECIAL_UNIT}
++                            [/and]
+                         [/have_unit]
+                         [then]
+                             {UNIT_MSG (
+@@ -1510,7 +1675,7 @@
+ [/or]) ( _ &quot;Father!&quot;)}
+ {HERO_PRE_DEATH Leana ( _ &quot;Leana!&quot;) (description=Rogan) ( _ &quot;Leana!&quot;)}
+ {HERO_PRE_DEATH Rogan ( _ &quot;Rogan!&quot;) (description=Leana) ( _ &quot;Rogan!&quot;)}
+-{HERO_PRE_DEATH Horomir ( _ &quot;Rogan!&quot;) (description=Leana) ( _ &quot;Horomir!&quot;)}
++{HERO_PRE_DEATH Horomir ( _ &quot;Horomir!&quot;) (description=Leana) ( _ &quot;Horomir!&quot;)}
+ 
+ #define RAAJAL_DEAD_TO_SOUL TYPE  SOUL_VARIATION
+     [event]
+@@ -1682,6 +1847,7 @@
+             {VARIABLE_OP hp_gain add $hp}
+             {VARIABLE store[$i].variables.owner Raajal}
+             {VARIABLE store[$i].side 2}
++            {CLEAR_VARIABLE store[$i].overlays}
+             [unstore_unit]
+                 variable=store[$i]
+                 find_vacant=no
+@@ -1749,3 +1915,239 @@
+         [/movement_costs]
+     [/wml_filter]) movement_costs.castle 1}
+ [/event]
++
++#If an enemy soul attacks a unit near Raajal's castle, it will move to a soul castle
++#(thus giving other enemies a chance to kill units attacking Raajal)
++[event]
++    name=attack_end
++    first_time_only=no
++    [filter]
++        side=2
++        type=Lost Soul
++    [/filter]
++    [filter_second]
++        x=1-10,11-14
++        y=1-10,7-10
++    [/filter_second]
++    
++    #If Raajal was attacked and both units are still alive
++    [if]
++        [variable]
++            name=raajal_attacked
++            equals=yes
++        [/variable]
++        [have_unit]
++            x=$x1
++            y=$y1
++        [/have_unit]
++        [have_unit]
++            x=$x2
++            y=$y2
++        [/have_unit]
++        [then]
++            #Store locations of Raajal's units that are near the attacked unit
++            [store_locations]
++                variable=locs
++                [filter]
++                    side=2
++                    [not]
++                        description=Raajal
++                    [/not]
++                [/filter]
++                [and]
++                    x=$x2
++                    y=$y2
++                    radius=3
++                [/and]
++            [/store_locations]
++
++            #If Raajal has three or more units nearby
++            [if]
++                [variable]
++                    name=locs.length
++                    greater_than=3
++                [/variable]
++                [then]
++                    {START_SOUL_POWER Raajal (Undead General Power) $x1 $y1}
++        
++                    #Kill soul (it goes to a soul castle near Raajal's castle)
++                    [kill]
++                        x=$x1
++                        y=$y1
++                        fire_event=yes
++                    [/kill]
++        
++                    {STOP_SOUL_POWER}
++                [/then]
++            [/if]
++            {CLEAR_VARIABLE store}
++        [/then]
++    [/if]
++[/event]
++
++#define SET_ENEMY_GOTO X_TO Y_TO FILTER
++    {MODIFY_UNIT_GOTO (
++    side=2
++    [wml_filter] #Goto values not set (they are cleared each turn)
++        goto_x=0
++        goto_y=0
++    [/wml_filter]
++    [filter_location]
++        [filter_adjacent_location] #Not adjacent to one of your units
++            [not]
++                [filter]
++                    side=1
++                [/filter]
++            [/not]
++        [/filter_adjacent_location]
++    [/filter_location]
++    [and]
++        {FILTER}
++    [/and]) ({X_TO}) ({Y_TO})}
++#enddef
++
++#define ENEMY_TO_RAAJAL FILTER
++    #About to enter cave: go inside
++    {SET_ENEMY_GOTO 5 6 (
++    x,y=10-19,7-9
++    [and]
++        {FILTER}
++    [/and]
++    )}
++
++    #Northeast of cave: go to 20,3
++    {SET_ENEMY_GOTO 20 3 (
++    x,y=11-17,1-6
++    [and]
++        {FILTER}
++    [/and]
++    )}
++
++    #Near 20,3: go to 20,8
++    {SET_ENEMY_GOTO 20 8 (
++    x,y=18-23,1-6
++    [and]
++        {FILTER}
++    [/and]
++    )}
++
++    #East of 20,3: go to 29,10
++    {SET_ENEMY_GOTO 29 10 (
++    x,y=24-40,1-7
++    [and]
++        {FILTER}
++    [/and]
++    )}
++
++    #Just southwest of cave: go to 11,14
++    {SET_ENEMY_GOTO 11 14 (
++    x,y=1-5,11-13
++    [and]
++        {FILTER}
++    [/and]
++    )}
++
++    #South end: go to 25,30
++    {SET_ENEMY_GOTO 25 30 (
++    x,y=16-40,31-40
++    [and]
++        {FILTER}
++    [/and]
++    )}
++
++    #All other units: go to cave entrance
++    {SET_ENEMY_GOTO 11 8 (
++    [not]
++        x,y=1-9,1-8
++    [/not]
++    [and]
++        {FILTER}
++    [/and]
++    )}
++#enddef
++
++[event]
++    name=ai turn
++    first_time_only=no
++
++    [if]
++        [variable]
++            name=side_number
++            equals=2
++        [/variable]
++        [have_unit]
++            description=Raajal
++        [/have_unit]
++        [then]
++
++            #Store Raajal's souls
++            {STORE_UNITS store (
++                type=Lost Soul
++                side=2) no}  
++        
++            #If you are attacking Raajal or Raajal has fewer than 11 souls
++            [if]
++                [variable]
++                    name=store.length
++                    less_than=11
++                [/variable]
++                [or]
++                    [have_unit]
++                        side=1
++                        x,y=1-10,1-9
++                    [/have_unit]
++                [/or]
++                [then]
++                    #All enemies will go to Raajal's castle
++                    {ENEMY_TO_RAAJAL ()}
++                [/then]
++                [else]
++                    [if]
++                        [have_unit]
++                            description=Randalf
++                        [/have_unit]
++                        [then]
++                            {STORE_UNITS store description=Randalf no}
++                
++                            #If Randalf is too powerful
++                            [if]
++                                [variable]
++                                    name=store.hitpoints
++                                    greater_than=65
++                                [/variable]
++                                [then]
++                                    #Souls will try to avoid him
++                                    {ENEMY_TO_RAAJAL (
++                                    type=Lost Soul
++                                    side=2
++                                    [filter_location]
++                                        x=$store.x
++                                        y=$store.y
++                                        radius=9
++                                    [/filter_location]
++                                    )}
++                                [/then]
++                            [/if]
++                        [/then]
++                    [/if]
++                [/else]
++            [/if]
++        
++            {CLEAR_VARIABLE store}
++        [/then]
++    [/if]
++[/event]
++
++#Clear goto values of AI units
++[event]
++    name=new turn
++    first_time_only=no
++    {MODIFY_UNIT_GOTO (
++        side=2
++        [not]
++            [wml_filter]
++                goto_x=0
++                goto_y=0
++            [/wml_filter]
++        [/not]) 0 0}
++[/event]
+\ No newline at end of file
+
+Modified: branches/1.4/Raajal/Raajal/utils/mission-theomund.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/utils/mission-theomund.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/utils/mission-theomund.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -1,3 +1,5 @@
++#textdomain wesnoth-Raajal
++
+ disallow_recall=yes
+ next_scenario=null
+ victory_when_enemies_defeated=no
+@@ -79,15 +81,15 @@
+         [/variable]
+         [then]
+             [objectives]
+-                summary=&quot;Move Theomund to Barruk's castle&quot;
++                summary=_&quot;Move Theomund to Barruk's castle&quot;
+                 victory_string=&quot;End of day:&quot;
+                 [objective]
+                     condition=win
+-                    description=&quot;End of turns (you can continue next day)&quot;
++                    description=_&quot;End of turns (you can continue next day)&quot;
+                 [/objective]
+                 [objective]
+                     condition=win
+-                    description=&quot;Or, an orc patroller sees Theomund&quot;
++                    description=_&quot;Or, an orc patroller sees Theomund&quot;
+                 [/objective]
+             [/objectives]
+         [/then]
+@@ -100,15 +102,15 @@
+         [/variable]
+         [then]
+             [objectives]
+-                summary=&quot;Move Theomund and his orcs across the river&quot;
++                summary=_&quot;Move Theomund and his orcs across the river&quot;
+                 victory_string=&quot;End of day:&quot;
+                 [objective]
+                     condition=win
+-                    description=&quot;End of turns (you can continue next day)&quot;
++                    description=_&quot;End of turns (you can continue next day)&quot;
+                 [/objective]
+                 [objective]
+                     condition=win
+-                    description=&quot;Or, you are spotted&quot;
++                    description=_&quot;Or, you are spotted&quot;
+                 [/objective]
+             [/objectives]
+         [/then]
+@@ -121,16 +123,16 @@
+         [/variable]
+         [then]
+             [objectives]
+-                summary=&quot;Attack Hector's castle&quot;
+-                note=&quot;Units exit the mine after Gerald's men cross the river&quot;
++                summary=_&quot;Attack Hector's castle&quot;
++                note=_&quot;Units exit the mine after Gerald's men cross the river&quot;
+                 victory_string=&quot;End of day:&quot;
+                 [objective]
+                     condition=win
+-                    description=&quot;End of turns (you can continue next day)&quot;
++                    description=_&quot;End of turns (you can continue next day)&quot;
+                 [/objective]
+                 [objective]
+                     condition=win
+-                    description=&quot;Or, death of Barruk&quot;
++                    description=_&quot;Or, death of Barruk&quot;
+                 [/objective]
+             [/objectives]
+         [/then]
+@@ -144,22 +146,22 @@
+         [then]
+             [objectives]
+                 victory_string=&quot;End of day:&quot;
+-                note=&quot;You can enter the mine to help Theomund&quot;
++                note=_&quot;You can enter the mine to help Theomund&quot;
+                 [objective]
+                     condition=win
+-                    description=&quot;Death of Gerald II&quot;
++                    description=_&quot;Death of Gerald II&quot;
+                 [/objective]
+                 [objective]
+                     condition=win
+-                    description=&quot;Or, end of turns (you can continue next day)&quot;
++                    description=_&quot;Or, end of turns (you can continue next day)&quot;
+                 [/objective]
+                 [objective]
+                     condition=win
+-                    description=&quot;Or, death of Theomund&quot;
++                    description=_&quot;Or, death of Theomund&quot;
+                 [/objective]
+                 [objective]
+                     condition=win
+-                    description=&quot;Or, death of Barruk&quot;
++                    description=_&quot;Or, death of Barruk&quot;
+                 [/objective]
+             [/objectives]
+         [/then]
+@@ -173,9 +175,9 @@
+         {VARIABLE theomund_objective_index 0}
+ 
+         #Unstore Theomund and men east of the orc mountain
+-        {UNSTORE_AT theomund_store 1 23 10}
+-        {UNSTORE_AT horomir_store 3 22 10}
+-        {UNSTORE_AT theomund_men_store 3 (22-28) (11-13)}
++        {UNSTORE_AT theomund_store 1 22 10}
++        {UNSTORE_AT horomir_store 3 23 10}
++        {UNSTORE_AT theomund_men_store 3 (21-23,24-28,29-32) (11-13,8-13,11-13)}
+ 
+         #Hector's men
+         {UNIT_CREATE (Grand Marshal) Hector ( _ &quot;Hector&quot;) 3 63 7 (canrecruit=yes)}
+@@ -451,10 +453,10 @@
+         first_time_only=no
+ 
+         [if]
+-            [variable]
+-                name=turn_number
+-                greater_than=1
+-            [/variable]
++#            [variable]
++#                name=turn_number
++#                greater_than=1
++#            [/variable]
+             [have_unit]
+                 {FILTER}
+                 side=3
+@@ -532,11 +534,29 @@
+                 [/if]
+                 {NEXT i}
+ 
++                {CLEAR_VARIABLE x_next}
++                {CLEAR_VARIABLE y_next}
+             [/then]
+         [/if]
+     [/event]
+ #enddef
+ 
++#define SLURBOW_ATTACK_THEOMUND DESC HP
++    [animate_unit]
++        [filter]
++            description={DESC}
++        [/filter]
++        flag=attack
++        hit=yes
++        [primary_attack]
++            name=crossbow
++            type=fire
++        [/primary_attack]
++    [/animate_unit]
++    
++    {MODIFY_UNIT (description=King Theomund) hitpoints ({HP})}
++#enddef
++
+ #define SET_PATROL X Y X_NEXT Y_NEXT X_SIGHT Y_SIGHT
+     {VARIABLE_OP var format patrol_{X}_{Y}.x_next}
+     {VARIABLE $var ({X_NEXT})}
+@@ -552,64 +572,53 @@
+ {DO_PATROL race=orc (
+ #Orc patrollers surround Theomund
+ {STORE_UNITS theomund_store (description=King Theomund) no}
+-{MOVE_UNIT (description=Olag) $theomund_store.x $theomund_store.y}
+-{MOVE_UNIT (description=Igok) $theomund_store.x $theomund_store.y}
++
++[store_locations]
++    variable=locs
++    x=$theomund_store.x
++    y=$theomund_store.y
++    radius=1
++[/store_locations]
+ {CLEAR_VARIABLE theomund_store}
+ 
+-#Horomir hears the orc crossbows
+-[scroll_to_unit]
+-    description=Horomir
+-[/scroll_to_unit]
+-[delay]
+-    time=500
+-[/delay]
+-[sound]
+-    name=crossbow.ogg
+-[/sound]
+-[sound]
+-    name=human-old-hit-1.ogg
+-[/sound]
+-[delay]
+-    time=500
+-[/delay]
+-[sound]
+-    name=crossbow.ogg
+-[/sound]
+-[sound]
+-    name=human-old-hit-2.ogg
+-[/sound]
+-[delay]
+-    time=500
+-[/delay]
+-[sound]
+-    name=crossbow.ogg
+-[/sound]
+-[sound]
+-    name=human-old-hit-3.ogg
+-[/sound]
++#If Igok is to Theomund's left, move Olag to his right
++[if]
++    [have_unit]
++        description=Igok
++        x=$locs[0].x
++        y=$locs[0].y
++    [/have_unit]
++    [then]
++        #Igok faces Theomund (direction of attack)
++        {MODIFY_UNIT (description=Igok) facing se}
++        #Olag moves to Theomund's right
++        {MOVE_UNIT (description=Olag) $locs[5].x $locs[5].y}
++        {MODIFY_UNIT (description=Olag) facing sw}
++    [/then]
++    [else]
++        #Move Olag to Theomund's left and Igok to his right
++        {MOVE_UNIT (description=Olag) $locs[0].x $locs[0].y}
++        {MODIFY_UNIT (description=Olag) facing se}
++        {MOVE_UNIT (description=Igok) $locs[5].x $locs[5].y}
++        {MODIFY_UNIT (description=Igok) facing sw}
++    [/else]
++[/if]
+ 
+-{MODIFY_UNIT (description=Horomir) facing sw}
+-{UNIT_MSG (description=Horomir) ( _ &quot;Father!&quot;)}
++{CLEAR_VARIABLE locs}
+ 
+-#Theomund is killed
+-[redraw] [/redraw]
+-[sound]
+-    name=crossbow.ogg
+-[/sound]
+-[sound]
+-    name=human-old-hit-4.ogg
+-[/sound]
+-[delay]
+-    time=500
+-[/delay]
+-[sound]
+-    name=crossbow.ogg
+-[/sound]
++{SLURBOW_ATTACK_THEOMUND Olag 48}
++{SLURBOW_ATTACK_THEOMUND Olag 32}
++{SLURBOW_ATTACK_THEOMUND Igok 16}
++{SLURBOW_ATTACK_THEOMUND Igok 0}
++
+ [kill]
+     description=King Theomund
+     animate=yes
+ [/kill]
+ 
++{MODIFY_UNIT (description=Horomir) facing sw}
++{UNIT_MSG (description=Horomir) ( _ &quot;Father!&quot;)}
++
+ {THEOMUND_CLEAR_VARIABLES}
+ {END_THEOMUND}
+ )}
+@@ -795,6 +804,7 @@
+         {CLEAR_VARIABLE patrol_53_5}
+         {CLEAR_VARIABLE patrol_49_8}
+         {CLEAR_VARIABLE patrol_50_11}
++        {CLEAR_VARIABLE patrol_53_13}
+         {CLEAR_VARIABLE patrol_56_11}
+         {CLEAR_VARIABLE patrol_62_13}
+         {CLEAR_VARIABLE patrol_69_13}
+@@ -1153,6 +1163,9 @@
+ y=$y) $x_to $y_to}
+ {NEXT i}
+ 
++{CLEAR_VARIABLE x_to}
++{CLEAR_VARIABLE y_to}
++
+ #Second wave arrives next turn
+ {VARIABLE turn_wave2_arrive $turn_number}
+ {VARIABLE_OP turn_wave2_arrive modulo 24}
+@@ -1296,6 +1309,7 @@
+             #Note: this is a temporary fix until I set gotos around mountains
+             {MODIFY_UNIT (
+             side=2
++            x,y=45-100,1-13
+             [wml_filter]
+                 [not]
+                     movement_type=mounted
+@@ -1363,7 +1377,7 @@
+                             {MOVE_UNIT (x,y=112,6) $locs[0].x $locs[0].y}
+                         [/then]
+                         [else]
+-                            #Thsi should only happen if you cheat
++                            #This should only happen if you cheat
+                             {DEBUG_MSG ( _ &quot;Error: could not move unit blocking the mine entrance&quot;)}
+                         [/else]
+                     [/if]
+
+Modified: branches/1.4/Raajal/Raajal/utils/raajal-powers.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/utils/raajal-powers.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/utils/raajal-powers.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -1,3 +1,5 @@
++#textdomain wesnoth-Raajal
++
+ #define SOUL_TO_CASTLE_LOCS KILLER_FILTER SOUL_FILTER CASTLE_FILTER DEFAULT_X DEFAULT_Y NEW_SIDE
+     [event]
+         name=die
+@@ -115,6 +117,7 @@
+ 
+     #Show master's power
+     {MODIFY_UNIT ({MASTER_FILTER}) type ({MASTER_POWER_TYPE})}
++    {MODIFY_UNIT ({MASTER_FILTER}) hitpoints $MASTER_STORE.hitpoints}
+     {MODIFY_UNIT ({MASTER_FILTER}) max_hitpoints $MASTER_STORE.max_hitpoints}
+ 
+     #He faces the unit
+
+Modified: branches/1.4/Raajal/Raajal/utils/terrain.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/utils/terrain.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/utils/terrain.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -1,3 +1,5 @@
++#textdomain wesnoth-Raajal
++
+ [terrain]
+     symbol_image=water/ocean
+     id=soulcastle
+
+Modified: branches/1.4/Raajal/Raajal/utils/utils.cfg
+===================================================================
+--- branches/1.4/Raajal/Raajal/utils/utils.cfg	2008-05-01 13:57:15 UTC (rev 2191)
++++ branches/1.4/Raajal/Raajal/utils/utils.cfg	2008-05-01 13:58:20 UTC (rev 2192)
+@@ -1,3 +1,4 @@
++#textdomain wesnoth
+ 
+ #define SET_DAY DAY_NUMBER
+     [event]
+@@ -6,6 +7,34 @@
+     [/event]
+ #enddef
+ 
++#define PARTIAL_HEAL FILTER HP
++    [store_unit]
++        [filter]
++            {FILTER}
++        [/filter]
++
++        kill=no
++        variable=PARTIAL_HEAL_store
++    [/store_unit]
++
++    {FOREACH PARTIAL_HEAL_store PARTIAL_HEAL_i}
++    [object]
++        silent=yes
++    
++        [filter]
++            x,y=$PARTIAL_HEAL_store[$PARTIAL_HEAL_i].x,$PARTIAL_HEAL_store[$PARTIAL_HEAL_i].y
++        [/filter]
++    
++        [effect]
++            apply_to=hitpoints
++            increase={HP}
++        [/effect]
++    [/object]
++    {NEXT PARTIAL_HEAL_i}
++
++    {CLEAR_VARIABLE PARTIAL_HEAL_store}
++#enddef
++
+ #define FACE_X FILTER X
+     {STORE_UNITS store ({FILTER}) no}
+     {VARIABLE store[0].facing se}
+@@ -156,7 +185,7 @@
+         side={SIDE}
+         x={X}
+         y={Y}
+-        canrecruit=1
++        canrecruit=yes
+         [modifications]
+             {TRAIT_LOYAL}
+         [/modifications]
+@@ -244,6 +273,9 @@
+ 
+     {CLEAR_VARIABLE locs}
+     {CLEAR_VARIABLE ({STORE})}
++    {CLEAR_VARIABLE max_attacks}
++    {CLEAR_VARIABLE max_moves}
++    {CLEAR_VARIABLE j}
+ #enddef
+ 
+ #define UNIT_COUNT FILTER VAR
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001381.html">[Wescamp-i18n-commit] r2191 - in	branches/1.4/Bad_Moon_Rising/Bad_Moon_Rising: .	external_binary_data/images images/attacks images/misc	images/portraits images/units images/units/primeval	images/units/ukians maps scenarios units units/primeval	units/ukians utils
+</A></li>
+	<LI>Next message: <A HREF="001379.html">[Wescamp-i18n-commit] r2193 - in branches/1.4/Eliador/Eliador: .	utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1378">[ date ]</a>
+              <a href="thread.html#1378">[ thread ]</a>
+              <a href="subject.html#1378">[ subject ]</a>
+              <a href="author.html#1378">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

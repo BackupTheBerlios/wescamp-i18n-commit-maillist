@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r2740 - in	branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown:	. ai dist images/units/demons images/units/undead-skeletal	macros maps scenarios units/demons units/humans units/mechanical
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2009-September/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2740%20-%20in%0A%09branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown%3A%0A%09.%20ai%20dist%20images/units/demons%20images/units/undead-skeletal%0A%09macros%20maps%20scenarios%20units/demons%20units/humans%20units/mechanical&In-Reply-To=%3C200909211949.n8LJnDlZ031251%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001854.html">
+   <LINK REL="Next"  HREF="001856.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r2740 - in	branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown:	. ai dist images/units/demons images/units/undead-skeletal	macros maps scenarios units/demons units/humans units/mechanical</H1>
+    <B>mordante at BerliOS</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2740%20-%20in%0A%09branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown%3A%0A%09.%20ai%20dist%20images/units/demons%20images/units/undead-skeletal%0A%09macros%20maps%20scenarios%20units/demons%20units/humans%20units/mechanical&In-Reply-To=%3C200909211949.n8LJnDlZ031251%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r2740 - in	branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown:	. ai dist images/units/demons images/units/undead-skeletal	macros maps scenarios units/demons units/humans units/mechanical">mordante at mail.berlios.de
+       </A><BR>
+    <I>Mon Sep 21 21:49:13 CEST 2009</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001854.html">[Wescamp-i18n-commit] r2739 - in branches/1.7/The_Final_Exam: .	The_Final_Exam The_Final_Exam/maps The_Final_Exam/scenarios
+</A></li>
+        <LI>Next message: <A HREF="001856.html">[Wescamp-i18n-commit] r2741 - in	branches/1.6/The_Final_Exam/The_Final_Exam: . scenarios
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1855">[ date ]</a>
+              <a href="thread.html#1855">[ thread ]</a>
+              <a href="subject.html#1855">[ subject ]</a>
+              <a href="author.html#1855">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2009-09-21 21:49:12 +0200 (Mon, 21 Sep 2009)
+New Revision: 2740
+
+Added:
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/ai/python/
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/maps/15_Paradoxical_Missions/
+Removed:
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/_patch/
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/metatags/
+Modified:
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/ChangeLog
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/_main.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/about.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/base-debug.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/base-loader.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/base-math.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/base-rc.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/base-utils.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/base-variables.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/base-workarounds.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/dist/VERSION
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/editor-loader.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/images/units/demons/grunt+female.png
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/images/units/demons/grunt.png
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/images/units/demons/regular+female.png
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/images/units/demons/regular.png
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/images/units/demons/warrior+female.png
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/images/units/demons/warrior.png
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/images/units/demons/zephyr+female.png
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/images/units/demons/zephyr.png
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/images/units/undead-skeletal/rider-melee.png
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/images/units/undead-skeletal/rider-move.png
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/images/units/undead-skeletal/rider.png
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/macros/amla.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/macros/animation-utils.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/macros/first-time-help.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/macros/glamour.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/macros/scenario-utils.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/macros/unit-utils.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/scenarios/09_The_Library.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/scenarios/15_Shadows_of_Time.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/terrain-virtual.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/terrain.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/units/demons/Warrior.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/units/humans/Chaos_Longbowman.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/units/humans/Chaos_Longbowman_Heavy.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/units/mechanical/Goliath.cfg
+   branches/1.6/Invasion_from_the_Unknown/Invasion_from_the_Unknown/units/mechanical/Iron_Golem.cfg
+Log:
+wescamp_client: automatic update of addon 'Invasion_from_the_Unknown'
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001854.html">[Wescamp-i18n-commit] r2739 - in branches/1.7/The_Final_Exam: .	The_Final_Exam The_Final_Exam/maps The_Final_Exam/scenarios
+</A></li>
+	<LI>Next message: <A HREF="001856.html">[Wescamp-i18n-commit] r2741 - in	branches/1.6/The_Final_Exam/The_Final_Exam: . scenarios
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1855">[ date ]</a>
+              <a href="thread.html#1855">[ thread ]</a>
+              <a href="subject.html#1855">[ subject ]</a>
+              <a href="author.html#1855">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

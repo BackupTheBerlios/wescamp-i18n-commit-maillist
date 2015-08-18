@@ -1,0 +1,2177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r2187 - in	branches/1.4/Extended_Era/Extended_Era: . eras	images/units/chaos races units/aragwaith units/chaos	units/dark_elves units/dwarves units/kalifa units/nagas	units/orcs units/outlaws units/sidhe units/steppe_orcs	units/sylvan_fairies units/trolls units/woses
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2008-May/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2187%20-%20in%0A%09branches/1.4/Extended_Era/Extended_Era%3A%20.%20eras%0A%09images/units/chaos%20races%20units/aragwaith%20units/chaos%0A%09units/dark_elves%20units/dwarves%20units/kalifa%20units/nagas%0A%09units/orcs%20units/outlaws%20units/sidhe%20units/steppe_orcs%0A%09units/sylvan_fairies%20units/trolls%20units/woses&In-Reply-To=%3C200805011349.m41DnhOT007768%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001374.html">
+   <LINK REL="Next"  HREF="001376.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r2187 - in	branches/1.4/Extended_Era/Extended_Era: . eras	images/units/chaos races units/aragwaith units/chaos	units/dark_elves units/dwarves units/kalifa units/nagas	units/orcs units/outlaws units/sidhe units/steppe_orcs	units/sylvan_fairies units/trolls units/woses</H1>
+    <B>mordante at BerliOS</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2187%20-%20in%0A%09branches/1.4/Extended_Era/Extended_Era%3A%20.%20eras%0A%09images/units/chaos%20races%20units/aragwaith%20units/chaos%0A%09units/dark_elves%20units/dwarves%20units/kalifa%20units/nagas%0A%09units/orcs%20units/outlaws%20units/sidhe%20units/steppe_orcs%0A%09units/sylvan_fairies%20units/trolls%20units/woses&In-Reply-To=%3C200805011349.m41DnhOT007768%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r2187 - in	branches/1.4/Extended_Era/Extended_Era: . eras	images/units/chaos races units/aragwaith units/chaos	units/dark_elves units/dwarves units/kalifa units/nagas	units/orcs units/outlaws units/sidhe units/steppe_orcs	units/sylvan_fairies units/trolls units/woses">mordante at mail.berlios.de
+       </A><BR>
+    <I>Thu May  1 15:49:43 CEST 2008</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001374.html">[Wescamp-i18n-commit] r2186 - in	branches/1.4/Invasion_from_the_Unknown:	Invasion_from_the_Unknown/translations/fr/LC_MESSAGES po
+</A></li>
+        <LI>Next message: <A HREF="001376.html">[Wescamp-i18n-commit] r2188 - in branches/1.4/The_Heist/The_Heist:	. maps scenarios utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1375">[ date ]</a>
+              <a href="thread.html#1375">[ thread ]</a>
+              <a href="subject.html#1375">[ subject ]</a>
+              <a href="author.html#1375">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2008-05-01 15:49:40 +0200 (Thu, 01 May 2008)
+New Revision: 2187
+
+Added:
+   branches/1.4/Extended_Era/Extended_Era/images/units/chaos/magus+female.png
+Modified:
+   branches/1.4/Extended_Era/Extended_Era/Credits
+   branches/1.4/Extended_Era/Extended_Era/changelog
+   branches/1.4/Extended_Era/Extended_Era/detect.cfg
+   branches/1.4/Extended_Era/Extended_Era/eras/default+extended+eom.cfg
+   branches/1.4/Extended_Era/Extended_Era/eras/default+extended.cfg
+   branches/1.4/Extended_Era/Extended_Era/eras/extended.cfg
+   branches/1.4/Extended_Era/Extended_Era/eras/xrpg.cfg
+   branches/1.4/Extended_Era/Extended_Era/images/units/chaos/magus.png
+   branches/1.4/Extended_Era/Extended_Era/races/sylvans.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Eagle_Master.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Eagle_Rider.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Sorcerer.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Spearman.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Warlock.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Chaos_Daemon.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Demonologist.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Doom_Guard.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Evil_Crab.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Greater_Daemon.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Greater_Mutation.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Headhunter.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Hell_Crab.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Hell_Guardian.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Flesh.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Rabid.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Warp.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Invoker.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Lesser_Daemon.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Lesser_Mutation.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Magus.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/chaos/Winged_Daemon.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Captain.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Cleric.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Enchantress.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/High_Lord.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Hunter.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lizard_Master.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lizard_Rider.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lord.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Marshal.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Noble.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Shadow.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Sorcerer.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Sorceress.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Stalker.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Warlock.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Wizard.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dwarves/Arcanister.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dwarves/Runemaster.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dwarves/Runesmith.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dwarves/Steamwheel.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dwarves/Thunderwheel.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/dwarves/Warwheel.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/kalifa/Amir.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/kalifa/Arif.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/kalifa/Ekim.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/kalifa/Ekim_Haram.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/kalifa/Immortal.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/kalifa/Mubarizan.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/nagas/Assassin.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/nagas/Depthprowler.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/nagas/Depthstalker.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/nagas/Hunter.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/orcs/Shaman.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/orcs/Witch_Doctor.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/outlaws/Princess.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/outlaws/Queen.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/outlaws/Rogue_Mage.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/outlaws/Shadow_Lord.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/outlaws/Shadow_Mage.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Fury.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Herald.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Raindancer.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Shadowdancer.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Ancestor.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Forefather.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Warrior.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Stormlord.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Tempest.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Thunderblade.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Tracker.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Veiledblade.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Wanderer.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Warmage.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Warsinger.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Whirlwind.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Wildblade.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Windlasher.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sidhe/Windrunner.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Flanker.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Hunter.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Drover.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Herder.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Master.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Juggernaut.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Khan.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Outcast.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Pariah.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Rigid.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Savage.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Shieldbearer.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Skewer.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Spearhead.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Stoic.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Striker.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Vanguard.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Dryad.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Faerie.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Spirit.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Sprite.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/trolls/Shaman.cfg
+   branches/1.4/Extended_Era/Extended_Era/units/woses/Shaman.cfg
+Log:
+wescamp_client: automatic update of addon 'Extended_Era'
+
+Modified: branches/1.4/Extended_Era/Extended_Era/Credits
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/Credits	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/Credits	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,6 +15,7 @@
+ - Dwarvish Runner Line: Wayfarer (Art) ? / Turin (stats) ? 
+ - Naga Hunter: i don't know (from UtBS), additional frames from Verdanna
+ - Naga Guardians: i don't know (from UtBS)
++- Naga Depthstalker : Sapient (Concept and Original Idea), Eternal (New Art)
+ - Troll Shaman: Asa Swain ? (Don't Know, from UBTS)
+ - Wose Shaman: I don't know :( Comes from Delfador's Memoir
+ - Fire Sprites/Spirits: Jb/Mythological (idea and stats), Shadow (graphics)
+@@ -30,6 +31,7 @@
+     Art Tweaks from Megane, Neoskel, Shadow Master and Wayfarer
+     Original WML: Akls
+     Balancing: Pietro &amp; Noyga
++    Misc:  Slug
+ - Kalifa:
+     Idea and lead development: Noy
+     Art: Xan, ijuric, Eleazar
+
+Modified: branches/1.4/Extended_Era/Extended_Era/changelog
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/changelog	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/changelog	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -1,3 +1,12 @@
++27/4/2008 v x.33.2 (unstable)
++    - Version support in era the detection script (which might be renamed to
++     &quot;version.cfg&quot; in the next release) &amp; era id (does not provide EoM version
++     since i don't know how to detect it 
++    - New Chaos descriptions
++    - New Chaos graphics
++    - Special notes normalization
++    - Fairies animation tweaks
++
+ 24/3/2008 v x.33.1 (unstable)
+     - Fixed a bunch of broken animations
+     - other miscellanous chaos graphic updates
+
+Modified: branches/1.4/Extended_Era/Extended_Era/detect.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/detect.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/detect.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -1,2 +1,9 @@
++#note : this might be renamed to &quot;version.cfg&quot; in x.34
++
++#ifndef EXTENDED_ERA_INSTALLED
+ #define EXTENDED_ERA_INSTALLED
+ #enddef
++
++#define EXTENDED_ERA_VERSION
++x.33#enddef
++#endif
+
+Modified: branches/1.4/Extended_Era/Extended_Era/eras/default+extended+eom.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/eras/default+extended+eom.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/eras/default+extended+eom.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -14,7 +14,7 @@
+ #ifdef TRAIT_ATTUNED
+ 
+ [era]
+-	id=era_extended_eom
++	id=era_extended_eom_{EXTENDED_ERA_VERSION}
+ 	name= _ &quot;Extended Era + Era of Myths + Default&quot;
+ 
+ 	{RANDOM_SIDE}
+
+Modified: branches/1.4/Extended_Era/Extended_Era/eras/default+extended.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/eras/default+extended.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/eras/default+extended.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -2,7 +2,7 @@
+ 
+ ### Extended Era + Default
+ [era]
+-	id=era_extended_default
++	id=era_extended_default_{EXTENDED_ERA_VERSION}
+ 	name= _ &quot;Extended Era + Default&quot;
+ 
+ 	{RANDOM_SIDE}
+
+Modified: branches/1.4/Extended_Era/Extended_Era/eras/extended.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/eras/extended.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/eras/extended.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -2,7 +2,7 @@
+ 
+ ### Extended Era
+ [era]
+-	id=era_extended
++	id=era_extended_{EXTENDED_ERA_VERSION}
+ 	name= _ &quot;Extended Era&quot;
+ 
+ 	{RANDOM_SIDE}
+
+Modified: branches/1.4/Extended_Era/Extended_Era/eras/xrpg.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/eras/xrpg.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/eras/xrpg.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -2,7 +2,7 @@
+ 
+ ### Extended Era
+ [era]
+-	id=era_extended_rpg
++	id=era_extended_rpg_{EXTENDED_ERA_VERSION}
+ 	name= _ &quot;Extended RPG&quot;
+ 
+ 	{RANDOM_SIDE}
+
+Added: branches/1.4/Extended_Era/Extended_Era/images/units/chaos/magus+female.png
+===================================================================
+(Binary files differ)
+
+
+Property changes on: branches/1.4/Extended_Era/Extended_Era/images/units/chaos/magus+female.png
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Modified: branches/1.4/Extended_Era/Extended_Era/images/units/chaos/magus.png
+===================================================================
+(Binary files differ)
+
+Modified: branches/1.4/Extended_Era/Extended_Era/races/sylvans.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/races/sylvans.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/races/sylvans.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -93,45 +93,230 @@
+ #enddef
+ 
+ #define MISSILE_FRAME_FAERIE_BURN
+-	projectile_start_time=-330
+-	[projectile_frame]
+-		duration=50
+-		halo=halo/saurian-magic-halo-1.png
+-	[/projectile_frame]
+-	[projectile_frame]
+-		duration=50
+-		halo=halo/saurian-magic-halo-2.png
+-	[/projectile_frame]
+-	[projectile_frame]
+-		duration=50
+-		halo=halo/saurian-magic-halo-3.png
+-	[/projectile_frame]
+-	[projectile_frame]
+-		duration=50
+-		halo=halo/saurian-magic-halo-4.png
+-	[/projectile_frame]
+-	[projectile_frame]
+-		duration=50
+-		halo=halo/saurian-magic-halo-5.png
+-	[/projectile_frame]
+-	[projectile_frame]
+-		duration=50
+-		halo=halo/saurian-magic-halo-6.png
+-	[/projectile_frame]
+-	[projectile_frame]
+-		duration=50
+-		halo=halo/saurian-magic-halo-7.png
+-	[/projectile_frame]
++	missile_start_time=-200
++	[missile_frame]
++			duration=200
++			halo=halo/mage-halo1.png,halo/mage-halo2.png,halo/mage-halo3.png,halo/mage-halo4.png,halo/mage-halo5.png
++			halo_x,halo_y=11,-21
++		[/missile_frame]
+ 	[if]
++		direction=n,ne,nw
+ 		hits=yes
+-		{FIRE_BURST_SMALL}
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-1.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-2.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-3.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-4.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-5.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-6.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-7.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-8.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-9.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-10.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-11.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-12.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-13.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-14.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-15.png&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-16.png&quot;
++			offset=1.0
++		[/missile_frame]
+ 	[/if]
+ 	[else]
++		direction=s,se,sw
++		hits=yes
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-1.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-2.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-3.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-4.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-5.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-6.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-7.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-8.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-9.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-10.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-11.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-12.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-13.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-14.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-15.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++		[missile_frame]
++			duration=60
++			halo=&quot;projectiles/fireball-impact-16.png~FL(vert)&quot;
++			offset=1.0
++		[/missile_frame]
++	[/else]
++	[else]
+ 		hits=no
+-		#dummy missile frame to block the sliding otherwise
++		direction=s,se,sw,n,ne,nw
+ 		[missile_frame]
+-			begin=0
+-			end=100
++			duration=75
++			image=&quot;projectiles/fire-burst-small-1.png&quot;
++			image_diagonal=&quot;projectiles/fire-burst-small-1.png&quot;
++			offset=0.8
+ 		[/missile_frame]
++		[missile_frame]
++			duration=75
++			image=&quot;projectiles/fire-burst-small-2.png&quot;
++			image_diagonal=&quot;projectiles/fire-burst-small-2.png&quot;
++			offset=0.83
++		[/missile_frame]
++		[missile_frame]
++			duration=75
++			image=&quot;projectiles/fire-burst-small-3.png&quot;
++			image_diagonal=&quot;projectiles/fire-burst-small-3.png&quot;
++			offset=0.86
++		[/missile_frame]
++		[missile_frame]
++			duration=75
++			image=&quot;projectiles/fire-burst-small-4.png&quot;
++			image_diagonal=&quot;projectiles/fire-burst-small-4.png&quot;
++			offset=0.89
++		[/missile_frame]
++		[missile_frame]
++			duration=75
++			image=&quot;projectiles/fire-burst-small-5.png&quot;
++			image_diagonal=&quot;projectiles/fire-burst-small-5.png&quot;
++			offset=0.92
++		[/missile_frame]
++		[missile_frame]
++			duration=75
++			image=&quot;projectiles/fire-burst-small-6.png&quot;
++			image_diagonal=&quot;projectiles/fire-burst-small-6.png&quot;
++			offset=0.95
++		[/missile_frame]
++		[missile_frame]
++			duration=75
++			image=&quot;projectiles/fire-burst-small-7.png&quot;
++			image_diagonal=&quot;projectiles/fire-burst-small-7.png&quot;
++			offset=0.98
++		[/missile_frame]
++		[missile_frame]
++			duration=75
++			image=&quot;projectiles/fire-burst-small-8.png&quot;
++			image_diagonal=&quot;projectiles/fire-burst-small-8.png&quot;
++			offset=1.0
++		[/missile_frame]
+ 	[/else]
+ #enddef
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Eagle_Master.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Eagle_Master.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Eagle_Master.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,7 +16,7 @@
+ 	undead_variation=mounted
+ 	cost=35
+ 	usage=scout
+-	unit_description= _ &quot;With experience, Eagle riders become more skilled and the relation with their winged friend become so strong that they act as one. As Eagle masters, they no longer need to give orders to their mounts, those anticipate them.&quot;
++	unit_description= _ &quot;With experience, Eagle riders become more skilled and the relation with their winged friend become so strong that they act as one. As Eagle masters, they no longer need to give orders to their mounts, those anticipate them.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_ATTACK_ONLY}
+ 	{DEFENSE_ANIM &quot;units/human-aragwaith/eagle-rider-attack.png&quot; &quot;units/human-aragwaith/eagle-rider-flying-8.png&quot; {SOUND_LIST:GRYPHON_HIT} }
+ 	die_sound={SOUND_LIST:GRYPHON_DIE}
+ 	[defense]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Eagle_Rider.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Eagle_Rider.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Eagle_Rider.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,7 +17,7 @@
+ 	undead_variation=mounted
+ 	cost=21
+ 	usage=scout
+-	unit_description= _ &quot;Some Aragwaithi youths take young eagles as a pet. These are not the common eagles, but a race of noble, giant birds of prey. When they are grown enough, they usually willing to serve as a mount for their best friend, and their young mates learn the art of riding these giant birds.&quot;
++	unit_description= _ &quot;Some Aragwaithi youths take young eagles as a pet. These are not the common eagles, but a race of noble, giant birds of prey. When they are grown enough, they usually willing to serve as a mount for their best friend, and their young mates learn the art of riding these giant birds.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_ATTACK_ONLY}
+ 	die_sound={SOUND_LIST:GRYPHON_DIE}
+ 	[defense]
+ 		mountains=40
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Sorcerer.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Sorcerer.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Sorcerer.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,9 +16,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=68
+ 	usage=healer
+-	unit_description= _ &quot;Sorcerers are like the wind they can stand in front of you and one second later behind you. On the battlefield they are fearful enemies and even the aragwaithi throw a carefull eye on them mostly from a prefered distance of a hundred feets.
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_MAGICAL}
++	unit_description= _ &quot;Sorcerers are like the wind they can stand in front of you and one second later behind you. On the battlefield they are fearful enemies and even the aragwaithi throw a carefull eye on them mostly from a prefered distance of a hundred feets.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	[abilities]
+ 		{ABILITY_CURES}
+ 		{ABILITY_TELEPORT}
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Spearman.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Spearman.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Spearman.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,10 +15,8 @@
+ 	advanceto=Aragwaith Pikeman,Aragwaith Flagbearer
+ 	cost=15
+ 	usage=fighter
+-	unit_description= _ &quot;The less dextrous and stronger Aragwaith take up the spear. Useful in hunting, this weapon is also deadly on the battlefield. Many impetuous knights have found themselves or their mounts impaled on the point of an Aragwaithi spear.
++	unit_description= _ &quot;The less dextrous and stronger Aragwaith take up the spear. Useful in hunting, this weapon is also deadly on the battlefield. Many impetuous knights have found themselves or their mounts impaled on the point of an Aragwaithi spear.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_FIRSTSTRIKE}
+ 
+-Special Notes:&quot;+{SPECIAL_NOTES_FIRSTSTRIKE}
+-
+ 	{DEFENSE_ANIM &quot;units/human-aragwaith/spearman-defend.png&quot; &quot;units/human-aragwaith/spearman.png&quot; {SOUND_LIST:HUMAN_HIT} }
+ 
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Warlock.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Warlock.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/aragwaith/Warlock.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,10 +18,8 @@
+ 	[abilities]
+ 		{ABILITY_HEALS}
+ 	[/abilities]
+-	unit_description= _ &quot;The magically inclined among the Aragwaith recieve not only the martial training so common in Aragwaithi society, but also in the art of healing, and of course in magic. Wielding powerful fire, competent with their staves, possessing a healing touch, Warlocks are the noblest of a noble people.
++	unit_description= _ &quot;The magically inclined among the Aragwaith recieve not only the martial training so common in Aragwaithi society, but also in the art of healing, and of course in magic. Wielding powerful fire, competent with their staves, possessing a healing touch, Warlocks are the noblest of a noble people.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 
+-Special Notes:&quot;+{SPECIAL_NOTES_MAGICAL}
+-
+ 	{DEFENSE_ANIM &quot;units/human-aragwaith/warlock.png&quot; &quot;units/human-aragwaith/warlock.png&quot; {SOUND_LIST:HUMAN_HIT} }
+ 
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Chaos_Daemon.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Chaos_Daemon.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Chaos_Daemon.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,7 +17,7 @@
+ 	cost=42
+ 	usage=mixed fighter
+ 	undead_variation=drake
+-	unit_description= _ &quot;The lesser demons are the gift of the Gods of Chaos to those who have shown to be worthy enough to recieve aid from their sides, though barely any tougher than the average human the lesser demons can easily turn the tide of a battle due to the combination of their nible movement and tough fighting...&quot;
++	unit_description= _ &quot;The lesser demons are the gift of the Gods of Chaos to those who have shown to be worthy enough to recieve aid from their sides, though barely any tougher than the average human the lesser demons can easily turn the tide of a battle due to the combination of their nible movement and tough fighting...&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_FIRSTSTRIKE}
+ 	{DEFENSE_ANIM &quot;units/chaos/demonlore-defend.png&quot; &quot;units/chaos/demonlore.png&quot; {SOUND_LIST:DRAKE_HIT} }
+ 	die_sound=drake-die.ogg
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Demonologist.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Demonologist.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Demonologist.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -23,7 +23,7 @@
+ 		{ABILITY_LEADERSHIP_LEVEL_3}
+ 	[/abilities]
+ 	usage=archer
+-	unit_description= _ &quot;The mastery of daemons lies in the changing into daemon oneself. Demonologists are daemonic minds entrapped in human body. What is left of human in these creatures are only bodies and memories of invokers and magi, who finally achieved the true power of their lords.&quot;
++	unit_description= _ &quot;The mastery of daemons lies in the changing into daemon oneself. Demonologists are daemonic minds entrapped in human body. What is left of human in these creatures are only bodies and memories of invokers and magi, who finally achieved the true power of their lords.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	{DEFENSE_ANIM &quot;units/chaos/demonologist.png&quot; &quot;units/chaos/demonologist.png&quot; {SOUND_LIST:HUMAN_OLD_HIT} }
+ 	die_sound={SOUND_LIST:HUMAN_OLD_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Doom_Guard.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Doom_Guard.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Doom_Guard.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 	advanceto=Chaos Elite Armorer
+ 	cost=40
+ 	usage=fighter
+-	unit_description= _ &quot;Daemons know that, the only thing than can stop a tidal wave is a powerful wall. Doom Guards are such wall, wall of living flesh and steel. Devoid of bloodlust, their aggression is changed into fanatic loyalty. Doom Guards are not the ones to fight, they are the ones to stand against every possible enemy.&quot;
++	unit_description= _ &quot;Daemons know that, the only thing than can stop a tidal wave is a powerful wall. Doom Guards are such wall, wall of living flesh and steel. Devoid of bloodlust, their aggression is changed into fanatic loyalty. Doom Guards are not the ones to fight, they are the ones to stand against every possible enemy.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_STEADFAST}
+ 	{DEFENSE_ANIM &quot;units/chaos/armorer.png&quot; &quot;units/chaos/armorer.png&quot; {SOUND_LIST:HUMAN_HIT} }
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Evil_Crab.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Evil_Crab.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Evil_Crab.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,6 +19,7 @@
+ 	cost=18
+ 	usage=fighter
+ 	undead_variation=troll
++      unit_description= _ &quot;The corruption of chaos is a subtle and slow process. Even animals as harmless as crabs can be unwittingly twisted and warped far beyond their ordinary nature. Evil crab's are one all too unfortunate result of this process, as the merfolk and naga can attest to.&quot;
+ 	{DEFENSE_ANIM &quot;units/chaos/lesser-crab.png&quot; &quot;units/chaos/lesser-crab.png&quot; {SOUND_LIST:TROLL_HIT} }
+ 	die_sound={SOUND_LIST:TROLL_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Greater_Daemon.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Greater_Daemon.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Greater_Daemon.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 	cost=80
+ 	usage=mixed fighter
+ 	undead_variation=drake
+-	unit_description= _ &quot;The lesser demons are the gift of the Gods of Chaos to those who have shown to be worthy enough to recieve aid from their sides, though barely any tougher than the average human the lesser demons can easily turn the tide of a battle due to the combination of their nible movement and tough fighting...&quot;
++	unit_description= _ &quot;The lesser demons are the gift of the Gods of Chaos to those who have shown to be worthy enough to recieve aid from their sides, though barely any tougher than the average human the lesser demons can easily turn the tide of a battle due to the combination of their nible movement and tough fighting...&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_FIRSTSTRIKE}
+ 	{DEFENSE_ANIM &quot;units/chaos/greater-daemon.png&quot; &quot;units/chaos/greater-daemon.png&quot; {SOUND_LIST:DRAKE_HIT} }
+ 	die_sound=drake-die.ogg
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Greater_Mutation.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Greater_Mutation.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Greater_Mutation.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,6 +18,7 @@
+ 	cost=40
+ 	usage=mutant
+ 	undead_variation=troll
++      unit_description= _ &quot;It came as a great surprise to the Magus who created them that Mutations would over time increase in both stature and strength. It seems the act of killing feeds these bloodthirsty beasts on some innate level. There are few soldier's brave or indeed foolish enough to face off against such a creature, especially when night falls.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_POISON}
+ 	{DEFENSE_ANIM &quot;units/chaos/greater-mutation.png&quot; &quot;units/chaos/greater-mutation.png&quot; {SOUND_LIST:TROLL_HIT} }
+ 	die_sound={SOUND_LIST:TROLL_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Headhunter.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Headhunter.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Headhunter.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -22,7 +22,7 @@
+ 	advanceto=Chaos Marauder
+ 	cost=18
+ 	usage=scout
+-	unit_description= _ &quot;Given their souls to daemons, these lifeless scouts appear in the places, that will be infested with the daemonic plague. They are the ones to spread fear and message of daemonic invasions.&quot;
++	unit_description= _ &quot;Given their souls to daemons, these lifeless scouts appear in the places, that will be infested with the daemonic plague. They are the ones to spread fear and message of daemonic invasions.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_SKIRMISHER}
+ 	{DEFENSE_ANIM &quot;units/chaos/headhunter.png&quot; &quot;units/chaos/headhunter.png&quot; {SOUND_LIST:HUMAN_HIT} }
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Hell_Crab.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Hell_Crab.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Hell_Crab.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -20,6 +20,7 @@
+ 	cost=40
+ 	usage=fighter
+ 	undead_variation=troll
++      unit_description= _ &quot;Within each species there are often freakishly strong and powerful aberrations born through seemingly blind chance. Successful servants of chaos can find their bodies shifting and growing as these latent traits are brought out. The Hell Crab is a powerful example of the potential all Evil Crabs carry inside them.&quot;
+ 	{DEFENSE_ANIM &quot;units/chaos/greater-crab.png&quot; &quot;units/chaos/greater-crab.png&quot; {SOUND_LIST:TROLL_HIT} }
+ 	die_sound={SOUND_LIST:TROLL_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Hell_Guardian.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Hell_Guardian.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Hell_Guardian.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,7 +19,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=80
+ 	usage=fighter
+-	unit_description= _ &quot;Only the toughest of armorers are worthy of greatest armors, that are forged in burning pits of daemonic homeworld. It is said, that if they were commanded to, they could easily withstand the avalanche without stepping back.&quot;
++	unit_description= _ &quot;Only the toughest of armorers are worthy of greatest armors, that are forged in burning pits of daemonic homeworld. It is said, that if they were commanded to, they could easily withstand the avalanche without stepping back.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_STEADFAST}
+ 	{DEFENSE_ANIM &quot;units/chaos/elite-armorer.png&quot; &quot;units/chaos/elite-armorer.png&quot; {SOUND_LIST:HUMAN_HIT} }
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,9 +15,7 @@
+ 	cost=15
+ 	usage=frenzy
+ 	undead_variation=saurian
+-	unit_description= _ &quot;Trained hunting dog are ferocious animals, eager to attack in an uncontrolled frenzy.
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_BERSERK}
++	unit_description= _ &quot;Trained hunting dog are ferocious animals, eager to attack in an uncontrolled frenzy.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_BERSERK}
+ 	{DEFENSE_ANIM &quot;units/chaos/hound-defend.png&quot; &quot;units/chaos/hound.png&quot; wolf-hit.wav}
+ 	die_sound=wolf-die.wav
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Flesh.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Flesh.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Flesh.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,9 +16,7 @@
+ 	cost=40
+ 	usage=frenzy
+ 	undead_variation=saurian
+-	unit_description= _ &quot;A hound that becomes a host for a lesser daemon turns into a flesh hound. The unnatural fusion gives them a strange half dog, half human. With a daemons cunning and a dog's senses, these muscled berserkers follow the stench of blood.
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_BERSERK}
++	unit_description= _ &quot;A hound that becomes a host for a lesser daemon turns into a flesh hound. The unnatural fusion gives them a strange half dog, half human. With a daemons cunning and a dog's senses, these muscled berserkers follow the stench of blood.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_BERSERK}
+ 	{DEFENSE_ANIM &quot;units/chaos/flesh-hound.png&quot; &quot;units/chaos/flesh-hound.png&quot; wolf-hit.wav}
+ 	die_sound=wolf-die.wav
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Rabid.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Rabid.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Rabid.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,9 +15,7 @@
+ 	cost=40
+ 	usage=frenzy
+ 	undead_variation=saurian
+-	unit_description= _ &quot;Dog infused with chaotic magic turn rabid. The magic degrades their mind and turns them into slavering beasts that hunger for bloodshed.
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_BERSERK}
++	unit_description= _ &quot;Dog infused with chaotic magic turn rabid. The magic degrades their mind and turns them into slavering beasts that hunger for bloodshed.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_BERSERK}
+ 	{DEFENSE_ANIM &quot;units/chaos/rabid-hound-defend.png&quot; &quot;units/chaos/rabid-hound.png&quot; wolf-hit.wav}
+ 	die_sound=wolf-die.wav
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Warp.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Warp.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Hound_Warp.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,10 +16,8 @@
+ 	cost=80
+ 	usage=frenzy
+ 	undead_variation=saurian
+-	unit_description= _ &quot;With time, Rabid Hounds become mutated by the insidious magic of chaos flowing through their bodies. They grow horns and other demonic traits, becoming Warp Hounds. Their only desire is to rend their enemies with teeth and claw.
++	unit_description= _ &quot;With time, Rabid Hounds become mutated by the insidious magic of chaos flowing through their bodies. They grow horns and other demonic traits, becoming Warp Hounds. Their only desire is to rend their enemies with teeth and claw.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_BERSERK}
+ 
+-Special Notes:&quot;+{SPECIAL_NOTES_BERSERK}
+-
+ 	{DEFENSE_ANIM &quot;units/chaos/warp-hound.png&quot; &quot;units/chaos/warp-hound.png&quot; wolf-hit.wav}
+ 	get_hit_sound=wolf-hit.wav
+ 	die_sound=wolf-die.wav
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Invoker.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Invoker.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Invoker.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,7 +19,7 @@
+ 	advanceto=Chaos Magus
+ 	cost=17
+ 	usage=archer
+-	unit_description= _ &quot;You can spot them at the first line of Chaos flood. Standing with small groups of warriors, these adepts of fiery arts of Chaos command the vanguard hordes of chaos, seeking the best opportunity to advance in the ranks of Chaos. At this point, their mind can be still compared to the mind of the mortal. The only difference is they have no soul, for they sold theirs to their daemonic Gods.&quot;
++	unit_description= _ &quot;You can spot them at the first line of Chaos flood. Standing with small groups of warriors, these adepts of fiery arts of Chaos command the vanguard hordes of chaos, seeking the best opportunity to advance in the ranks of Chaos. At this point, their mind can be still compared to the mind of the mortal. The only difference is they have no soul, for they sold theirs to their daemonic Gods.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	{DEFENSE_ANIM &quot;units/chaos/invoker-defend.png&quot; &quot;units/chaos/invoker.png&quot; {SOUND_LIST:HUMAN_HIT} }
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Lesser_Daemon.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Lesser_Daemon.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Lesser_Daemon.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,7 +17,7 @@
+ 	cost=20
+ 	usage=mixed fighter
+ 	undead_variation=drake
+-	unit_description= _ &quot;The lesser demons are the gift of the Gods of Chaos to those who have shown to be worthy enough to recieve aid from their sides, though barely any tougher than the average human the lesser demons can easily turn the tide of a battle due to the combination of their nible movement and tough fighting...&quot;
++	unit_description= _ &quot;The lesser demons are the gift of the Gods of Chaos to those who have shown to be worthy enough to recieve aid from their sides, though barely any tougher than the average human the lesser demons can easily turn the tide of a battle due to the combination of their nible movement and tough fighting...&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_FIRSTSTRIKE}
+ 	{DEFENSE_ANIM &quot;units/chaos/lesser-demon-defend.png&quot; &quot;units/chaos/lesser-demon.png&quot; {SOUND_LIST:DRAKE_HIT} }
+ 	die_sound=drake-die.ogg
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Lesser_Mutation.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Lesser_Mutation.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Lesser_Mutation.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,6 +18,7 @@
+ 	cost=20
+ 	usage=mutant
+ 	undead_variation=troll
++      unit_description= _ &quot;Myriad and ever-changing the forces of chaos recognize the need for staying power within their ranks. Thus in dark labs filled with screams the Mutations were created. These warped monstrosities were gifted with a self healing body whose very touch other races find poisonous.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_POISON}
+ 	{DEFENSE_ANIM &quot;units/chaos/lesser-mutation.png&quot; &quot;units/chaos/lesser-mutation.png&quot; {SOUND_LIST:TROLL_HIT} }
+ 	die_sound={SOUND_LIST:TROLL_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Magus.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Magus.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Magus.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -22,7 +22,7 @@
+ 		{ABILITY_LEADERSHIP_LEVEL_2}
+ 	[/abilities]
+ 	usage=archer
+-	unit_description= _ &quot;It is they, who rally with the larger groups of chaos warriors, supporting them with magic. As daemonic essence touches chaotic mages, they gain the sharpness of mind and way of thinking more resembling daemons, than human beings. Being trapped between human and daemon life form, they seek no turning back, but aspire to lose their humanity and succumb to the very core of Chaos.&quot;
++	unit_description= _ &quot;It is they, who rally with the larger groups of chaos warriors, supporting them with magic. As daemonic essence touches chaotic mages, they gain the sharpness of mind and way of thinking more resembling daemons, than human beings. Being trapped between human and daemon life form, they seek no turning back, but aspire to lose their humanity and succumb to the very core of Chaos.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	{DEFENSE_ANIM &quot;units/chaos/magus.png&quot; &quot;units/chaos/magus.png&quot; {SOUND_LIST:HUMAN_HIT} }
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[death]
+@@ -145,5 +145,6 @@
+ 	[female]
+ 		gender=female
+ 		name= _ &quot;female^Magus&quot;
++		image=&quot;units/chaos/magus+female.png&quot;
+ 	[/female]
+ [/unit]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/chaos/Winged_Daemon.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/chaos/Winged_Daemon.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/chaos/Winged_Daemon.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -25,7 +25,7 @@
+ 	cost=40
+ 	usage=scout
+ 	undead_variation=drake
+-	unit_description= _ &quot;Some daemons are given with power, some are given with speed. Winged Daemons are the messengers and vanguard of the Daemonic Corpus, who always take pleasure at sudden strikes and appearing in the place, that no one could expect them.&quot;
++	unit_description= _ &quot;Some daemons are given with power, some are given with speed. Winged Daemons are the messengers and vanguard of the Daemonic Corpus, who always take pleasure at sudden strikes and appearing in the place, that no one could expect them.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_FIRSTSTRIKE}
+ 	{DEFENSE_ANIM &quot;units/chaos/winged-demon-defend.png&quot; &quot;units/chaos/winged-demon.png&quot; {SOUND_LIST:DRAKE_HIT} }
+ 	die_sound=drake-die.ogg
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Captain.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Captain.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Captain.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 		{ABILITY_LEADERSHIP_LEVEL_2}
+ 	[/abilities]
+ 	usage=fighter
+-	unit_description= _ &quot;These Elves have been an example to their fellow soldiers, and have gained the rank of Captain. Although they can never become Lords, they still strive to do their best to defend the Matron Mother with their swords and short spears.&quot;
++	unit_description= _ &quot;These Elves have been an example to their fellow soldiers, and have gained the rank of Captain. Although they can never become Lords, they still strive to do their best to defend the Matron Mother with their swords and short spears.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_LEADERSHIP}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Cleric.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Cleric.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Cleric.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,7 +19,7 @@
+ 		{ABILITY_CURES}
+ 	[/abilities]
+ 	usage=mixed fighter
+-	unit_description= _ &quot;A Cleric is adapt at both their magical abilities and the use of their maces, as the Dwarves have found out. They have the cure ability, a tool they use for their sadistic pleasure. Terribly seductive, they are both feared and admired for their beauty and cruelty.&quot;
++	unit_description= _ &quot;A Cleric is adapt at both their magical abilities and the use of their maces, as the Dwarves have found out. They have the cure ability, a tool they use for their sadistic pleasure. Terribly seductive, they are both feared and admired for their beauty and cruelty.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}+{SPECIAL_NOTES_CURES}
+ 	get_hit_sound={SOUND_LIST:ELF_FEMALE_HIT}
+ 	die_sound={SOUND_LIST:ELF_FEMALE_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Enchantress.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Enchantress.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Enchantress.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,7 +15,7 @@
+ 	advanceto=Dark Elf Sorceress
+ 	cost=19
+ 	usage=mixed fighter
+-	unit_description= _ &quot;The women of the Dark Elves often join the Order of the Clerics at a very young age. They start of as an Enchantress, with limited physical and magical abilities, and have just began practicing their torture techniques. Through the guiding of the Clerics, someday they will become a mighty Sorceress.&quot;
++	unit_description= _ &quot;The women of the Dark Elves often join the Order of the Clerics at a very young age. They start of as an Enchantress, with limited physical and magical abilities, and have just began practicing their torture techniques. Through the guiding of the Clerics, someday they will become a mighty Sorceress.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ELF_FEMALE_HIT}
+ 	die_sound={SOUND_LIST:ELF_FEMALE_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/High_Lord.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/High_Lord.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/High_Lord.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 		{ABILITY_LEADERSHIP_LEVEL_3}
+ 	[/abilities]
+ 	usage=fighter
+-	unit_description= _ &quot;When in his castle, the High Lord watches his slaves, feeds the lizards, and other duties. They wear simple purple robes, and keep their hair combed. However, when on the battlefield, they are as bold and daring as anyone. After years of experience, they know every trick of their trade. Their men follow them fearlessly, confident that through their Lords guidance, none can stand before them.&quot;
++	unit_description= _ &quot;When in his castle, the High Lord watches his slaves, feeds the lizards, and other duties. They wear simple purple robes, and keep their hair combed. However, when on the battlefield, they are as bold and daring as anyone. After years of experience, they know every trick of their trade. Their men follow them fearlessly, confident that through their Lords guidance, none can stand before them.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_LEADERSHIP}+{SPECIAL_NOTES_SLOW}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Hunter.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Hunter.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Hunter.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 	advanceto=Dark Elf Shadow
+ 	cost=18
+ 	usage=mixed fighter
+-	unit_description= _ &quot;Lurking in the ever dark depths of the caves, the Hunters move around with out a sound, except for the twang of their crossbows.&quot;
++	unit_description= _ &quot;Lurking in the ever dark depths of the caves, the Hunters move around with out a sound, except for the twang of their crossbows.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_CAVESTALK}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	{DEFENSE_ANIM &quot;units/elves-dark/hunter-defend.png&quot; &quot;units/elves-dark/hunter.png&quot; {SOUND_LIST:ELF_HIT} }
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lizard_Master.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lizard_Master.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lizard_Master.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,7 +16,7 @@
+ 	cost=35
+ 	undead_variation=mounted
+ 	usage=scout
+-	unit_description= _ &quot;Though the Lizards are not as fast as horses, they are much more powerful. Many an Dwarf has been cut in two by it's strong jaws. It would be well to recruit several of these powerful units.&quot;
++	unit_description= _ &quot;Though the Lizards are not as fast as horses, they are much more powerful. Many an Dwarf has been cut in two by it's strong jaws. It would be well to recruit several of these powerful units.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_CHARGE}
+ 	get_hit_sound=hiss-hit.wav
+ 	die_sound=hiss-die.wav
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lizard_Rider.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lizard_Rider.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lizard_Rider.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,7 +15,7 @@
+ 	cost=24
+ 	undead_variation=mounted
+ 	usage=scout
+-	unit_description= _ &quot;From childhood, they have been training with their beast, feeding it, healing it, and sleeping with it. It is their duty to scout ahead into the unknown, to go where no Dark Elf has gone before. Some day, they will become Master of the Lizard.&quot;
++	unit_description= _ &quot;From childhood, they have been training with their beast, feeding it, healing it, and sleeping with it. It is their duty to scout ahead into the unknown, to go where no Dark Elf has gone before. Some day, they will become Master of the Lizard.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_CHARGE}
+ 	get_hit_sound=hiss-hit.wav
+ 	die_sound=hiss-die.wav
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lord.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lord.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Lord.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,7 +17,7 @@
+ 		{ABILITY_LEADERSHIP_LEVEL_2}
+ 	[/abilities]
+ 	usage=fighter
+-	unit_description= _ &quot;Highly decorated, These men have gained the title of Lord through their cunning, their prowess, bravery, and strength. They command their provinces, lead their men in battle, and hold the law with an iron grip. They lead as an example to the life of a warrior in the realm of the Dark Elves.&quot;
++	unit_description= _ &quot;Highly decorated, These men have gained the title of Lord through their cunning, their prowess, bravery, and strength. They command their provinces, lead their men in battle, and hold the law with an iron grip. They lead as an example to the life of a warrior in the realm of the Dark Elves.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_LEADERSHIP}+{SPECIAL_NOTES_SLOW}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Marshal.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Marshal.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Marshal.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,7 +19,7 @@
+ 		{ABILITY_LEADERSHIP_LEVEL_3}
+ 	[/abilities]
+ 	usage=fighter
+-	unit_description= _ &quot;These Elves have proven themselves on and off the battle field with their character and demeanor. They have earned for themselves the rank of Marshal. Although they can never become Lords, they still strive to do their best to defend the Matron Mother with their swords and short spears.&quot;
++	unit_description= _ &quot;These Elves have proven themselves on and off the battle field with their character and demeanor. They have earned for themselves the rank of Marshal. Although they can never become Lords, they still strive to do their best to defend the Matron Mother with their swords and short spears.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_LEADERSHIP}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Noble.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Noble.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Noble.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -14,7 +14,7 @@
+ 	advanceto=Dark Elf Lord
+ 	cost=17
+ 	usage=fighter
+-	unit_description= _ &quot;The young Lords are rash and brave. They have spent their entire childhood training with the sword, and have been taught from the best Marshals battlefield tactics. They have highly decorative shields that they use in battle to attack and encourage their troops.&quot;
++	unit_description= _ &quot;The young Lords are rash and brave. They have spent their entire childhood training with the sword, and have been taught from the best Marshals battlefield tactics. They have highly decorative shields that they use in battle to attack and encourage their troops.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_SLOW}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Shadow.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Shadow.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Shadow.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 	advanceto=Dark Elf Stalker
+ 	cost=33
+ 	usage=mixed fighter
+-	unit_description= _ &quot;Staying hidden safe in the shadows of the caves, they will hit you when you least expect it. Despite their frailty, they can inflict great damage over time, slowly taking the life away from their prey .&quot;
++	unit_description= _ &quot;Staying hidden safe in the shadows of the caves, they will hit you when you least expect it. Despite their frailty, they can inflict great damage over time, slowly taking the life away from their prey .&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_CAVESTALK}+{SPECIAL_NOTES_BACKSTAB}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Sorcerer.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Sorcerer.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Sorcerer.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,7 +16,7 @@
+ 	advanceto=Dark Elf Warlock
+ 	cost=39
+ 	usage=archer
+-	unit_description= _ &quot;Sorcerers are Wizards that have gone deeper into the studying of the arcane arts. Their research consumes them in a quest for more power, leading them down a path toward the dark arts practiced by the Necromancers and Lichs. Their mighty cold blast can freeze any foe that dares to cross their path.&quot;
++	unit_description= _ &quot;Sorcerers are Wizards that have gone deeper into the studying of the arcane arts. Their research consumes them in a quest for more power, leading them down a path toward the dark arts practiced by the Necromancers and Lichs. Their mighty cold blast can freeze any foe that dares to cross their path.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Sorceress.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Sorceress.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Sorceress.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 		{ABILITY_HEALS}
+ 	[/abilities]
+ 	usage=mixed fighter
+-	unit_description= _ &quot;The women of the Dark Elves often join the Order of the Clerics at a very young age. These have gained the rank of Sorceress, and have nearly mastered the art of healing, torturing, and healing their captives again and again. Very soon, they will become Clerics, the terribly seductive sadistic torturers.&quot;
++	unit_description= _ &quot;The women of the Dark Elves often join the Order of the Clerics at a very young age. These have gained the rank of Sorceress, and have nearly mastered the art of healing, torturing, and healing their captives again and again. Very soon, they will become Clerics, the terribly seductive sadistic torturers.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}+{SPECIAL_NOTES_HEALS}
+ 	get_hit_sound={SOUND_LIST:ELF_FEMALE_HIT}
+ 	die_sound={SOUND_LIST:ELF_FEMALE_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Stalker.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Stalker.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Stalker.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,7 +19,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=55
+ 	usage=mixed fighter
+-	unit_description= _ &quot;Cunning, agile warriors, the Stalkers are powerful in both the use of their daggers and crossbows. They are completely hidden in the caves, only the thud of a dead body tells you they are near.&quot;
++	unit_description= _ &quot;Cunning, agile warriors, the Stalkers are powerful in both the use of their daggers and crossbows. They are completely hidden in the caves, only the thud of a dead body tells you they are near.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_CAVESTALK}+{SPECIAL_NOTES_BACKSTAB}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Warlock.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Warlock.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Warlock.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,7 +16,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=80
+ 	usage=archer
+-	unit_description= _ &quot;The best of their kind, these Warlocks have immense power, rivaling even that of the Arch Mage. They have discovered the secrets of the dark arts, and have the power to drain life from their opponents with a single touch, and add it to their own.&quot;
++	unit_description= _ &quot;The best of their kind, these Warlocks have immense power, rivaling even that of the Arch Mage. They have discovered the secrets of the dark arts, and have the power to drain life from their opponents with a single touch, and add it to their own.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Wizard.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Wizard.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dark_elves/Wizard.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,7 +16,7 @@
+ 	advanceto=Dark Elf Sorcerer
+ 	cost=21
+ 	usage=archer
+-	unit_description= _ &quot;Some Dark Elves prefer studying the arcane arts over close-combat. Usually they are left to the lesser duties of the House, such as upkeep, watching the slaves, and other such things. However, in time of conflict, they can do great damage, even though they lack any training in close-combat.&quot;
++	unit_description= _ &quot;Some Dark Elves prefer studying the arcane arts over close-combat. Usually they are left to the lesser duties of the House, such as upkeep, watching the slaves, and other such things. However, in time of conflict, they can do great damage, even though they lack any training in close-combat.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dwarves/Arcanister.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dwarves/Arcanister.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dwarves/Arcanister.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -21,9 +21,7 @@
+ 	alignment=neutral
+ 	cost=50
+ 	usage=fighter
+-	unit_description= _ &quot;The most powerful of all the runecrafters, the Dwarvish Arcanister destroys wounded enemies almost instantly, and rarely fails to cause a wound when that is his intent. His skill in runecrafting is unrivaled, and the glyphs he carves into his weapons and armor deflect the blows of his enemies.&quot; + _ &quot;
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_MAGICAL}
++	unit_description= _ &quot;The most powerful of all the runecrafters, the Dwarvish Arcanister destroys wounded enemies almost instantly, and rarely fails to cause a wound when that is his intent. His skill in runecrafting is unrivaled, and the glyphs he carves into his weapons and armor deflect the blows of his enemies.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	die_sound={SOUND_LIST:DWARF_DIE}
+ 	{DEFENSE_ANIM &quot;units/dwarves/arcanister-defend.png&quot; &quot;units/dwarves/arcanister.png&quot; {SOUND_LIST:DWARF_HIT} }
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dwarves/Runemaster.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dwarves/Runemaster.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dwarves/Runemaster.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -20,9 +20,7 @@
+ 	experience=220
+ 	advanceto=XE Dwarvish Arcanister
+ 	undead_variation=dwarf
+-	unit_description= _ &quot;Except for those with almost supernatural skill, the highest rank a runecrafter can rise to is that of the Dwarvish Runemaster. Striking blows nearly as powerful as those of the best warriors, they would be fearsome without their craft, but with it they are also nigh on invincible, since their runes cause the physical blows of their enemies to deal less damage than would be expected.&quot; + _ &quot;
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_MAGICAL}
++	unit_description= _ &quot;Except for those with almost supernatural skill, the highest rank a runecrafter can rise to is that of the Dwarvish Runemaster. Striking blows nearly as powerful as those of the best warriors, they would be fearsome without their craft, but with it they are also nigh on invincible, since their runes cause the physical blows of their enemies to deal less damage than would be expected.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	die_sound={SOUND_LIST:DWARF_DIE}
+ 	{DEFENSE_ANIM &quot;units/dwarves/runemaster2-defend.png&quot; &quot;units/dwarves/runemaster2.png&quot; {SOUND_LIST:DWARF_HIT} }
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dwarves/Runesmith.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dwarves/Runesmith.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dwarves/Runesmith.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -20,9 +20,7 @@
+ 	experience=110
+ 	advanceto=XE Dwarvish Runemaster
+ 	undead_variation=dwarf
+-	unit_description= _ &quot;Dwarvish runesmiths, now practiced at their craft, carve arcane runes into their weapons and armor. These runes infuse the runesmith's blows with power and accuracy, and disrupt the blows of their enemies, causing them to strike softly, weakly and on the armor of the defender.&quot; + _ &quot;
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_MAGICAL}
++	unit_description= _ &quot;Dwarvish runesmiths, now practiced at their craft, carve arcane runes into their weapons and armor. These runes infuse the runesmith's blows with power and accuracy, and disrupt the blows of their enemies, causing them to strike softly, weakly and on the armor of the defender.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	die_sound={SOUND_LIST:DWARF_DIE}
+ 	{DEFENSE_ANIM &quot;units/dwarves/runesmith-defend.png&quot; &quot;units/dwarves/runesmith.png&quot; {SOUND_LIST:DWARF_HIT} }
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dwarves/Steamwheel.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dwarves/Steamwheel.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dwarves/Steamwheel.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,9 +17,7 @@
+ 	cost=15
+ 	undead_variation=mounted
+ 	usage=scout
+-	unit_description= _ &quot;Some Dwarves use strange vehicles that can move fast without a horse. It is said that these great wheeled vehicles are powered by invisible steam genies, thus they are called 'Steamwheels'.&quot; + _ &quot;
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_CHARGE}
++	unit_description= _ &quot;Some Dwarves use strange vehicles that can move fast without a horse. It is said that these great wheeled vehicles are powered by invisible steam genies, thus they are called 'Steamwheels'.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_CHARGE}
+ 	get_hit_sound={SOUND_LIST:DWARF_HIT}
+ 	die_sound={SOUND_LIST:DWARF_DIE}
+ 	[resistance]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dwarves/Thunderwheel.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dwarves/Thunderwheel.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dwarves/Thunderwheel.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,9 +17,7 @@
+ 	cost=25
+ 	undead_variation=mounted
+ 	usage=scout
+-	unit_description= _ &quot;With the help of one more steam genie, those noisy vehicles are able to move faster than horses.&quot; + _ &quot;
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_CHARGE}
++	unit_description= _ &quot;With the help of one more steam genie, those noisy vehicles are able to move faster than horses.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_CHARGE}
+ 	get_hit_sound={SOUND_LIST:DWARF_HIT}
+ 	die_sound={SOUND_LIST:DWARF_DIE}
+ 	[resistance]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/dwarves/Warwheel.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/dwarves/Warwheel.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/dwarves/Warwheel.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,9 +18,7 @@
+ 	cost=35
+ 	undead_variation=mounted
+ 	usage=scout
+-	unit_description= _ &quot;Warwheels are faster and more heavily armored than Steamwheels, and can breach enemy lines with their fearsome charge.&quot; + _ &quot;
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_CHARGE}
++	unit_description= _ &quot;Warwheels are faster and more heavily armored than Steamwheels, and can breach enemy lines with their fearsome charge.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_CHARGE}
+ 	get_hit_sound={SOUND_LIST:DWARF_HIT}
+ 	die_sound={SOUND_LIST:DWARF_DIE}
+ 	[resistance]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/kalifa/Amir.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/kalifa/Amir.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/kalifa/Amir.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,7 +15,7 @@
+ 	cost=18
+ 	usage=fighter
+ 	{MAGENTA_IS_THE_TEAM_COLOR}
+-	unit_description= _ &quot;The Amir form the backbone of any Kalifa foot advance.  They are often sent against fortified enemy positions where their valor and skill with a sword allows them to assault seemingly inpenetrable defenses.&quot;
++	unit_description= _ &quot;The Amir form the backbone of any Kalifa foot advance.  They are often sent against fortified enemy positions where their valor and skill with a sword allows them to assault seemingly inpenetrable defenses.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MARKSMAN}
+ 	get_hit_sound={SOUND_LIST:HUMAN_HIT}
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/kalifa/Arif.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/kalifa/Arif.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/kalifa/Arif.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,7 +15,7 @@
+ 	cost=38
+ 	usage=fighter
+ 	{MAGENTA_IS_THE_TEAM_COLOR}
+-	unit_description= _ &quot;The Arif are made up of the more defensive minded Amir veterans.  They have become very skilled in using their shield to tire and stun their enemies.&quot;
++	unit_description= _ &quot;The Arif are made up of the more defensive minded Amir veterans.  They have become very skilled in using their shield to tire and stun their enemies.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MARKSMAN}+{SPECIAL_NOTES_SLOW}
+ 	get_hit_sound={SOUND_LIST:HUMAN_HIT}
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[resistance]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/kalifa/Ekim.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/kalifa/Ekim.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/kalifa/Ekim.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -21,7 +21,7 @@
+ 	cost=18
+ 	usage=healer
+ 	{MAGENTA_IS_THE_TEAM_COLOR}
+-	unit_description= _ &quot;Ekim use their knowledge of ancient medicine and herbal concoctions to quickly bring the Kalifa soldiers back to the front lines.&quot;
++	unit_description= _ &quot;Ekim use their knowledge of ancient medicine and herbal concoctions to quickly bring the Kalifa soldiers back to the front lines.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_CURES}
+ 	get_hit_sound={SOUND_LIST:HUMAN_HIT}
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/kalifa/Ekim_Haram.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/kalifa/Ekim_Haram.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/kalifa/Ekim_Haram.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -23,7 +23,7 @@
+ 	cost=35
+ 	usage=healer
+ 	{MAGENTA_IS_THE_TEAM_COLOR}
+-	unit_description= _ &quot;These sages have reached the absolute epitome medical knowledge and freely use their herbal concoctions on themselves without fear of side-effects.&quot;
++	unit_description= _ &quot;These sages have reached the absolute epitome medical knowledge and freely use their herbal concoctions on themselves without fear of side-effects.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_CURES}+{SPECIAL_NOTES_REGENERATES}
+ 	get_hit_sound={SOUND_LIST:HUMAN_HIT}
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/kalifa/Immortal.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/kalifa/Immortal.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/kalifa/Immortal.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,7 +16,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=18
+ 	usage=fighter
+-	unit_description= _ &quot;These Arif have become so skilled that thier foes wonder whether they can die at all.&quot;
++	unit_description= _ &quot;These Arif have become so skilled that thier foes wonder whether they can die at all.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MARKSMAN}+{SPECIAL_NOTES_SLOW}
+ 	get_hit_sound={SOUND_LIST:HUMAN_HIT}
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[resistance]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/kalifa/Mubarizan.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/kalifa/Mubarizan.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/kalifa/Mubarizan.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,7 +16,7 @@
+ 	cost=35
+ 	usage=fighter
+ 	{MAGENTA_IS_THE_TEAM_COLOR}
+-	unit_description= _ &quot;Mubarizan take pride in always manning the front lines of an offensive.  They regularly take down heavily fortified castles and seldom fail to inflict grievous losses on their foemen.&quot;
++	unit_description= _ &quot;Mubarizan take pride in always manning the front lines of an offensive.  They regularly take down heavily fortified castles and seldom fail to inflict grievous losses on their foemen.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MARKSMAN}+{SPECIAL_NOTES_FIRSTSTRIKE}
+ 	get_hit_sound={SOUND_LIST:HUMAN_HIT}
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/nagas/Assassin.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/nagas/Assassin.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/nagas/Assassin.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 	undead_variation=swimmer
+ 	cost=25
+ 	usage=archer
+-	unit_description= _ &quot;Naga Hunters are Naga who are skilled at hunting with a bow. Since the naga are naturally resistant to poison, they have no qualms about hunting with poisoned arrows. These two foot long shafts, tipped with a potent poison, have been known to slay many kinds of prey.&quot;
++	unit_description= _ &quot;Naga Hunters are Naga who are skilled at hunting with a bow. Since the naga are naturally resistant to poison, they have no qualms about hunting with poisoned arrows. These two foot long shafts, tipped with a potent poison, have been known to slay many kinds of prey.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_POISON}
+ 	hit_sound={SOUND_LIST:NAGA_HIT}
+ 	die_sound=naga-die.ogg
+ 	[defense]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/nagas/Depthprowler.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/nagas/Depthprowler.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/nagas/Depthprowler.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,9 +18,7 @@
+ 	undead_variation=swimmer
+ 	cost=26
+ 	usage=fighter
+-	unit_description= _ &quot;Some nagas, whether through cowardice or cunning, develop a knack for surviving in darker depths of the water. After special training, this knowledge can develop into an entirely different branch of combat, although it is just as deadly. Naga Depthstalkers are especially valued as brood guardians, where they keep watch over eggs laid in hidden caves.
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_BACKSTAB}
++	unit_description= _ &quot;Some nagas, whether through cowardice or cunning, develop a knack for surviving in darker depths of the water. After special training, this knowledge can develop into an entirely different branch of combat, although it is just as deadly. Naga Depthstalkers are especially valued as brood guardians, where they keep watch over eggs laid in hidden caves.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_BACKSTAB}+{SPECIAL_NOTES_SUBMERGE}
+ 	die_sound=naga-die.ogg
+ 	{DEFENSE_ANIM &quot;units/nagas/depthstalker-defend.png&quot; &quot;units/nagas/depthstalker.png&quot; {SOUND_LIST:NAGA_HIT} }
+ 	[abilities]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/nagas/Depthstalker.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/nagas/Depthstalker.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/nagas/Depthstalker.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,9 +18,7 @@
+ 	undead_variation=swimmer
+ 	cost=46
+ 	usage=fighter
+-	unit_description= _ &quot;Some nagas, whether through cowardice or cunning, develop a knack for surviving in darker depths of the water. After special training, this knowledge can develop into an entirely different branch of combat, although it is just as deadly. Naga Depthstalkers are especially valued as brood guardians, where they keep watch over eggs laid in hidden caves.
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_BACKSTAB}
++	unit_description= _ &quot;Some nagas, whether through cowardice or cunning, develop a knack for surviving in darker depths of the water. After special training, this knowledge can develop into an entirely different branch of combat, although it is just as deadly. Naga Depthstalkers are especially valued as brood guardians, where they keep watch over eggs laid in hidden caves.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_BACKSTAB}+{SPECIAL_NOTES_SUBMERGE}
+ 	die_sound=naga-die.ogg
+ 	{DEFENSE_ANIM &quot;units/nagas/depthstalker-defend.png&quot; &quot;units/nagas/depthstalker.png&quot; {SOUND_LIST:NAGA_HIT} }
+ 	[abilities]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/nagas/Hunter.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/nagas/Hunter.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/nagas/Hunter.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,7 +16,7 @@
+ 	undead_variation=swimmer
+ 	cost=16
+ 	usage=archer
+-	unit_description= _ &quot;Naga Hunters are Naga who are skilled at hunting with a bow. Since the naga are naturally resistant to poison, they have no qualms about hunting with poisoned arrows. These two foot long shafts, tipped with a potent poison, have been known to slay many kinds of prey.&quot;
++	unit_description= _ &quot;Naga Hunters are Naga who are skilled at hunting with a bow. Since the naga are naturally resistant to poison, they have no qualms about hunting with poisoned arrows. These two foot long shafts, tipped with a potent poison, have been known to slay many kinds of prey.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_POISON}
+ 	die_sound=naga-die.ogg
+ 	[movement_anim]
+ 		[frame]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/orcs/Shaman.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/orcs/Shaman.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/orcs/Shaman.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,9 +17,7 @@
+ 	advanceto=Orcish Witch Doctor,Orcish Warlock
+ 	cost=18
+ 	usage=mixed fighter
+-	unit_description= _ &quot;Orcish Shamans are the guardians of orcish magic. Respected among orcish tribes, they form the Orcish Council, which makes important decisions for the whole Orcish community and arbitrates the many conflicts that arise between tribes of this argumentative race. Although physically weak (for Orcs), Orcish Shamans are good spell casters and can curse their enemies, draining their life.
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_DRAIN}
++	unit_description= _ &quot;Orcish Shamans are the guardians of orcish magic. Respected among orcish tribes, they form the Orcish Council, which makes important decisions for the whole Orcish community and arbitrates the many conflicts that arise between tribes of this argumentative race. Although physically weak (for Orcs), Orcish Shamans are good spell casters and can curse their enemies, draining their life.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_DRAIN}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	{DEFENSE_ANIM &quot;units/orcs/shaman-tan-defend.png&quot; &quot;units/orcs/shaman-tan.png&quot; {SOUND_LIST:ORC_HIT} }
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/orcs/Witch_Doctor.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/orcs/Witch_Doctor.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/orcs/Witch_Doctor.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,9 +18,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=21
+ 	usage=mixed fighter
+-	unit_description= _ &quot;Orcish Shamans are the guardians of orcish magic. Respected among orcish tribes, they form the Orcish Council, which makes important decisions for the whole Orcish community and arbitrates the many conflicts that arise between tribes of this argumentative race. Although physically weak (for Orcs), Orcish Shamans are good spell casters and can curse their enemies, draining their life.
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_DRAIN}
++	unit_description= _ &quot;Orcish Shamans are the guardians of orcish magic. Respected among orcish tribes, they form the Orcish Council, which makes important decisions for the whole Orcish community and arbitrates the many conflicts that arise between tribes of this argumentative race. Although physically weak (for Orcs), Orcish Shamans are good spell casters and can curse their enemies, draining their life.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_DRAIN}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	{DEFENSE_ANIM &quot;units/orcs/shaman-black-defend.png&quot; &quot;units/orcs/shaman-black.png&quot; {SOUND_LIST:ORC_HIT} }
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/outlaws/Princess.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/outlaws/Princess.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/outlaws/Princess.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -20,7 +20,7 @@
+ 		{ABILITY_DISTRACT}
+ 	[/abilities]
+ 	usage=mixed fighter
+-	unit_description= _ &quot;A noble by birth, the Outlaw Princess has learnt swordplay with the greatest generals, but she is the product of a failed aristocracy who has opted for the life of an Outlaw. She dreams of founding her own Queendom with the plunder she finds on the road.&quot;
++	unit_description= _ &quot;A noble by birth, the Outlaw Princess has learnt swordplay with the greatest generals, but she is the product of a failed aristocracy who has opted for the life of an Outlaw. She dreams of founding her own Queendom with the plunder she finds on the road.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_DISTRACT}
+ 	die_sound={SOUND_LIST:HUMAN_FEMALE_DIE}
+ 	[defend]
+ 		hits=miss
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/outlaws/Queen.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/outlaws/Queen.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/outlaws/Queen.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -23,7 +23,7 @@
+ 		{ABILITY_LEADERSHIP_LEVEL_3}
+ 	[/abilities]
+ 	usage=mixed fighter
+-	unit_description= _ &quot;A noble by birth, the Outlaw Queen has learnt swordplay with the greatest generals and battle tactics with the greatest sages, making her both a great combatant and leader. However, she is the product of a failed aristocracy who has opted for the life of an Outlaw. She dreams of founding her own Queendom with the plunder she finds on the road, and she is ever so close to that goal.&quot;
++	unit_description= _ &quot;A noble by birth, the Outlaw Queen has learnt swordplay with the greatest generals and battle tactics with the greatest sages, making her both a great combatant and leader. However, she is the product of a failed aristocracy who has opted for the life of an Outlaw. She dreams of founding her own Queendom with the plunder she finds on the road, and she is ever so close to that goal.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_DISTRACT}+{SPECIAL_NOTES_LEADERSHIP}
+ 	die_sound={SOUND_LIST:HUMAN_FEMALE_DIE}
+ 	[defend]
+ 		hits=miss
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/outlaws/Rogue_Mage.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/outlaws/Rogue_Mage.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/outlaws/Rogue_Mage.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,7 +16,7 @@
+ 	advanceto=Shadow Mage
+ 	cost=17
+ 	usage=mixed fighter
+-	unit_description=&quot;Some mages are thrown out of the mage's guild for attempting to practice forbidden arts. Now completely outside the law, these rogue mages do whatever necessary to support their study of black magic. Although not as skilled as mages with more formal training, their magic can be quite lethal, while their banditry has resulted in moderate skill with the short sword.&quot;
++	unit_description=&quot;Some mages are thrown out of the mage's guild for attempting to practice forbidden arts. Now completely outside the law, these rogue mages do whatever necessary to support their study of black magic. Although not as skilled as mages with more formal training, their magic can be quite lethal, while their banditry has resulted in moderate skill with the short sword.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:HUMAN_OLD_HIT}
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[defend]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/outlaws/Shadow_Lord.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/outlaws/Shadow_Lord.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/outlaws/Shadow_Lord.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -20,7 +20,7 @@
+ 	cost=90
+ 	{AMLA_DEFAULT}
+ 	usage=mixed fighter
+-	unit_description=&quot;Few humans fathom the secrets of light and dark magic and retain their sanity.  Those that can master that balance become Shadow Lords, fully existing neither in the world of light nor the world of darkness.  No longer needing physical weapons, they are fearsome to both their enemies and those they lord over.&quot;
++	unit_description=&quot;Few humans fathom the secrets of light and dark magic and retain their sanity.  Those that can master that balance become Shadow Lords, fully existing neither in the world of light nor the world of darkness.  No longer needing physical weapons, they are fearsome to both their enemies and those they lord over.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}+{SPECIAL_NOTES_LEADERSHIP}
+ 	get_hit_sound={SOUND_LIST:HUMAN_OLD_HIT}
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[defend]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/outlaws/Shadow_Mage.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/outlaws/Shadow_Mage.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/outlaws/Shadow_Mage.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,7 +19,7 @@
+ 	advanceto=Shadow Lord
+ 	cost=52
+ 	usage=mixed fighter
+-	unit_description=&quot;Years of violence and brutality to support the study of forbidden magical arts have turned the shadow mages into feared fighters. Now completely enthralled with power, they have been known to command small followings of henchmen. They are outmatched in direct magical combat with their magic-using peers, instead channeling their energies into devestating melee attacks. Despite their offensive power, the corruption in their souls has begun to adversely affect their health.&quot;
++	unit_description=&quot;Years of violence and brutality to support the study of forbidden magical arts have turned the shadow mages into feared fighters. Now completely enthralled with power, they have been known to command small followings of henchmen. They are outmatched in direct magical combat with their magic-using peers, instead channeling their energies into devestating melee attacks. Despite their offensive power, the corruption in their souls has begun to adversely affect their health.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}+{SPECIAL_NOTES_LEADERSHIP}
+ 	get_hit_sound={SOUND_LIST:HUMAN_OLD_HIT}
+ 	die_sound={SOUND_LIST:HUMAN_DIE}
+ 	[defend]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Fury.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Fury.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Fury.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,7 +15,7 @@
+ 	advanceto=Sidhe Wildblade
+ 	cost=20
+ 	usage=fighter
+-	unit_description= _ &quot;The fury is a peculiar sidhe warrior, half-mystic half crazed. In the heat of the battle, he will throw himself in an all-out attack, fighting untile either he or his ennemy is dead.&quot;
++	unit_description= _ &quot;The fury is a peculiar sidhe warrior, half-mystic half crazed. In the heat of the battle, he will throw himself in an all-out attack, fighting untile either he or his ennemy is dead.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_BERSERK}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Herald.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Herald.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Herald.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,7 +17,7 @@
+ 	advanceto=Sidhe Warsinger
+ 	cost=32
+ 	usage=fighter
+-	unit_description= _ &quot;The Heralds are sidhe who go out onto the battlefield, singing the warrior chants that drive the others onwards.&quot;
++	unit_description= _ &quot;The Heralds are sidhe who go out onto the battlefield, singing the warrior chants that drive the others onwards.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_LEADERSHIP}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Raindancer.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Raindancer.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Raindancer.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,7 +15,7 @@
+ 	advanceto=Sidhe Windlasher,Sidhe Warmage
+ 	cost=22
+ 	usage=archer
+-	unit_description= _ &quot;The sidhe nobility are powerful mages. They have concentrated their powers on the calling of lighting from an otherwise clear sky, and their dancing among the lightning is what gave them their name of raindancers. Alas, the young and brash noblemen are uninterested in study, and more likely to go practice their swordplay than their magic.&quot;
++	unit_description= _ &quot;The sidhe nobility are powerful mages. They have concentrated their powers on the calling of lighting from an otherwise clear sky, and their dancing among the lightning is what gave them their name of raindancers. Alas, the young and brash noblemen are uninterested in study, and more likely to go practice their swordplay than their magic.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Shadowdancer.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Shadowdancer.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Shadowdancer.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 	[abilities]
+ 		{ABILITY_AMBUSH}
+ 	[/abilities]
+-	unit_description= _ &quot;Some may look down upon the shadowdancer's specialty, but they would be well advised not to do so in his face, lest they wish to have their sword in their back.&quot;
++	unit_description= _ &quot;Some may look down upon the shadowdancer's specialty, but they would be well advised not to do so in his face, lest they wish to have their sword in their back.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_AMBUSH}+{SPECIAL_NOTES_BACKSTAB}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Ancestor.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Ancestor.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Ancestor.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 	[/abilities]
+ 	cost=44
+ 	usage=spirit
+-	unit_description= _ &quot;Revered warriors of old roam through the woods of the sidhe, visible only due to their shining silver swords. They are only partially present in the mortal realm, and wounds close as if they had never existed. Their voice can whisper in the wind the words that chill the hearts of their ennemies.&quot;
++	unit_description= _ &quot;Revered warriors of old roam through the woods of the sidhe, visible only due to their shining silver swords. They are only partially present in the mortal realm, and wounds close as if they had never existed. Their voice can whisper in the wind the words that chill the hearts of their ennemies.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_TERROR}+{SPECIAL_NOTES_SYLVAN_SPARK}
+ 	get_hit_sound=wail.wav
+ 	die_sound=wail-long.wav
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Forefather.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Forefather.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Forefather.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,7 +19,7 @@
+ 	[/abilities]
+ 	cost=74
+ 	usage=spirit
+-	unit_description= _ &quot;The greatest warriors of the sidhe are far from gone. When you hear their death chant, echoing through the trees, know that their silver blades are also near.&quot;
++	unit_description= _ &quot;The greatest warriors of the sidhe are far from gone. When you hear their death chant, echoing through the trees, know that their silver blades are also near.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_TERROR}+{SPECIAL_NOTES_SYLVAN_SPARK}
+ 	get_hit_sound=wail.wav
+ 	die_sound=wail-long.wav
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Warrior.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Warrior.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Spirit_Warrior.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 	[/abilities]
+ 	cost=21
+ 	usage=spirit
+-	unit_description= _ &quot;The great sidhe warriors of times past are not quite gone. They roam through the forests of their former homes, seeking to perform the feats of arms they did in the past, and death is no obstacle...&quot;
++	unit_description= _ &quot;The great sidhe warriors of times past are not quite gone. They roam through the forests of their former homes, seeking to perform the feats of arms they did in the past, and death is no obstacle...&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_TERROR}+{SPECIAL_NOTES_SYLVAN_SPARK}
+ 	get_hit_sound=wail.wav
+ 	die_sound=wail-long.wav
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Stormlord.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Stormlord.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Stormlord.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,7 +15,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=106
+ 	usage=archer
+-	unit_description= _ &quot;The stormlord has spent his entire life studying magic. He has given up weapon practice and most physical pursuits for this. Many wild elves distrust them because of this, but they fear them even more. And if a sidhe fears someone...&quot;
++	unit_description= _ &quot;The stormlord has spent his entire life studying magic. He has given up weapon practice and most physical pursuits for this. Many wild elves distrust them because of this, but they fear them even more. And if a sidhe fears someone...&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Tempest.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Tempest.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Tempest.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -14,7 +14,7 @@
+ 	advanceto=Sidhe Stormlord
+ 	cost=56
+ 	usage=archer
+-	unit_description= _ &quot;Elder mages, seen as sages among the sidhe are given the name of tempest. They call down lightning with ease and use a magic whose raw destructive power is almost unequaled.&quot;
++	unit_description= _ &quot;Elder mages, seen as sages among the sidhe are given the name of tempest. They call down lightning with ease and use a magic whose raw destructive power is almost unequaled.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Thunderblade.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Thunderblade.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Thunderblade.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,7 +15,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=56
+ 	usage=mixed fighter
+-	unit_description= _ &quot;When the first sidhe lord died in battle, the shards of his mighty sword were collected and kept preciously by the fines wild elf mages. If a sidhe shows himself a great warrior and has the magic of the nobleborn, he might be awarded a thunderblade, a special sword enchanted with a fragment of the sidhe lord's great weapon.&quot;
++	unit_description= _ &quot;When the first sidhe lord died in battle, the shards of his mighty sword were collected and kept preciously by the fines wild elf mages. If a sidhe shows himself a great warrior and has the magic of the nobleborn, he might be awarded a thunderblade, a special sword enchanted with a fragment of the sidhe lord's great weapon.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Tracker.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Tracker.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Tracker.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 	[abilities]
+ 		{ABILITY_SKIRMISHER}
+ 	[/abilities]
+-	unit_description= _ &quot;Among the finest scouts known, wild elf trackers are swift and versatile, skilled in both hand to hand and ranged combat when using short spears. Their complete lack of armor is a liability, though.&quot;
++	unit_description= _ &quot;Among the finest scouts known, wild elf trackers are swift and versatile, skilled in both hand to hand and ranged combat when using short spears. Their complete lack of armor is a liability, though.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_SKIRMISHER}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Veiledblade.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Veiledblade.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Veiledblade.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,7 +17,7 @@
+ 	[abilities]
+ 		{ABILITY_AMBUSH}
+ 	[/abilities]
+-	unit_description= _ &quot;Not all sidhe like to fight up front. The shadowy veiledblades can slip in through the ennemy's defense, and stealthily hit an unexpecting foe, often mortally so.&quot;
++	unit_description= _ &quot;Not all sidhe like to fight up front. The shadowy veiledblades can slip in through the ennemy's defense, and stealthily hit an unexpecting foe, often mortally so.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_AMBUSH}+{SPECIAL_NOTES_BACKSTAB}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Wanderer.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Wanderer.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Wanderer.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,7 +19,7 @@
+ 	advanceto=Sidhe Tracker
+ 	cost=17
+ 	usage=scout
+-	unit_description= _ &quot;The sidhe sometimes have more lonesome among them who prefer the tracking and scouting to actual combat. These, known as wanderers, are armed with short spears that they use quite ... convincingly, though their real usefulness is for running ahead. Their extreme swiftness comes, however, at a price as they fight almost armorless and die fast in direct combat.&quot;
++	unit_description= _ &quot;The sidhe sometimes have more lonesome among them who prefer the tracking and scouting to actual combat. These, known as wanderers, are armed with short spears that they use quite ... convincingly, though their real usefulness is for running ahead. Their extreme swiftness comes, however, at a price as they fight almost armorless and die fast in direct combat.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_SKIRMISHER}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Warmage.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Warmage.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Warmage.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -14,7 +14,7 @@
+ 	advanceto=Sidhe Thunderblade
+ 	cost=38
+ 	usage=archer
+-	unit_description= _ &quot;Few sidhe are capable of staying away from battle for long. The war mages are wild elf nobility who, though trained as mages, spend most of their time sword in hand. Their prowesses with the sword are easily those of a warrior and their magic is a welcome ally.&quot;
++	unit_description= _ &quot;Few sidhe are capable of staying away from battle for long. The war mages are wild elf nobility who, though trained as mages, spend most of their time sword in hand. Their prowesses with the sword are easily those of a warrior and their magic is a welcome ally.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Warsinger.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Warsinger.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Warsinger.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=52
+ 	usage=fighter
+-	unit_description= _ &quot;The Warsinger is a master of the songs of combat. A powerful warrior himself, he can drive his companions into battle frenzies.&quot;
++	unit_description= _ &quot;The Warsinger is a master of the songs of combat. A powerful warrior himself, he can drive his companions into battle frenzies.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_LEADERSHIP}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Whirlwind.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Whirlwind.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Whirlwind.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -18,7 +18,7 @@
+ 		{ABILITY_SKIRMISHER}
+ 	[/abilities]
+ 	usage=fighter
+-	unit_description= _ &quot;The whirlwind is a wildblade who has survived many battles. A legend in his own way, he is feared by all sidhe who fear his rage. When he wishes to kill nothing and no one can stop him.&quot;
++	unit_description= _ &quot;The whirlwind is a wildblade who has survived many battles. A legend in his own way, he is feared by all sidhe who fear his rage. When he wishes to kill nothing and no one can stop him.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_BERSERK}+{SPECIAL_NOTES_SKIRMISHER}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Wildblade.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Wildblade.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Wildblade.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -15,7 +15,7 @@
+ 	advanceto=Sidhe Whirlwind
+ 	cost=35
+ 	usage=fighter
+-	unit_description= _ &quot;A wildblade, once its battle rage has started, is a terrifying thing to behold. Hitting left and right with a strength and a devotion rarely seen, he cares not for pain, or even death...&quot;
++	unit_description= _ &quot;A wildblade, once its battle rage has started, is a terrifying thing to behold. Hitting left and right with a strength and a devotion rarely seen, he cares not for pain, or even death...&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_BERSERK}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Windlasher.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Windlasher.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Windlasher.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -14,7 +14,7 @@
+ 	advanceto=Sidhe Tempest
+ 	cost=38
+ 	usage=archer
+-	unit_description= _ &quot;The sidhe who dedicates himself to the windlasher's life will find it a hard one. He must stop the training in arms and devote himself to the study of magic. Few choose this path, but it is a worthy one.&quot;
++	unit_description= _ &quot;The sidhe who dedicates himself to the windlasher's life will find it a hard one. He must stop the training in arms and devote himself to the study of magic. Few choose this path, but it is a worthy one.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sidhe/Windrunner.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sidhe/Windrunner.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sidhe/Windrunner.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,7 +19,7 @@
+ 	[abilities]
+ 		{ABILITY_SKIRMISHER}
+ 	[/abilities]
+-	unit_description= _ &quot;The windrunners are the finest scouts available to the sidhe. Their speed is unbelievable, and their prowesses with their spears, whether thrown or in hand to hand, are amazing. They might die fast in direct combat, though.&quot;
++	unit_description= _ &quot;The windrunners are the finest scouts available to the sidhe. Their speed is unbelievable, and their prowesses with their spears, whether thrown or in hand to hand, are amazing. They might die fast in direct combat, though.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_SKIRMISHER}
+ 	get_hit_sound={SOUND_LIST:ELF_HIT}
+ 	die_sound={SOUND_LIST:ELF_HIT}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Flanker.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Flanker.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Flanker.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,7 +17,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=22
+ 	usage=scout
+-	unit_description= _ &quot;Some goblins have discovered that the skills gained on the hunt can be put to use on the battlefield. While goblins are not overly welcome among the raiding parties, they are undeniably useful and so their presence is tolerated, if grudgingly.&quot;
++	unit_description= _ &quot;Some goblins have discovered that the skills gained on the hunt can be put to use on the battlefield. While goblins are not overly welcome among the raiding parties, they are undeniably useful and so their presence is tolerated, if grudgingly.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_SLOW}
+ 	get_hit_sound={SOUND_LIST:GOBLIN_HIT}
+ 	die_sound={SOUND_LIST:GOBLIN_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Hunter.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Hunter.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Hunter.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,7 +16,7 @@
+ 	advanceto=Steppe Flanker,Steppe Striker,
+ 	cost=15
+ 	usage=scout
+-	unit_description= _ &quot;The cruel life on the steppes tends to weed out the weak early on and harden those that remain. For this reason goblins are nowhere near as common on the steppe as they are elsewhere. Those that do survive often make themselves useful as scouts or scavengers. In hunting parties they specialise in the use of barbed harpoons to lame prey, allowing an easier kill for their larger orcish bretheren.&quot;
++	unit_description= _ &quot;The cruel life on the steppes tends to weed out the weak early on and harden those that remain. For this reason goblins are nowhere near as common on the steppe as they are elsewhere. Those that do survive often make themselves useful as scouts or scavengers. In hunting parties they specialise in the use of barbed harpoons to lame prey, allowing an easier kill for their larger orcish bretheren.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_SLOW}
+ 	get_hit_sound={SOUND_LIST:GOBLIN_HIT}
+ 	die_sound={SOUND_LIST:GOBLIN_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Drover.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Drover.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Drover.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,9 +17,7 @@
+ 	cost=34
+ 	usage=archer
+ 	unit_description= _ &quot;A Herder of sufficiant ability can become what the Steppe Orcs call a Drover, the elite of the IceWind order. With age and experience in the control of elemental magics. Some have claimed to be capable of summoning forth fierce blizzards from a clear sky, an unlikely feat unconfirmed by outsiders. When asked about the mechanics of their abilities they often answer by refering to themselves as 'conduits'. Just what it is that they channel is never revealed.
+-The tribespeople claim to notice a blue tinge that begins to pervade their normally brown complexion and a crystalline hardness of their skin. Other steppe orcs whisper that this is because their hearts pump not blood, but ice. 
+-
+-Special Notes: The Frost attack inflicted by the IceWind Drover is magical in nature and always has a high chance of hitting an enemy.&quot;
++The tribespeople claim to notice a blue tinge that begins to pervade their normally brown complexion and a crystalline hardness of their skin. Other steppe orcs whisper that this is because their hearts pump not blood, but ice.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[resistance]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Herder.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Herder.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Herder.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,9 +19,7 @@
+ 	unit_description= _ &quot;There is an old tale about the creation of the the IceWind order: A gang of children were fishing when a very young female, hooking something bigger then she could land, was dragged into the subzero waters. She did not reappear. Two days later, by which time the tribe had nearly forgotton the loss, a sentry witnessed an unnerving spectacle. The very same girl, delirious with exhaustion and deathly pale, was spotted dragging herself from the pond.
+ After the incident the girl, whose name is a closely guarded secret, was never the same. The tribespeople told stories of seeing her freeze a bear solid, simply by looking at it, others claimed that she went out by night to converse with unseen things that moved in the water. Nobody dared approch her about these rumours, lest they prove to be true. 
+ She became the founder of the IceWind order, every year she would select children from the tribe to train. Whatever she taught them, it granted them a mysterious influence over the elements of their habitat. The Herders themselves describe this influence as 'union'. Within her lifetime the order became an accepted part of the clan. 
+-The child refused outright to reveal what had happened in the frozen pool and when she died many years later the secret died with her. 
+-
+-Special Notes: In battle Herder's are able to conjure up a field of lethal cold. This is magical in nature and always has a high chance of damaging an enemy.&quot;
++The child refused outright to reveal what had happened in the frozen pool and when she died many years later the secret died with her.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[resistance]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Master.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Master.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Icewind_Master.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,9 +17,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=55
+ 	usage=archer
+-	unit_description= _ &quot;Masters are a rare thing indeed, especially in a race with little aptitude for magic. There is almost never more then one in each generation and, as often as not, no Masters will emerge for decades. Those that do reach this pinnacle of their order are often of reclusive nature, as their power seperates them from the main clan. However the reasons for their estrangement also grant them great respect from their brethren.
+-
+-Special Notes: The Frost attack inflicted by the IceWind Master is magical in nature and always has a high chance of hitting an enemy.&quot;
++	unit_description= _ &quot;Masters are a rare thing indeed, especially in a race with little aptitude for magic. There is almost never more then one in each generation and, as often as not, no Masters will emerge for decades. Those that do reach this pinnacle of their order are often of reclusive nature, as their power seperates them from the main clan. However the reasons for their estrangement also grant them great respect from their brethren.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[resistance]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Juggernaut.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Juggernaut.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Juggernaut.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,9 +17,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=40
+ 	usage=fighter
+-	unit_description= _ &quot;Some of the Steppe Orcs aspiring to power realise that they actually have a certain aptitude for the charge. Abandoning the pursuit of leadership, these Juggernauts fling themselves on the enemy with utterly ferocious recklessness. In one legendary incident, likely made greater with each telling, an entire squad of elves scattered and ran at the sight of a single Juggernaut bearing down on them.
+-
+-Special Notes: When used on the offensive the intimidation of a Juggernauts charging flail attack decreases the damage he takes in retaliation. This only effects enemies of equal or lesser level.&quot;
++	unit_description= _ &quot;Some of the Steppe Orcs aspiring to power realise that they actually have a certain aptitude for the charge. Abandoning the pursuit of leadership, these Juggernauts fling themselves on the enemy with utterly ferocious recklessness. In one legendary incident, likely made greater with each telling, an entire squad of elves scattered and ran at the sight of a single Juggernaut bearing down on them.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_DREAD}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Khan.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Khan.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Khan.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -21,9 +21,7 @@
+ 		{ABILITY_LEADERSHIP_LEVEL_3}
+ 	[/abilities]
+ 	unit_description= _ &quot;The steppe chieftains are titled Khans, serving as both statesmen and generals. They have discovered the advantages of leading from behind, urging their fellows on before them. Before a battle it is customary for them to mingle with the soldiers, goading them on with threats, promises, insults or just primal bellows. Anything to spur them into a towering rage. Nearly everyone who has fought the orcs of the steppe has spoke of the unnerving roars of the orcish leaders.
+-Despite this, Khans are more then ready to enter the fray against any especially audacious enemy that seeks to challenge them. Often, while retaining their flail, they focus on using the axe as they are considered too valuable an asset to risk in daredevil charges. 
+-
+-Special Notes: When used on the offensive the intimidation of a Khans charging flail attack decreases the damage he takes in retaliation. This only effects enemies of equal or lesser level.&quot;
++Despite this, Khans are more then ready to enter the fray against any especially audacious enemy that seeks to challenge them. Often, while retaining their flail, they focus on using the axe as they are considered too valuable an asset to risk in daredevil charges.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_LEADERSHIP}+{SPECIAL_NOTES_DREAD}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Outcast.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Outcast.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Outcast.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,9 +17,7 @@
+ 	cost=30
+ 	usage=fighter
+ 	unit_description= _ &quot;Not all initiates to the IceWind order are successful. Some lack the necessary patience, others are found wanting in mental edurance. However being excluded from the order cannot make them forget what they have learned.
+-When the Outcasts first began performing supposedly forbidden magic on their own, the IceWind order raised an uproar in the tribal council. Under threat of exile the Outcasts were forced to ceace their activities. But their order survived, albeit in a different form. Rather then mimic their counterparts, they developed a parallel sect taht exists on the fringes of the tribe. The magics worked by the Outcasts are undeniably crude, but have great practicle use. However they are denied the mystical union with their icy home, that is a right reserved for the Herders. 
+-
+-Special Notes: The strike of the Outcast is of a magical variety and always has a high chance of success.&quot;
++When the Outcasts first began performing supposedly forbidden magic on their own, the IceWind order raised an uproar in the tribal council. Under threat of exile the Outcasts were forced to ceace their activities. But their order survived, albeit in a different form. Rather then mimic their counterparts, they developed a parallel sect taht exists on the fringes of the tribe. The magics worked by the Outcasts are undeniably crude, but have great practicle use. However they are denied the mystical union with their icy home, that is a right reserved for the Herders.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Pariah.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Pariah.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Pariah.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,9 +16,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=46
+ 	usage=fighter
+-	unit_description= _ &quot;Those rejects of the IceWind order who achieve veteran status in their art are looked upon as akin to minor criminals. However not even the Herders can deny that they are more then a little useful. Pariahs have little loyalty to the clan and rarely fight except for an incentive. When they do, they specialise in flushing foes from fortified positions or difficult terrain.
+-
+-Special Notes: The strike of the Pariah is of a magical variety and always has a high chance of success.&quot;
++	unit_description= _ &quot;Those rejects of the IceWind order who achieve veteran status in their art are looked upon as akin to minor criminals. However not even the Herders can deny that they are more then a little useful. Pariahs have little loyalty to the clan and rarely fight except for an incentive. When they do, they specialise in flushing foes from fortified positions or difficult terrain.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Rigid.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Rigid.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Rigid.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,9 +16,7 @@
+ 	advanceto=Steppe Stoic
+ 	cost=32
+ 	usage=defender
+-	unit_description= _ &quot;Aptly named, the Rigid are a near unbreakable foe. They often form fall-back positions behind the battle lines. Many a time the Rigid have been sacrificed, delaying the enemy while the main force recovers and regroups behind their unyielding wall of flesh, bone and iron. Their role is hardly a glorious one and usually comes to an end jammed into a choke point against hopeless odds.
+-
+-Special Notes: Due to their lack of weaponry Rigid can not attack the enemy. When attacked however, they retaliate with heavy strikes with the front of their shields.&quot;
++	unit_description= _ &quot;Aptly named, the Rigid are a near unbreakable foe. They often form fall-back positions behind the battle lines. Many a time the Rigid have been sacrificed, delaying the enemy while the main force recovers and regroups behind their unyielding wall of flesh, bone and iron. Their role is hardly a glorious one and usually comes to an end jammed into a choke point against hopeless odds.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_DEFEND_ONLY}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[resistance]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Savage.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Savage.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Savage.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,9 +17,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=34
+ 	usage=fighter
+-	unit_description= _ &quot;Unlike humans or elves, most orcs find a barbaric thrill in the chaos and blood of battle. Some so much so that the experience pushes their psyche, unstable and voilent at the best of times, dangerously close to the brink. Teetering on the fine edge between sanity and burning instinct, they are feared nearly as much by their comrades as by their enemies. Hurling themselves bodily into the fray, they attack enemies solely with their fists and teeth. Savages cease to use armour at all, allowing them greater speed and ease of movement but sacrificing the protection it gives. Few have been known to survive beyond early adulthood.
+-
+-Special Notes: When fighting, Savages enter a voilent frenzy, driving home their attack until their own death or that of their target.&quot;
++	unit_description= _ &quot;Unlike humans or elves, most orcs find a barbaric thrill in the chaos and blood of battle. Some so much so that the experience pushes their psyche, unstable and voilent at the best of times, dangerously close to the brink. Teetering on the fine edge between sanity and burning instinct, they are feared nearly as much by their comrades as by their enemies. Hurling themselves bodily into the fray, they attack enemies solely with their fists and teeth. Savages cease to use armour at all, allowing them greater speed and ease of movement but sacrificing the protection it gives. Few have been known to survive beyond early adulthood.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_BERSERK}
+ 	[defense]
+ 		deep_water=80
+ 		shallow_water=70
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Shieldbearer.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Shieldbearer.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Shieldbearer.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,9 +16,7 @@
+ 	advanceto=Steppe Rigid
+ 	cost=12
+ 	usage=defender
+-	unit_description= _ &quot;Some soldiers are given a special role, quite different from any of their comrades. Shieldbearers carry no real weapon at all. Their unique duty is to protect the wounded, patch up holes in the line and, if all looks to be lost, hold off the enemy long enough to cover their retreating army. It has often been said by the Steppe Orcs that while the Shieldbearers have never secured victory, they have numerous times prevented utter defeat.
+-
+-Special Notes: Due to their lack of weaponry Shieldbearers can not attack the enemy. When defending however, they retaliate with heavy strikes with the front of their shields.&quot;
++	unit_description= _ &quot;Some soldiers are given a special role, quite different from any of their comrades. Shieldbearers carry no real weapon at all. Their unique duty is to protect the wounded, patch up holes in the line and, if all looks to be lost, hold off the enemy long enough to cover their retreating army. It has often been said by the Steppe Orcs that while the Shieldbearers have never secured victory, they have numerous times prevented utter defeat.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_DEFEND_ONLY}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[resistance]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Skewer.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Skewer.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Skewer.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,9 +17,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=44
+ 	usage=fighter
+-	unit_description= _ &quot;While orcs may not be renowned for their intellectual capacity, it is well within their powers of thinking to realise that a longer spear will allow them to impale an enemy from greater distance. In addition, Skewers delight in crafting barbed heads for their spears, further increasing their grisly effectiveness.
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_FIRSTSTRIKE}
++	unit_description= _ &quot;While orcs may not be renowned for their intellectual capacity, it is well within their powers of thinking to realise that a longer spear will allow them to impale an enemy from greater distance. In addition, Skewers delight in crafting barbed heads for their spears, further increasing their grisly effectiveness.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_FIRSTSTRIKE}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Spearhead.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Spearhead.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Spearhead.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,9 +16,7 @@
+ 	advanceto=Steppe Juggernaut,Steppe Vanguard
+ 	cost=20
+ 	usage=fighter
+-	unit_description= _ &quot;Any Steppe Orcs wishing to lead their comrades must first show their worth in battle. Spearheads lead the charge into the enemy, seeking to crash a hole in the battle lines of the foe. It is a dangerous profession to say the least. Their eagerness to impress frequently results in a sticky end. Their crude but often effective tactics are complemented by equally crude but effective weapons. A weight attached to a chain makes a perfectly servicable flail.
+-
+-Special Notes: When used on the offensive the intimidation of a Spearheads charging flail attack decreases the damage he takes in retaliation. This only effects enemies of equal or lesser level.&quot;
++	unit_description= _ &quot;Any Steppe Orcs wishing to lead their comrades must first show their worth in battle. Spearheads lead the charge into the enemy, seeking to crash a hole in the battle lines of the foe. It is a dangerous profession to say the least. Their eagerness to impress frequently results in a sticky end. Their crude but often effective tactics are complemented by equally crude but effective weapons. A weight attached to a chain makes a perfectly servicable flail.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_DREAD}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Stoic.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Stoic.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Stoic.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,9 +17,7 @@
+ 	{AMLA_DEFAULT}
+ 	cost=41
+ 	usage=defender
+-	unit_description= _ &quot;The Stoic are embodiments of endurance, plain and simple. They are characterized by sheer stubbornness and refusal to go down even under the heaviest of blows. Time and again a foe has struck down a Stoic and thought him dead, only to see the hardy orc lift himself from among the corpses of the dead, raise his shield and reasume his position.
+-
+-Special Notes: Due to their lack of weaponry Stoic may not attack the enemy. When attacked however, they retaliate with heavy strikes with the front of their shields. &quot;
++	unit_description= _ &quot;The Stoic are embodiments of endurance, plain and simple. They are characterized by sheer stubbornness and refusal to go down even under the heaviest of blows. Time and again a foe has struck down a Stoic and thought him dead, only to see the hardy orc lift himself from among the corpses of the dead, raise his shield and reasume his position.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_DEFEND_ONLY}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[resistance]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Striker.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Striker.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Striker.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -20,7 +20,7 @@
+ 	[abilities]
+ 		{ABILITY_SKIRMISHER}
+ 	[/abilities]
+-	unit_description= _ &quot;Rather then weaken foes for others to finish off, Strikers seek the killing blow themselves. However they do not possess the physique to survive long in a straight fight. Instead they dart around the main fracas, seeking to surprise distracted enemies.&quot;
++	unit_description= _ &quot;Rather then weaken foes for others to finish off, Strikers seek the killing blow themselves. However they do not possess the physique to survive long in a straight fight. Instead they dart around the main fracas, seeking to surprise distracted enemies.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_BACKSTAB}
+ 	get_hit_sound={SOUND_LIST:GOBLIN_HIT}
+ 	die_sound={SOUND_LIST:GOBLIN_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Vanguard.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Vanguard.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/steppe_orcs/Vanguard.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -19,9 +19,7 @@
+ 	[abilities]
+ 		{ABILITY_LEADERSHIP_LEVEL_2}
+ 	[/abilities]
+-	unit_description= _ &quot;Having proven themselves in battle, Vanguards start to assert their authority others. Their experience is put to use on the battlefield, where they direct the actions of their comrades. Yet often in the fracas of battle these subtleties are disregarded and the Vanguards live up to their name, leading by example. They have however learnt some restraint, complementing their flails with a standard battleaxe similar to that used by steppe warriors.
+-
+-Special Notes: When used on the offensive the intimidation of a Vanguards charging flail attack decreases the damage he takes in retaliation. This only effects enemies of equal or lesser level.&quot;
++	unit_description= _ &quot;Having proven themselves in battle, Vanguards start to assert their authority others. Their experience is put to use on the battlefield, where they direct the actions of their comrades. Yet often in the fracas of battle these subtleties are disregarded and the Vanguards live up to their name, leading by example. They have however learnt some restraint, complementing their flails with a standard battleaxe similar to that used by steppe warriors.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_LEADERSHIP}+{SPECIAL_NOTES_DREAD}
+ 	get_hit_sound={SOUND_LIST:ORC_HIT}
+ 	die_sound={SOUND_LIST:ORC_DIE}
+ 	[attack]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Dryad.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Dryad.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Dryad.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -17,15 +17,14 @@
+ 	{AMLA_DEFAULT}
+ 	cost=60
+ 	usage=archer
+-	unit_description= _ &quot;Mischievous in nature, these fiery fairies are pranksters at heart, with a sense of humor that is often called nymph-like. While their command of the fire element remains a mystery, it has been rumored that these fairies are cousins to the imp.  However, their protective attitude of nature and whimsical personality make them fast friends to the elves.
+-Special Notes:&quot;+{SPECIAL_NOTES_MAGICAL}
++	unit_description= _ &quot;Mischievous in nature, these fiery fairies are pranksters at heart, with a sense of humor that is often called nymph-like. While their command of the fire element remains a mystery, it has been rumored that these fairies are cousins to the imp.  However, their protective attitude of nature and whimsical personality make them fast friends to the elves.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	die_sound={SOUND_LIST:ELF_FEMALE_HIT}
+ 	{DEFENSE_ANIM_RANGE &quot;units/fairies-sylvan/dryad.png&quot; &quot;units/fairies-sylvan/dryad.png&quot; {SOUND_LIST:ELF_FEMALE_HIT} melee }
+ 	{DEFENSE_ANIM_ELVEN_RANGE &quot;units/fairies-sylvan/dryad.png&quot; &quot;units/fairies-sylvan/dryad.png&quot; {SOUND_LIST:ELF_FEMALE_HIT} ranged }
+ 
+ 	[attack]
+-		name=fire aura
+-		description= _ &quot;fire aura&quot;
++		name=fire touch
++		description= _ &quot;fire touch&quot;
+ 		icon=attacks/aura-fire.png
+ 		type=fire
+ 		range=melee
+@@ -47,7 +46,7 @@
+ 	[/attack]
+ 	[attack_anim]
+ 		[attack_filter]
+-			name=fire aura
++			name=fire touch
+ 		[/attack_filter]
+ 		{MELEE_FRAME_FIRE_AURA}
+ 	[/attack_anim]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Faerie.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Faerie.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Faerie.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,14 +16,14 @@
+ 	advanceto=Faerie Dryad,Faerie Spirit
+ 	cost=42
+ 	usage=archer
+-	unit_description= _ &quot;Mischievous in nature, these fiery fairies are pranksters at heart, with a sense of humor that is often called nymph-like. While their command of the fire element remains a mystery, it has been rumored that these fairies are cousins to the imp.  However, their protective attitude of nature and whimsical personality make them fast friends to the elves.Special Notes:&quot;+{SPECIAL_NOTES_MAGICAL}
++	unit_description= _ &quot;Mischievous in nature, these fiery fairies are pranksters at heart, with a sense of humor that is often called nymph-like. While their command of the fire element remains a mystery, it has been rumored that these fairies are cousins to the imp.  However, their protective attitude of nature and whimsical personality make them fast friends to the elves.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	die_sound={SOUND_LIST:ELF_FEMALE_HIT}
+ 	{DEFENSE_ANIM_RANGE &quot;units/fairies-sylvan/fairy.png&quot; &quot;units/fairies-sylvan/fairy.png&quot; {SOUND_LIST:ELF_FEMALE_HIT} melee }
+ 	{DEFENSE_ANIM_ELVEN_RANGE &quot;units/fairies-sylvan/fairy.png&quot; &quot;units/fairies-sylvan/fairy.png&quot; {SOUND_LIST:ELF_FEMALE_HIT} ranged }
+ 
+ 	[attack]
+-		name=fire aura
+-		description= _ &quot;fire aura&quot;
++		name=fire touch
++		description= _ &quot;fire touch&quot;
+ 		icon=attacks/aura-fire.png
+ 		type=fire
+ 		range=melee
+@@ -45,7 +45,7 @@
+ 	[/attack]
+ 	[attack_anim]
+ 		[attack_filter]
+-			name=fire aura
++			name=fire touch
+ 		[/attack_filter]
+ 		{MELEE_FRAME_FIRE_AURA}
+ 	[/attack_anim]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Spirit.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Spirit.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Spirit.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -31,15 +31,14 @@
+ 	{AMLA_DEFAULT}
+ 	cost=60
+ 	usage=archer
+-	unit_description= _ &quot;Mischievous in nature, these fiery fairies are pranksters at heart, with a sense of humor that is often called nymph-like. While their command of the fire element remains a mystery, it has been rumored that these fairies are cousins to the imp.  However, their protective attitude of nature and whimsical personality make them fast friends to the elves.
+-Special Notes:&quot;+{SPECIAL_NOTES_MAGICAL}
++	unit_description= _ &quot;Mischievous in nature, these fiery fairies are pranksters at heart, with a sense of humor that is often called nymph-like. While their command of the fire element remains a mystery, it has been rumored that these fairies are cousins to the imp.  However, their protective attitude of nature and whimsical personality make them fast friends to the elves.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	die_sound={SOUND_LIST:ELF_FEMALE_HIT}
+ 	{DEFENSE_ANIM_RANGE &quot;units/fairies-sylvan/spirit.png&quot; &quot;units/fairies-sylvan/spirit.png&quot; {SOUND_LIST:ELF_FEMALE_HIT} melee }
+ 	{DEFENSE_ANIM_ELVEN_RANGE &quot;units/fairies-sylvan/spirit.png&quot; &quot;units/fairies-sylvan/spirit.png&quot; {SOUND_LIST:ELF_FEMALE_HIT} ranged }
+ 
+ 	[attack]
+-		name=fire aura
+-		description= _ &quot;fire aura&quot;
++		name=fire touch
++		description= _ &quot;fire touch&quot;
+ 		icon=attacks/aura-fire.png
+ 		type=fire
+ 		range=melee
+@@ -64,7 +63,7 @@
+ 	[/attack]
+ 	[attack_anim]
+ 		[attack_filter]
+-			name=fire aura
++			name=fire touch
+ 		[/attack_filter]
+ 		{MELEE_FRAME_FIRE_AURA}
+ 	[/attack_anim]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Sprite.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Sprite.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/sylvan_fairies/Sprite.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -16,14 +16,14 @@
+ 	advanceto=Fire Faerie
+ 	cost=21
+ 	usage=archer
+-	unit_description= _ &quot;Mischievous in nature, these fiery fairies are pranksters at heart, with a sense of humor that is often called nymph-like. While their command of the fire element remains a mystery, it has been rumored that these fairies are cousins to the imp.  However, their protective attitude of nature and whimsical personality make them fast friends to the elves.Special Notes:&quot;+{SPECIAL_NOTES_MAGICAL}
++	unit_description= _ &quot;Mischievous in nature, these fiery fairies are pranksters at heart, with a sense of humor that is often called nymph-like. While their command of the fire element remains a mystery, it has been rumored that these fairies are cousins to the imp.  However, their protective attitude of nature and whimsical personality make them fast friends to the elves.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_MAGICAL}
+ 	die_sound={SOUND_LIST:ELF_FEMALE_HIT}
+ 	{DEFENSE_ANIM_RANGE &quot;units/fairies-sylvan/sprite.png&quot; &quot;units/fairies-sylvan/sprite.png&quot; {SOUND_LIST:ELF_FEMALE_HIT} melee }
+ 	{DEFENSE_ANIM_ELVEN_RANGE &quot;units/fairies-sylvan/sprite.png&quot; &quot;units/fairies-sylvan/sprite.png&quot; {SOUND_LIST:ELF_FEMALE_HIT} ranged }
+ 
+ 	[attack]
+-		name=fire aura
+-		description= _ &quot;fire aura&quot;
++		name=fire touch
++		description= _ &quot;fire touch&quot;
+ 		icon=attacks/aura-fire.png
+ 		type=fire
+ 		range=melee
+@@ -45,7 +45,7 @@
+ 	[/attack]
+ 	[attack_anim]
+ 		[attack_filter]
+-			name=fire aura
++			name=fire touch
+ 		[/attack_filter]
+ 		{MELEE_FRAME_FIRE_AURA}
+ 	[/attack_anim]
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/trolls/Shaman.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/trolls/Shaman.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/trolls/Shaman.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -22,7 +22,7 @@
+ 	cost=32
+ 	undead_variation=troll
+ 	usage=mixed fighter
+-	unit_description= _ &quot;Troll shamans are the mystical leaders of the trolls. Though not as strong or tough as other trolls, their true power lies in their fire magic, which they use to blast enemies with gouts of fire.&quot;
++	unit_description= _ &quot;Troll shamans are the mystical leaders of the trolls. Though not as strong or tough as other trolls, their true power lies in their fire magic, which they use to blast enemies with gouts of fire.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_REGENERATES}+{SPECIAL_NOTES_MAGICAL}
+ 	{DEFENSE_ANIM &quot;units/trolls/shaman-defend.png&quot; &quot;units/trolls/shaman.png&quot; {SOUND_LIST:TROLL_HIT} }
+ 	die_sound={SOUND_LIST:TROLL_DIE}
+ 	#melee attack should be worse than troll rocklobber,
+
+Modified: branches/1.4/Extended_Era/Extended_Era/units/woses/Shaman.cfg
+===================================================================
+--- branches/1.4/Extended_Era/Extended_Era/units/woses/Shaman.cfg	2008-05-01 09:46:53 UTC (rev 2186)
++++ branches/1.4/Extended_Era/Extended_Era/units/woses/Shaman.cfg	2008-05-01 13:49:40 UTC (rev 2187)
+@@ -23,9 +23,7 @@
+ 		{ABILITY_REGENERATES}
+ 	[/abilities]
+ 	usage=mixed fighter
+-	unit_description=_&quot;These woses are able to command forest plants such as vines and creepers to hinder their enemies.
+-
+-Special Notes:&quot;+{SPECIAL_NOTES_AMBUSH}+{SPECIAL_NOTES_REGENERATES}+{SPECIAL_NOTES_SLOW}
++	unit_description=_&quot;These woses are able to command forest plants such as vines and creepers to hinder their enemies.&quot;+{SPECIAL_NOTES}+{SPECIAL_NOTES_AMBUSH}+{SPECIAL_NOTES_REGENERATES}+{SPECIAL_NOTES_SLOW}
+ 	get_hit_sound=wose-hit.ogg
+ 	die_sound=wose-die.ogg
+ 	[attack]
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001374.html">[Wescamp-i18n-commit] r2186 - in	branches/1.4/Invasion_from_the_Unknown:	Invasion_from_the_Unknown/translations/fr/LC_MESSAGES po
+</A></li>
+	<LI>Next message: <A HREF="001376.html">[Wescamp-i18n-commit] r2188 - in branches/1.4/The_Heist/The_Heist:	. maps scenarios utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1375">[ date ]</a>
+              <a href="thread.html#1375">[ thread ]</a>
+              <a href="subject.html#1375">[ subject ]</a>
+              <a href="author.html#1375">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

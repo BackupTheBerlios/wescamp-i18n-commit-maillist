@@ -1,0 +1,476 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r3412 - in branches/1.10/Trinity: . Trinity	Trinity/external_data Trinity/external_data/images	Trinity/images Trinity/images/misc Trinity/images/misc/fire	Trinity/images/portraits Trinity/images/portraits/transparent	Trinity/images/story Trinity/images/terrain	Trinity/images/units Trinity/maps Trinity/scenarios	Trinity/units Trinity/utils
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2011-February/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3412%20-%20in%20branches/1.10/Trinity%3A%20.%20Trinity%0A%09Trinity/external_data%20Trinity/external_data/images%0A%09Trinity/images%20Trinity/images/misc%20Trinity/images/misc/fire%0A%09Trinity/images/portraits%20Trinity/images/portraits/transparent%0A%09Trinity/images/story%20Trinity/images/terrain%0A%09Trinity/images/units%20Trinity/maps%20Trinity/scenarios%0A%09Trinity/units%20Trinity/utils&In-Reply-To=%3C20110219134733.441D04813DD%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002526.html">
+   <LINK REL="Next"  HREF="002528.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r3412 - in branches/1.10/Trinity: . Trinity	Trinity/external_data Trinity/external_data/images	Trinity/images Trinity/images/misc Trinity/images/misc/fire	Trinity/images/portraits Trinity/images/portraits/transparent	Trinity/images/story Trinity/images/terrain	Trinity/images/units Trinity/maps Trinity/scenarios	Trinity/units Trinity/utils</H1>
+    <B>mordante at mail.berlios.de</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3412%20-%20in%20branches/1.10/Trinity%3A%20.%20Trinity%0A%09Trinity/external_data%20Trinity/external_data/images%0A%09Trinity/images%20Trinity/images/misc%20Trinity/images/misc/fire%0A%09Trinity/images/portraits%20Trinity/images/portraits/transparent%0A%09Trinity/images/story%20Trinity/images/terrain%0A%09Trinity/images/units%20Trinity/maps%20Trinity/scenarios%0A%09Trinity/units%20Trinity/utils&In-Reply-To=%3C20110219134733.441D04813DD%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r3412 - in branches/1.10/Trinity: . Trinity	Trinity/external_data Trinity/external_data/images	Trinity/images Trinity/images/misc Trinity/images/misc/fire	Trinity/images/portraits Trinity/images/portraits/transparent	Trinity/images/story Trinity/images/terrain	Trinity/images/units Trinity/maps Trinity/scenarios	Trinity/units Trinity/utils">mordante at mail.berlios.de
+       </A><BR>
+    <I>Sat Feb 19 14:47:32 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002526.html">[Wescamp-i18n-commit] r3411 - branches/1.10
+</A></li>
+        <LI>Next message: <A HREF="002528.html">[Wescamp-i18n-commit] r3413 - branches/1.10
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2527">[ date ]</a>
+              <a href="thread.html#2527">[ thread ]</a>
+              <a href="subject.html#2527">[ subject ]</a>
+              <a href="author.html#2527">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2011-02-19 14:47:31 +0100 (Sat, 19 Feb 2011)
+New Revision: 3412
+
+Added:
+   branches/1.10/Trinity/Trinity/
+   branches/1.10/Trinity/Trinity/COPYING.txt
+   branches/1.10/Trinity/Trinity/_main.cfg
+   branches/1.10/Trinity/Trinity/about.cfg
+   branches/1.10/Trinity/Trinity/external_data/
+   branches/1.10/Trinity/Trinity/external_data/images/
+   branches/1.10/Trinity/Trinity/external_data/images/Trinity_Splash.png
+   branches/1.10/Trinity/Trinity/external_data/images/ponce-corsair.png
+   branches/1.10/Trinity/Trinity/images/
+   branches/1.10/Trinity/Trinity/images/misc/
+   branches/1.10/Trinity/Trinity/images/misc/big-trifog.png
+   branches/1.10/Trinity/Trinity/images/misc/blank.png
+   branches/1.10/Trinity/Trinity/images/misc/copper.png
+   branches/1.10/Trinity/Trinity/images/misc/echidna-fall.png
+   branches/1.10/Trinity/Trinity/images/misc/elf-dead.png
+   branches/1.10/Trinity/Trinity/images/misc/enemies1.jpg
+   branches/1.10/Trinity/Trinity/images/misc/fire/
+   branches/1.10/Trinity/Trinity/images/misc/fire/Engine-45.png
+   branches/1.10/Trinity/Trinity/images/misc/machine-1.png
+   branches/1.10/Trinity/Trinity/images/misc/machine-3.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-1.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-1b.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-2.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-2b.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-3.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-3b.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-4.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-4b.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-5.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-5b.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-6.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-6b.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-7.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-7b.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-8.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-8b.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-bak.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom-master.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom3.png
+   branches/1.10/Trinity/Trinity/images/misc/maelstrom5.png
+   branches/1.10/Trinity/Trinity/images/misc/schedule-tri-dark.png
+   branches/1.10/Trinity/Trinity/images/misc/schedule-tri-fade.png
+   branches/1.10/Trinity/Trinity/images/misc/schedule-tri-flare.png
+   branches/1.10/Trinity/Trinity/images/misc/schedule-underground-bak.png
+   branches/1.10/Trinity/Trinity/images/misc/swamp.png
+   branches/1.10/Trinity/Trinity/images/misc/target-1-hot.png
+   branches/1.10/Trinity/Trinity/images/misc/target-1.png
+   branches/1.10/Trinity/Trinity/images/misc/target-2-hot.png
+   branches/1.10/Trinity/Trinity/images/misc/target-2.png
+   branches/1.10/Trinity/Trinity/images/misc/target-3-hot.png
+   branches/1.10/Trinity/Trinity/images/misc/target-3.png
+   branches/1.10/Trinity/Trinity/images/misc/target-4-hot.png
+   branches/1.10/Trinity/Trinity/images/misc/target-4.png
+   branches/1.10/Trinity/Trinity/images/misc/target-hot.png
+   branches/1.10/Trinity/Trinity/images/misc/target.png
+   branches/1.10/Trinity/Trinity/images/portraits/
+   branches/1.10/Trinity/Trinity/images/portraits/bresda-heroine.png
+   branches/1.10/Trinity/Trinity/images/portraits/bresda.png
+   branches/1.10/Trinity/Trinity/images/portraits/caldera.png
+   branches/1.10/Trinity/Trinity/images/portraits/dardrus.png
+   branches/1.10/Trinity/Trinity/images/portraits/echidna-low.png
+   branches/1.10/Trinity/Trinity/images/portraits/echidna-mid.png
+   branches/1.10/Trinity/Trinity/images/portraits/echidna.png
+   branches/1.10/Trinity/Trinity/images/portraits/haldrad.png
+   branches/1.10/Trinity/Trinity/images/portraits/hera.png
+   branches/1.10/Trinity/Trinity/images/portraits/keldan.png
+   branches/1.10/Trinity/Trinity/images/portraits/key-guard.png
+   branches/1.10/Trinity/Trinity/images/portraits/nemesis-hi.png
+   branches/1.10/Trinity/Trinity/images/portraits/nemesis-low.png
+   branches/1.10/Trinity/Trinity/images/portraits/nemesis-mid.png
+   branches/1.10/Trinity/Trinity/images/portraits/ponce.png
+   branches/1.10/Trinity/Trinity/images/portraits/seth.png
+   branches/1.10/Trinity/Trinity/images/portraits/the-destroyer.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/bresda-heroine.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/bresda.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/caldera.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/echidna-low.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/echidna-mid.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/echidna.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/haldrad.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/hera.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/keldan.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/nemesis-hi.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/nemesis-low.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/nemesis-mid.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/ponce.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/seth.png
+   branches/1.10/Trinity/Trinity/images/portraits/transparent/the-destroyer.png
+   branches/1.10/Trinity/Trinity/images/story/
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-1.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-10.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-11.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-12.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-13.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-14.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-15.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-16.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-17-lil.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-17-lil.png
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-17.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-18.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-19.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-2.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-3.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-4.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-5.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-6.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-7.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-8.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall-9.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_EchidnaFall.png
+   branches/1.10/Trinity/Trinity/images/story/Trinity_airship.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_airship2.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_airship3.png
+   branches/1.10/Trinity/Trinity/images/story/Trinity_altar.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_black.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_blue-sky.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_cave-door.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_cave-door2.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_cave.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_elf-rider.png
+   branches/1.10/Trinity/Trinity/images/story/Trinity_end.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_green.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_green2.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-1.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-10.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-11.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-12.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-13.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-14.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-15.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-16.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-17.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-18.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-19.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-2.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-3.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-4.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-5.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-6.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-7.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-8.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island-9.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_island.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_maelstrom.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_nemesis-flag.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_swamp.png
+   branches/1.10/Trinity/Trinity/images/story/Trinity_throne.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_verranda.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_warning.jpg
+   branches/1.10/Trinity/Trinity/images/story/Trinity_white.jpg
+   branches/1.10/Trinity/Trinity/images/terrain/
+   branches/1.10/Trinity/Trinity/images/terrain/alt-trifog_1.png
+   branches/1.10/Trinity/Trinity/images/terrain/alt-trifog_2.png
+   branches/1.10/Trinity/Trinity/images/terrain/big-trifog.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifog_1.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifog_2.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifog_3.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifog_4.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifogb_1.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifogb_2.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifogb_3.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifogb_4.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifogc_1.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifogc_2.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifogc_3.png
+   branches/1.10/Trinity/Trinity/images/terrain/trifogc_4.png
+   branches/1.10/Trinity/Trinity/images/units/
+   branches/1.10/Trinity/Trinity/images/units/avatar.png
+   branches/1.10/Trinity/Trinity/images/units/bresda-defend1.png
+   branches/1.10/Trinity/Trinity/images/units/bresda-defend2.png
+   branches/1.10/Trinity/Trinity/images/units/bresda-heroine.png
+   branches/1.10/Trinity/Trinity/images/units/bresda-termagant-defend1.png
+   branches/1.10/Trinity/Trinity/images/units/bresda-termagant-defend2.png
+   branches/1.10/Trinity/Trinity/images/units/bresda-termagant.png
+   branches/1.10/Trinity/Trinity/images/units/bresda-virago-defend1.png
+   branches/1.10/Trinity/Trinity/images/units/bresda-virago-defend2.png
+   branches/1.10/Trinity/Trinity/images/units/bresda-virago.png
+   branches/1.10/Trinity/Trinity/images/units/bresda.png
+   branches/1.10/Trinity/Trinity/images/units/caldera-defend-1.png
+   branches/1.10/Trinity/Trinity/images/units/caldera-defend-2.png
+   branches/1.10/Trinity/Trinity/images/units/caldera-leading.png
+   branches/1.10/Trinity/Trinity/images/units/caldera.png
+   branches/1.10/Trinity/Trinity/images/units/caldera_-defend-1.png
+   branches/1.10/Trinity/Trinity/images/units/caldera_-defend-2.png
+   branches/1.10/Trinity/Trinity/images/units/caldera_-leading.png
+   branches/1.10/Trinity/Trinity/images/units/caldera_.png
+   branches/1.10/Trinity/Trinity/images/units/cannon.png
+   branches/1.10/Trinity/Trinity/images/units/chariot-hi.png
+   branches/1.10/Trinity/Trinity/images/units/chariot-lo.png
+   branches/1.10/Trinity/Trinity/images/units/chariot.png
+   branches/1.10/Trinity/Trinity/images/units/echidna-low.png
+   branches/1.10/Trinity/Trinity/images/units/echidna-mid.png
+   branches/1.10/Trinity/Trinity/images/units/hera-cloak.png
+   branches/1.10/Trinity/Trinity/images/units/hera.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-attack-1.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-attack-2.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-attack-3.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-attack-4.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-bow-attack1.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-bow-attack2.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-bow-attack3.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-bow-attack4.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-bow-defend.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-bow.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-defend.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-leading.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-scepter-attack-1.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-scepter-attack-2.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-scepter-attack-3.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-scepter-attack-4.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-scepter-defend.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-scepter-leading.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander-scepter.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-commander.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-fighter-attack-1.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-fighter-attack-2.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-fighter-defend.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-fighter.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-attack-w1.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-attack-w2.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-attack-w3.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-bow-attack1.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-bow-attack2.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-bow-attack3.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-bow-attack4.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-bow-defend.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-bow.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-defend.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-leading.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-scepter-attack-w1.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-scepter-attack-w2.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-scepter-attack-w3.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-scepter-defend.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-scepter-leading.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-scepter-sword-defend.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord-scepter.png
+   branches/1.10/Trinity/Trinity/images/units/konrad-lord.png
+   branches/1.10/Trinity/Trinity/images/units/kraken.png
+   branches/1.10/Trinity/Trinity/images/units/nemesis-hi.png
+   branches/1.10/Trinity/Trinity/images/units/nemesis-low.png
+   branches/1.10/Trinity/Trinity/images/units/nemesis-mid.png
+   branches/1.10/Trinity/Trinity/images/units/ponce-corsair-defend1.png
+   branches/1.10/Trinity/Trinity/images/units/ponce-corsair-defend2.png
+   branches/1.10/Trinity/Trinity/images/units/ponce-corsair-leading.png
+   branches/1.10/Trinity/Trinity/images/units/ponce-corsair.png
+   branches/1.10/Trinity/Trinity/images/units/ponce-defend1.png
+   branches/1.10/Trinity/Trinity/images/units/ponce-defend2.png
+   branches/1.10/Trinity/Trinity/images/units/ponce-leading.png
+   branches/1.10/Trinity/Trinity/images/units/ponce-seadog-defend1.png
+   branches/1.10/Trinity/Trinity/images/units/ponce-seadog-defend2.png
+   branches/1.10/Trinity/Trinity/images/units/ponce-seadog-leading.png
+   branches/1.10/Trinity/Trinity/images/units/ponce-seadog.png
+   branches/1.10/Trinity/Trinity/images/units/ponce.png
+   branches/1.10/Trinity/Trinity/images/units/seth-old.png
+   branches/1.10/Trinity/Trinity/images/units/seth.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s1.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s10.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s11.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s12.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s13.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s14.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s15.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s16.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s17.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s18.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s19.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s2.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s20.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s21.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s22.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s23.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s24.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s25.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s26.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s27.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s28.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s29.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s3.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s30.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s31.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s32.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s33.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s34.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s35.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s36.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s37.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s38.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s39.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s4.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s40.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s41.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s42.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s43.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s44.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s45.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s46.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s47.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s48.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s49.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s5.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s50.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s51.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s52.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s53.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s54.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s55.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s56.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s57.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s58.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s59.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s6.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s60.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s7.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s8.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer-s9.png
+   branches/1.10/Trinity/Trinity/images/units/the-destroyer.png
+   branches/1.10/Trinity/Trinity/maps/
+   branches/1.10/Trinity/Trinity/maps/3_01_Beggar.map
+   branches/1.10/Trinity/Trinity/maps/3_02_Ship.map
+   branches/1.10/Trinity/Trinity/maps/3_03_Weldyn.map
+   branches/1.10/Trinity/Trinity/maps/3_05_Spirits.map
+   branches/1.10/Trinity/Trinity/maps/3_07_Signalb.map
+   branches/1.10/Trinity/Trinity/maps/3_10_Home.map
+   branches/1.10/Trinity/Trinity/maps/3_Finale.map
+   branches/1.10/Trinity/Trinity/maps/3_H05.map
+   branches/1.10/Trinity/Trinity/maps/3_H05pre.map
+   branches/1.10/Trinity/Trinity/maps/3_H06.map
+   branches/1.10/Trinity/Trinity/maps/3_K02.map
+   branches/1.10/Trinity/Trinity/maps/3_K03.map
+   branches/1.10/Trinity/Trinity/maps/3_K04.map
+   branches/1.10/Trinity/Trinity/maps/3_K05.map
+   branches/1.10/Trinity/Trinity/maps/3_K06.map
+   branches/1.10/Trinity/Trinity/maps/3_K06b.map
+   branches/1.10/Trinity/Trinity/maps/3_P01b.map
+   branches/1.10/Trinity/Trinity/maps/3_P02b.map
+   branches/1.10/Trinity/Trinity/maps/3_P03.map
+   branches/1.10/Trinity/Trinity/maps/3_P04.map
+   branches/1.10/Trinity/Trinity/maps/3_P04p2.map
+   branches/1.10/Trinity/Trinity/maps/3_P05.map
+   branches/1.10/Trinity/Trinity/maps/3_P05c.map
+   branches/1.10/Trinity/Trinity/maps/F1a.map
+   branches/1.10/Trinity/Trinity/maps/F2a.map
+   branches/1.10/Trinity/Trinity/maps/F3a.map
+   branches/1.10/Trinity/Trinity/maps/F4a.map
+   branches/1.10/Trinity/Trinity/maps/F4a2.map
+   branches/1.10/Trinity/Trinity/maps/F5a.map
+   branches/1.10/Trinity/Trinity/scenarios/
+   branches/1.10/Trinity/Trinity/scenarios/00_Intro.cfg
+   branches/1.10/Trinity/Trinity/scenarios/00_Pre.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H01_Beggar.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H02_Weldyn.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H03_Spirits.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H04_Signal.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H05_Encounter.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_H06_Reversal.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K01_Ship.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K02_Elves.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K03_Lord.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K04_Storm.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K05_Interrogation.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_K06_Choice.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P01_Village.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P02_Entrance.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P03_Cave.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P04_Engine.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P04p2_Blockage.cfg
+   branches/1.10/Trinity/Trinity/scenarios/3_P05_Landing.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F1a_Onslaught.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F1b_GoingEast.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F2a_Air.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F3a_Phantom.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F4a_Hera.cfg
+   branches/1.10/Trinity/Trinity/scenarios/F5a_Destroyer.cfg
+   branches/1.10/Trinity/Trinity/scenarios/Z_Epilogue.cfg
+   branches/1.10/Trinity/Trinity/units/
+   branches/1.10/Trinity/Trinity/units/Battle_Queen.cfg
+   branches/1.10/Trinity/Trinity/units/Battle_Queen_.cfg
+   branches/1.10/Trinity/Trinity/units/Bresda.cfg
+   branches/1.10/Trinity/Trinity/units/Cannon.cfg
+   branches/1.10/Trinity/Trinity/units/Chariot.cfg
+   branches/1.10/Trinity/Trinity/units/Echidna-Low.cfg
+   branches/1.10/Trinity/Trinity/units/Echidna-Mid.cfg
+   branches/1.10/Trinity/Trinity/units/Echidna.cfg
+   branches/1.10/Trinity/Trinity/units/Haldrad-Commander.cfg
+   branches/1.10/Trinity/Trinity/units/Haldrad-Fighter.cfg
+   branches/1.10/Trinity/Trinity/units/Haldrad-Lord.cfg
+   branches/1.10/Trinity/Trinity/units/Keldan.cfg
+   branches/1.10/Trinity/Trinity/units/Ponce.cfg
+   branches/1.10/Trinity/Trinity/units/Primeval_Hera.cfg
+   branches/1.10/Trinity/Trinity/units/Primeval_Nemesis-Hi.cfg
+   branches/1.10/Trinity/Trinity/units/Primeval_Nemesis-Low.cfg
+   branches/1.10/Trinity/Trinity/units/Primeval_Nemesis-Mid.cfg
+   branches/1.10/Trinity/Trinity/units/Sea-Monsters.cfg
+   branches/1.10/Trinity/Trinity/units/Seth.cfg
+   branches/1.10/Trinity/Trinity/units/Trinity_Destroyer.cfg
+   branches/1.10/Trinity/Trinity/utils/
+   branches/1.10/Trinity/Trinity/utils/Mask_F4a.cfg
+   branches/1.10/Trinity/Trinity/utils/TRIabilities.cfg
+   branches/1.10/Trinity/Trinity/utils/cannons.cfg
+   branches/1.10/Trinity/Trinity/utils/fog.cfg
+   branches/1.10/Trinity/Trinity/utils/items.cfg
+   branches/1.10/Trinity/Trinity/utils/schedules.cfg
+   branches/1.10/Trinity/Trinity/utils/sides.cfg
+   branches/1.10/Trinity/Trinity/utils/utils.cfg
+Log:
+wescamp_client: automatic update of addon 'Trinity'
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002526.html">[Wescamp-i18n-commit] r3411 - branches/1.10
+</A></li>
+	<LI>Next message: <A HREF="002528.html">[Wescamp-i18n-commit] r3413 - branches/1.10
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2527">[ date ]</a>
+              <a href="thread.html#2527">[ thread ]</a>
+              <a href="subject.html#2527">[ subject ]</a>
+              <a href="author.html#2527">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

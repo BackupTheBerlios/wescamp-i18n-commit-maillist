@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r2592 - in	branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5: . macros	scenarios units units/boats units/drakes	units/human-loyalists units/human-outlaws units/monsters	units/nagas units/npc units/saurians units/special units/undead
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2009-April/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2592%20-%20in%0A%09branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5%3A%20.%20macros%0A%09scenarios%20units%20units/boats%20units/drakes%0A%09units/human-loyalists%20units/human-outlaws%20units/monsters%0A%09units/nagas%20units/npc%20units/saurians%20units/special%20units/undead&In-Reply-To=%3C200904211842.n3LIg82w003634%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="001706.html">
+   <LINK REL="Next"  HREF="001708.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r2592 - in	branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5: . macros	scenarios units units/boats units/drakes	units/human-loyalists units/human-outlaws units/monsters	units/nagas units/npc units/saurians units/special units/undead</H1>
+    <B>mordante at BerliOS</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2592%20-%20in%0A%09branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5%3A%20.%20macros%0A%09scenarios%20units%20units/boats%20units/drakes%0A%09units/human-loyalists%20units/human-outlaws%20units/monsters%0A%09units/nagas%20units/npc%20units/saurians%20units/special%20units/undead&In-Reply-To=%3C200904211842.n3LIg82w003634%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r2592 - in	branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5: . macros	scenarios units units/boats units/drakes	units/human-loyalists units/human-outlaws units/monsters	units/nagas units/npc units/saurians units/special units/undead">mordante at mail.berlios.de
+       </A><BR>
+    <I>Tue Apr 21 20:42:08 CEST 2009</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="001706.html">[Wescamp-i18n-commit] r2591 - in branches/1.6/Up_From_Slavery: .	Up_From_Slavery po
+</A></li>
+        <LI>Next message: <A HREF="001708.html">[Wescamp-i18n-commit] r2593 - in branches/1.6/Flight_Freedom_1_5: .	Flight_Freedom_1_5 po
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1707">[ date ]</a>
+              <a href="thread.html#1707">[ thread ]</a>
+              <a href="subject.html#1707">[ subject ]</a>
+              <a href="author.html#1707">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2009-04-21 20:42:06 +0200 (Tue, 21 Apr 2009)
+New Revision: 2592
+
+Modified:
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/_editor.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/_main.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/macros/deaths.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/macros/objectives.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/macros/schedules.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/macros/story.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/main.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/01_Survival.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/02a_Rebellion.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/02b_Swamps_Jamolar.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/03a_Manor.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/03b_Council_of_War.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/04a_Caravan.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/04b_Forest_of_Nightmares.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/05a_Blue_River.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/05b_Hafwyt.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/06a_Southern_Shore.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/06b_Mountain_Crypt.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/07a_Open_Ocean.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/08_Landfall.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/09_Drake_Escape.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/10_Underground.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/11_River_Skulls.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/12_Rockfall.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/13_Betrayal.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/14_Hordes_Undead.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/15_Gate_of_Storms.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/16_Exodus.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/17_Blockade.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/18_Return_to_Morogor.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/19_Liberation.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/20_Endgame.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/scenarios/21_Epilogue.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/boats/Battleship.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/boats/Caravel.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/boats/Clipper.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/boats/Dreadnought.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/boats/Frigate.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/boats/Galleon.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/boats/Pirate_Cruiser.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/boats/Pirate_Galleon.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/boats/Pirate_Schooner.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/drakes/Cave.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/drakes/Chieftain.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/drakes/Guard.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/drakes/Hatchling.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/drakes/High_Magus.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/drakes/Lord.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/drakes/Magus.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/drakes/Priest.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/drakes/Slave.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/drakes/Worker.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/drakes/Worker_Malakar.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/fake_units.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/human-loyalists/Ballista.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/human-loyalists/Driver.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/human-loyalists/Taskmaster.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/human-outlaws/Pirate.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/human-outlaws/Pirate_Captain.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/human-outlaws/Shadow_Mage.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/monsters/Giant_Ant.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/monsters/Giant_Boar.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/monsters/Giant_Spider_Lesser.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/monsters/Lava_Beast.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/monsters/Lava_Monster.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/monsters/Rock_Golem.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/monsters/Spirit_Major.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/monsters/Spirit_Minor.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/monsters/Spirit_Thunder.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/monsters/Wolf.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Cave_Naga.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Depthstalker.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Guardian.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Hunter.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Mage.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Sea_Hag.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Sentinel.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Spellcrafter.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Spellwarrior.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Warden.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Warlock.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/nagas/Warrior_Mage.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/npc/Chicken.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/npc/Cow.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/npc/Crow.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/npc/Falcon.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/npc/Fungoid.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/npc/Horse.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/npc/Pig.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/npc/Rabbit.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/saurians/Saurian_Headhunter.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/saurians/Saurian_Jarl.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/saurians/Saurian_Juggler.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/saurians/Saurian_Knifethrower.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/saurians/Saurian_Margrave.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/saurians/Saurian_Skald.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/special/Caravan.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/special/Door.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/special/Rock.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/undead/Abomination.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/undead/Gargoyle.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/undead/Spirit_Wisp.cfg
+   branches/1.6/Flight_Freedom_1_5/Flight_Freedom_1_5/units/undead/Undead_Dwarf.cfg
+Log:
+wescamp_client: automatic update of addon 'Flight_Freedom_1_5'
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="001706.html">[Wescamp-i18n-commit] r2591 - in branches/1.6/Up_From_Slavery: .	Up_From_Slavery po
+</A></li>
+	<LI>Next message: <A HREF="001708.html">[Wescamp-i18n-commit] r2593 - in branches/1.6/Flight_Freedom_1_5: .	Flight_Freedom_1_5 po
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1707">[ date ]</a>
+              <a href="thread.html#1707">[ thread ]</a>
+              <a href="subject.html#1707">[ subject ]</a>
+              <a href="author.html#1707">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r3853 - in branches/1.10/Wesnoth_Lua_Pack: .	po
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2011-September/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3853%20-%20in%20branches/1.10/Wesnoth_Lua_Pack%3A%20.%0A%09po&In-Reply-To=%3C20110906012349.00F21481223%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002967.html">
+   <LINK REL="Next"  HREF="002969.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r3853 - in branches/1.10/Wesnoth_Lua_Pack: .	po</H1>
+    <B>espreon at mail.berlios.de</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r3853%20-%20in%20branches/1.10/Wesnoth_Lua_Pack%3A%20.%0A%09po&In-Reply-To=%3C20110906012349.00F21481223%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r3853 - in branches/1.10/Wesnoth_Lua_Pack: .	po">espreon at mail.berlios.de
+       </A><BR>
+    <I>Tue Sep  6 03:23:48 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002967.html">[Wescamp-i18n-commit] r3852 - branches/1.10/Swamplings/po
+</A></li>
+        <LI>Next message: <A HREF="002969.html">[Wescamp-i18n-commit] r3854 - in branches/1.10/To_Lands_Unknown:	To_Lands_Unknown/translations/fr/LC_MESSAGES	To_Lands_Unknown/translations/pl/LC_MESSAGES po
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2968">[ date ]</a>
+              <a href="thread.html#2968">[ thread ]</a>
+              <a href="subject.html#2968">[ subject ]</a>
+              <a href="author.html#2968">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: espreon
+Date: 2011-09-06 03:23:48 +0200 (Tue, 06 Sep 2011)
+New Revision: 3853
+
+Added:
+   branches/1.10/Wesnoth_Lua_Pack/Makefile
+   branches/1.10/Wesnoth_Lua_Pack/campaign.def
+   branches/1.10/Wesnoth_Lua_Pack/po/
+   branches/1.10/Wesnoth_Lua_Pack/po/FINDCFG
+   branches/1.10/Wesnoth_Lua_Pack/po/LINGUAS
+   branches/1.10/Wesnoth_Lua_Pack/po/Makefile
+   branches/1.10/Wesnoth_Lua_Pack/po/Makefile.in.in
+   branches/1.10/Wesnoth_Lua_Pack/po/Makevars
+   branches/1.10/Wesnoth_Lua_Pack/po/POTFILES.in
+   branches/1.10/Wesnoth_Lua_Pack/po/af.po
+   branches/1.10/Wesnoth_Lua_Pack/po/ang.po
+   branches/1.10/Wesnoth_Lua_Pack/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">ang at latin.po</A>
+   branches/1.10/Wesnoth_Lua_Pack/po/ar.po
+   branches/1.10/Wesnoth_Lua_Pack/po/bg.po
+   branches/1.10/Wesnoth_Lua_Pack/po/ca.po
+   branches/1.10/Wesnoth_Lua_Pack/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">ca_ES at valencia.po</A>
+   branches/1.10/Wesnoth_Lua_Pack/po/cs.po
+   branches/1.10/Wesnoth_Lua_Pack/po/da.po
+   branches/1.10/Wesnoth_Lua_Pack/po/de.po
+   branches/1.10/Wesnoth_Lua_Pack/po/el.po
+   branches/1.10/Wesnoth_Lua_Pack/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">en at shaw.po</A>
+   branches/1.10/Wesnoth_Lua_Pack/po/en_GB.po
+   branches/1.10/Wesnoth_Lua_Pack/po/eo.po
+   branches/1.10/Wesnoth_Lua_Pack/po/es.po
+   branches/1.10/Wesnoth_Lua_Pack/po/et.po
+   branches/1.10/Wesnoth_Lua_Pack/po/eu.po
+   branches/1.10/Wesnoth_Lua_Pack/po/fi.po
+   branches/1.10/Wesnoth_Lua_Pack/po/fr.po
+   branches/1.10/Wesnoth_Lua_Pack/po/fur_IT.po
+   branches/1.10/Wesnoth_Lua_Pack/po/ga.po
+   branches/1.10/Wesnoth_Lua_Pack/po/gl.po
+   branches/1.10/Wesnoth_Lua_Pack/po/he.po
+   branches/1.10/Wesnoth_Lua_Pack/po/hr.po
+   branches/1.10/Wesnoth_Lua_Pack/po/hu.po
+   branches/1.10/Wesnoth_Lua_Pack/po/id.po
+   branches/1.10/Wesnoth_Lua_Pack/po/is.po
+   branches/1.10/Wesnoth_Lua_Pack/po/it.po
+   branches/1.10/Wesnoth_Lua_Pack/po/ja.po
+   branches/1.10/Wesnoth_Lua_Pack/po/ko.po
+   branches/1.10/Wesnoth_Lua_Pack/po/la.po
+   branches/1.10/Wesnoth_Lua_Pack/po/lt.po
+   branches/1.10/Wesnoth_Lua_Pack/po/lv.po
+   branches/1.10/Wesnoth_Lua_Pack/po/mk.po
+   branches/1.10/Wesnoth_Lua_Pack/po/mr.po
+   branches/1.10/Wesnoth_Lua_Pack/po/nb_NO.po
+   branches/1.10/Wesnoth_Lua_Pack/po/nl.po
+   branches/1.10/Wesnoth_Lua_Pack/po/pl.po
+   branches/1.10/Wesnoth_Lua_Pack/po/pt.po
+   branches/1.10/Wesnoth_Lua_Pack/po/pt_BR.po
+   branches/1.10/Wesnoth_Lua_Pack/po/racv.po
+   branches/1.10/Wesnoth_Lua_Pack/po/remove-potcdate.sed
+   branches/1.10/Wesnoth_Lua_Pack/po/remove-potcdate.sin
+   branches/1.10/Wesnoth_Lua_Pack/po/ro.po
+   branches/1.10/Wesnoth_Lua_Pack/po/ru.po
+   branches/1.10/Wesnoth_Lua_Pack/po/sk.po
+   branches/1.10/Wesnoth_Lua_Pack/po/sl.po
+   branches/1.10/Wesnoth_Lua_Pack/po/sr.po
+   branches/1.10/Wesnoth_Lua_Pack/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">sr at ijekavian.po</A>
+   branches/1.10/Wesnoth_Lua_Pack/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">sr at ijekavianlatin.po</A>
+   branches/1.10/Wesnoth_Lua_Pack/po/<A HREF="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">sr at latin.po</A>
+   branches/1.10/Wesnoth_Lua_Pack/po/sv.po
+   branches/1.10/Wesnoth_Lua_Pack/po/tl.po
+   branches/1.10/Wesnoth_Lua_Pack/po/tr.po
+   branches/1.10/Wesnoth_Lua_Pack/po/vi.po
+   branches/1.10/Wesnoth_Lua_Pack/po/wesnoth-null.pot
+   branches/1.10/Wesnoth_Lua_Pack/po/zh_CN.po
+   branches/1.10/Wesnoth_Lua_Pack/po/zh_TW.po
+Log:
+Wesnoth Lua Pack (1.10): added translation stuff.
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002967.html">[Wescamp-i18n-commit] r3852 - branches/1.10/Swamplings/po
+</A></li>
+	<LI>Next message: <A HREF="002969.html">[Wescamp-i18n-commit] r3854 - in branches/1.10/To_Lands_Unknown:	To_Lands_Unknown/translations/fr/LC_MESSAGES	To_Lands_Unknown/translations/pl/LC_MESSAGES po
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2968">[ date ]</a>
+              <a href="thread.html#2968">[ thread ]</a>
+              <a href="subject.html#2968">[ subject ]</a>
+              <a href="author.html#2968">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>

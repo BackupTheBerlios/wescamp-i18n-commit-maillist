@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Wescamp-i18n-commit] r2985 - in branches/1.8/Nightmares_of_Meloen:	. Nightmares_of_Meloen Nightmares_of_Meloen/ai	Nightmares_of_Meloen/ai/ais Nightmares_of_Meloen/ai/formula	Nightmares_of_Meloen/dist Nightmares_of_Meloen/doc	Nightmares_of_Meloen/doc/how_to_play	Nightmares_of_Meloen/eras Nightmares_of_Meloen/factions	Nightmares_of_Meloen/images Nightmares_of_Meloen/images/attacks	Nightmares_of_Meloen/images/sketches	Nightmares_of_Meloen/images/sketches/Melon	Nightmares_of_Meloen/images/sketches/mystic_x	Nightmares_of_Meloen/images/terrain	Nightmares_of_Meloen/images/units Nightmares_of_Meloen/images/utils	Nightmares_of_Meloen/movetypes Nightmares_of_Meloen/races	Nightmares_of_Meloen/sounds Nightmares_of_Meloen/traits	Nightmares_of_Meloen/units Nightmares_of_Meloen/units/aberrations	Nightmares_of_Meloen/units/elementals	Nightmares_of_Meloen/units/insects	Nightmares_of_Meloen/units/nightmares	Nightmares_of_Meloen/units/utils Nightmares_of_Meloen/utils
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/wescamp-i18n-commit/2010-April/index.html" >
+   <LINK REL="made" HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2985%20-%20in%20branches/1.8/Nightmares_of_Meloen%3A%0A%09.%20Nightmares_of_Meloen%20Nightmares_of_Meloen/ai%0A%09Nightmares_of_Meloen/ai/ais%20Nightmares_of_Meloen/ai/formula%0A%09Nightmares_of_Meloen/dist%20Nightmares_of_Meloen/doc%0A%09Nightmares_of_Meloen/doc/how_to_play%0A%09Nightmares_of_Meloen/eras%20Nightmares_of_Meloen/factions%0A%09Nightmares_of_Meloen/images%20Nightmares_of_Meloen/images/attacks%0A%09Nightmares_of_Meloen/images/sketches%0A%09Nightmares_of_Meloen/images/sketches/Melon%0A%09Nightmares_of_Meloen/images/sketches/mystic_x%0A%09Nightmares_of_Meloen/images/terrain%0A%09Nightmares_of_Meloen/images/units%20Nightmares_of_Meloen/images/utils%0A%09Nightmares_of_Meloen/movetypes%20Nightmares_of_Meloen/races%0A%09Nightmares_of_Meloen/sounds%20Nightmares_of_Meloen/traits%0A%09Nightmares_of_Meloen/units%20Nightmares_of_Meloen/units/aberrations%0A%09Nightmares_of_Meloen/units/elementals%0A%09Nightmares_of_Meloen/units/insects%0A%09Nightmares_of_Meloen/units/nightmares%0A%09Nightmares_of_Meloen/units/utils%20Nightmares_of_Meloen/utils&In-Reply-To=%3C201004181908.o3IJ8aIj004437%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="002099.html">
+   <LINK REL="Next"  HREF="002101.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Wescamp-i18n-commit] r2985 - in branches/1.8/Nightmares_of_Meloen:	. Nightmares_of_Meloen Nightmares_of_Meloen/ai	Nightmares_of_Meloen/ai/ais Nightmares_of_Meloen/ai/formula	Nightmares_of_Meloen/dist Nightmares_of_Meloen/doc	Nightmares_of_Meloen/doc/how_to_play	Nightmares_of_Meloen/eras Nightmares_of_Meloen/factions	Nightmares_of_Meloen/images Nightmares_of_Meloen/images/attacks	Nightmares_of_Meloen/images/sketches	Nightmares_of_Meloen/images/sketches/Melon	Nightmares_of_Meloen/images/sketches/mystic_x	Nightmares_of_Meloen/images/terrain	Nightmares_of_Meloen/images/units Nightmares_of_Meloen/images/utils	Nightmares_of_Meloen/movetypes Nightmares_of_Meloen/races	Nightmares_of_Meloen/sounds Nightmares_of_Meloen/traits	Nightmares_of_Meloen/units Nightmares_of_Meloen/units/aberrations	Nightmares_of_Meloen/units/elementals	Nightmares_of_Meloen/units/insects	Nightmares_of_Meloen/units/nightmares	Nightmares_of_Meloen/units/utils Nightmares_of_Meloen/utils</H1>
+    <B>mordante at BerliOS</B> 
+    <A HREF="mailto:wescamp-i18n-commit%40lists.berlios.de?Subject=Re%3A%20%5BWescamp-i18n-commit%5D%20r2985%20-%20in%20branches/1.8/Nightmares_of_Meloen%3A%0A%09.%20Nightmares_of_Meloen%20Nightmares_of_Meloen/ai%0A%09Nightmares_of_Meloen/ai/ais%20Nightmares_of_Meloen/ai/formula%0A%09Nightmares_of_Meloen/dist%20Nightmares_of_Meloen/doc%0A%09Nightmares_of_Meloen/doc/how_to_play%0A%09Nightmares_of_Meloen/eras%20Nightmares_of_Meloen/factions%0A%09Nightmares_of_Meloen/images%20Nightmares_of_Meloen/images/attacks%0A%09Nightmares_of_Meloen/images/sketches%0A%09Nightmares_of_Meloen/images/sketches/Melon%0A%09Nightmares_of_Meloen/images/sketches/mystic_x%0A%09Nightmares_of_Meloen/images/terrain%0A%09Nightmares_of_Meloen/images/units%20Nightmares_of_Meloen/images/utils%0A%09Nightmares_of_Meloen/movetypes%20Nightmares_of_Meloen/races%0A%09Nightmares_of_Meloen/sounds%20Nightmares_of_Meloen/traits%0A%09Nightmares_of_Meloen/units%20Nightmares_of_Meloen/units/aberrations%0A%09Nightmares_of_Meloen/units/elementals%0A%09Nightmares_of_Meloen/units/insects%0A%09Nightmares_of_Meloen/units/nightmares%0A%09Nightmares_of_Meloen/units/utils%20Nightmares_of_Meloen/utils&In-Reply-To=%3C201004181908.o3IJ8aIj004437%40sheep.berlios.de%3E"
+       TITLE="[Wescamp-i18n-commit] r2985 - in branches/1.8/Nightmares_of_Meloen:	. Nightmares_of_Meloen Nightmares_of_Meloen/ai	Nightmares_of_Meloen/ai/ais Nightmares_of_Meloen/ai/formula	Nightmares_of_Meloen/dist Nightmares_of_Meloen/doc	Nightmares_of_Meloen/doc/how_to_play	Nightmares_of_Meloen/eras Nightmares_of_Meloen/factions	Nightmares_of_Meloen/images Nightmares_of_Meloen/images/attacks	Nightmares_of_Meloen/images/sketches	Nightmares_of_Meloen/images/sketches/Melon	Nightmares_of_Meloen/images/sketches/mystic_x	Nightmares_of_Meloen/images/terrain	Nightmares_of_Meloen/images/units Nightmares_of_Meloen/images/utils	Nightmares_of_Meloen/movetypes Nightmares_of_Meloen/races	Nightmares_of_Meloen/sounds Nightmares_of_Meloen/traits	Nightmares_of_Meloen/units Nightmares_of_Meloen/units/aberrations	Nightmares_of_Meloen/units/elementals	Nightmares_of_Meloen/units/insects	Nightmares_of_Meloen/units/nightmares	Nightmares_of_Meloen/units/utils Nightmares_of_Meloen/utils">mordante at mail.berlios.de
+       </A><BR>
+    <I>Sun Apr 18 21:08:36 CEST 2010</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="002099.html">[Wescamp-i18n-commit] r2984 - branches/1.8
+</A></li>
+        <LI>Next message: <A HREF="002101.html">[Wescamp-i18n-commit] r2986 - in	branches/1.8/Bad_Moon_Rising/Bad_Moon_Rising: . images/misc	images/units maps scenarios2 scenarios3 units utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2100">[ date ]</a>
+              <a href="thread.html#2100">[ thread ]</a>
+              <a href="subject.html#2100">[ subject ]</a>
+              <a href="author.html#2100">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: mordante
+Date: 2010-04-18 21:08:30 +0200 (Sun, 18 Apr 2010)
+New Revision: 2985
+
+Added:
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/COPYING
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/COPYRIGHT
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/INCLUDE
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/_main.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/ai/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/ai/ais/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/ai/ais/formula_ai_curse.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/ai/formula/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/ai/formula/cursed_eval.fai
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/ai/formula/cursed_move.fai
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/ai/formula/jinx_attack.fai
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/ai/formula/jinx_eval.fai
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/credits.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/detect.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/dist/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/dist/BASEDIRS
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/dist/VERSION
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/dist/WMLDIRS
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/MeloenNightmares.tree
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/historic_nightmares_en.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/default_general_strategy.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/drakes.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/knalgans.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/loyalists.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/nom_general_strategy.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/nom_vs_drakes.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/nom_vs_knalgans.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/nom_vs_loyalists.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/nom_vs_nightmares.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/nom_vs_northerners.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/nom_vs_rebels.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/nom_vs_undead.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/northerners.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/rebels.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/how_to_play/undead.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/doc/tag_procedure.txt
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/eras/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/eras/aoh+nightmares.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/eras/default+nightmares.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/eras/my_era+nightmares.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/factions/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/factions/nightmares-aoh.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/factions/nightmares-default.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/attacks/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/attacks/cold_aura.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/attacks/egg.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/attacks/icicle.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/attacks/monster_paw.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/attacks/ue_melee_sandstorm.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/attacks/ue_melee_tornado.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/attacks/ue_melee_whirlpool.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/sketches/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/sketches/Melon/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/sketches/Melon/misfortune%20brainstorm.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/sketches/Melon/nightmare%20eyes.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/sketches/mystic_x/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/sketches/mystic_x/CHILDREN.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/sketches/mystic_x/avatar_of_foolishness.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/sketches/mystic_x/child_of_foolishness.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rock_1.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rock_2.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rock_3.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune1.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune1a.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune1b.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune2.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune2a.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune2b.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune3.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune3a.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune3b.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune4.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune4a.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune4b.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune5.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune5a.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune5b.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune6.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune6a.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/terrain/rune6b.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/angry_one.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/black_cat.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/calamity.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/cloud_of_gloom.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/creep_1.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/creep_2.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/creep_3.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/creep_4.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/creep_shadow.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/creepers.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/death_spectre.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/eternal_night.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/experienced_creepers.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/howling_darkness.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/inquisitor.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/jinx_beast.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/life_thief.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/raging_one.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/rash_one.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/reckless_one.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/scornful_watcher.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/scornful_watcher_attack.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/scornful_watcher_move.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/soul_snatcher.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/spiteful_watcher.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/unhatched.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/unhatched_attack_1.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/unhatched_attack_1A.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/unhatched_attack_1B.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/unstable_bramble_form.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/unstable_frost_form.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/unstable_quake_form.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/unstable_sandstorm_form.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/unstable_tornado_form.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/unstable_whirlpool_form-swamp.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/unstable_whirlpool_form.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/units/veteran_creepers.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/utils/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/images/utils/curse.png
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/mainline-strings.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/movetype_cat.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/movetype_darkness.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/movetype_egg.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/movetype_elemental_bramble.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/movetype_elemental_frost.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/movetype_elemental_quake.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/movetype_elemental_sandstorm.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/movetype_elemental_tornado.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/movetype_elemental_whirpool.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/movetype_eye.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/movetypes/movetype_insect.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/races/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/races/race_abberation.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/races/race_elemental.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/races/race_insect.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/races/race_nightmare.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/sounds/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/sounds/beast-die.ogg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/sounds/beast-hit.ogg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/sounds/cat-die.ogg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/sounds/cat-hit.ogg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/traits/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/traits/trait_elemental.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/traits/trait_insect.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/traits/trait_nightmare.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/traits/trait_unhatched.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/ab_bc_01_black_cat.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/ab_bc_02_jinx_beast.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/ab_bc_03_calamity.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/ab_sw_01_scornful_watcher.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/ab_sw_02_spiteful_watcher.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/ab_sw_03_inquisitor.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/ab_un_01_unhatched.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/ab_un_02_angry_one.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/ab_un_02b_rash_one.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/ab_un_03_raging_one.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/aberrations/ab_un_03b_reckless_one.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/elementals/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/elementals/el_ue_01_unstable_elemental.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/elementals/el_ue_02_nature_wrath.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/insects/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/insects/in_cr_00_creepers.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/nightmares/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/nightmares/ni_hd_01_howling_darkness.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/nightmares/ni_hd_02_cloud_of_gloom.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/nightmares/ni_hd_03_eternal_night.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/nightmares/ni_lt_01_life_thief.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/nightmares/ni_lt_02_soul_snatcher.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/nightmares/ni_lt_03_death_spectre.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/utils/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/units/utils/temp_unit.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/amla_creepers.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/arcane_focus.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/attack_anim.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/band.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/glowing_rune_terrains.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/horror.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/how_to_play.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/jinx.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/macro_curse.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/regen.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/reveal_variations.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/shroud_initial_castle.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/swap_keep.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/switch_ai.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/terrain_link.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/upkeep_band.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/utility_menu.cfg
+   branches/1.8/Nightmares_of_Meloen/Nightmares_of_Meloen/utils/world_conquest.cfg
+Log:
+wescamp_client: automatic update of addon 'Nightmares_of_Meloen'
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="002099.html">[Wescamp-i18n-commit] r2984 - branches/1.8
+</A></li>
+	<LI>Next message: <A HREF="002101.html">[Wescamp-i18n-commit] r2986 - in	branches/1.8/Bad_Moon_Rising/Bad_Moon_Rising: . images/misc	images/units maps scenarios2 scenarios3 units utils
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2100">[ date ]</a>
+              <a href="thread.html#2100">[ thread ]</a>
+              <a href="subject.html#2100">[ subject ]</a>
+              <a href="author.html#2100">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/wescamp-i18n-commit">More information about the Wescamp-i18n-commit
+mailing list</a><br>
+</body></html>
